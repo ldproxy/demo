@@ -1,0 +1,346 @@
+entries:
+  '-999999': No Information
+  '100': Food Product Manufacture
+  '101': Food Processing
+  '102': Meat Processing
+  '103': Seafood Processing
+  '104': Fruit and/or Vegetable Processing
+  '105': Oil-mill
+  '106': Dairying
+  '107': Grain Milling
+  '110': Baking
+  '111': Sugar Manufacture
+  '112': Sugar Milling
+  '113': Sugar Refining
+  '114': Confection Manufacture
+  '115': Pasta Manufacture
+  '116': Prepared Meal Manufacture
+  '118': Beverage Manufacture
+  '119': Animal Feed Manufacture
+  '120': Ice Manufacture
+  '121': Spirit Distillery
+  '122': Winery
+  '123': Brewing
+  '124': Soft Drink Manufacture
+  '125': Tobacco Product Manufacture
+  '129': Textile, Apparel and Leather Manufacture
+  '130': Textile Manufacture
+  '14': Grazing
+  '140': Apparel Manufacture
+  '15': Mixed Farming
+  '150': Leather Product Manufacture
+  '155': Footwear Manufacturing
+  '16': Migrant Labour
+  '160': Wood-based Manufacturing
+  '161': Sawmilling
+  '165': Wooden Construction Product Manufacture
+  '17': Crop Baling
+  '171': Paper-mill
+  '181': Printing
+  '19': Hunting
+  '190': Petroleum and Coal Products Manufacturing
+  '191': Coke Manufacture
+  '192': Petroleum Refining
+  '195': Chemical Manufacture
+  '2': Agriculture
+  '20': Forestry and/or Logging
+  '21': Silviculture
+  '210': Medicinal Product Manufacture
+  '221': Rubber Product Manufacture
+  '225': Plastic Product Manufacture
+  '230': Nonmetallic Mineral Product Manufacturing
+  '231': Glass Product Manufacture
+  '232': Refractory Product Manufacture
+  '233': Clay Product Manufacture
+  '234': Ceramic Product Manufacture
+  '235': Cement Mill
+  '236': Cement Product Manufacture
+  '237': Stone Product Manufacture
+  '240': Primary Metal Manufacturing
+  '241': Steel Mill
+  '242': Metal Refining
+  '243': Foundry
+  '250': Metal Product Manufacturing
+  '251': Structural Metal Product Manufacture
+  '255': Munitions Manufacture
+  '257': Fabricated Metal Product Manufacture
+  '260': Electronic Equipment Manufacture
+  '27': Forest Warden
+  '270': Electrical Equipment Manufacture
+  '272': Propane Sale
+  '280': Machinery Manufacture
+  '289': Transportation Equipment Manufacturing
+  '290': Motor Vehicle Manufacture
+  '3': Growing of Crops
+  '30': Fishing
+  '301': Ship Construction
+  '304': Railway Vehicle Manufacture
+  '305': Aircraft Manufacture
+  '306': Military Vehicle Manufacture
+  '310': Furniture Manufacture
+  '320': Miscellaneous Manufacturing
+  '321': Jewellery Manufacture
+  '322': Musical Instrument Manufacture
+  '323': Sports Goods Manufacture
+  '324': Game and/or Toy Manufacture
+  '325': Medical and/or Dental Equipment Manufacture
+  '330': General Repair
+  '331': Fabricated Metal Product Repair
+  '332': Electronic Equipment Repair
+  '333': Electrical Equipment Repair
+  '334': Machinery Repair
+  '340': Ship Repair
+  '341': Aircraft Repair
+  '342': Railway Vehicle Repair
+  '343': Motor Vehicle Repair
+  '35': Aquaculture
+  '350': Utilities
+  '351': Power Generation
+  '352': Climate Control
+  '355': Cooling
+  '356': Heating
+  '360': Water Supply
+  '361': Water Collection
+  '362': Water Treatment
+  '363': Water Distribution
+  '370': Sewerage
+  '372': Sewerage Screening
+  '382': Restroom
+  '383': Waste Treatment and Disposal
+  '385': Materials Recovery
+  '40': Mining and Quarrying
+  '440': Commerce
+  '459': Wholesale Merchant
+  '460': Retail Sale
+  '464': Specialized Store
+  '465': Non-specialized Store
+  '466': Convenience Store
+  '470': Petrol Sale
+  '473': Sales Yard
+  '474': Precious Metal Merchant
+  '475': Market
+  '476': Grocery
+  '477': Pharmacy
+  '478': Pet-shop
+  '480': Transport
+  '481': Terminal
+  '482': Station
+  '483': Stop
+  '484': Transfer Hub
+  '486': Signalling
+  '487': Transport System Maintenance
+  '488': Navigation
+  '489': Transportation Hub
+  '490': Railway Transport
+  '491': Railway Passenger Transport
+  '494': Pedestrian Transport
+  '495': Road Transport
+  '496': Road Passenger Transport
+  '497': Road Freight Transport
+  '50': Solid Mineral Fuel Mining
+  '500': Pipeline Transport
+  '501': Pumping
+  '505': Water Transport
+  '507': Inland Waters Transport
+  '508': Canal Transport
+  '510': Port Control
+  '511': Maritime Pilotage
+  '512': Pilot Station
+  '513': Harbour Control
+  '514': Mooring
+  '520': Air Transport
+  '525': Air Traffic Control
+  '529': Transportation Support
+  '530': Warehousing and Storage
+  '535': Motor Vehicle Parking
+  '536': Cargo Handling
+  '537': Customs Checkpoint
+  '538': Inspection Station
+  '539': Inspection
+  '540': Postal Activities
+  '541': Mail and Package Transport
+  '545': Courier Activities
+  '548': Short-term Accommodation
+  '549': Long-term Accommodation
+  '550': Accommodation
+  '551': Hotel
+  '552': Resort
+  '553': Motel
+  '554': Guest-house
+  '555': Hostel
+  '556': Dormitory
+  '557': Vacation Cottage
+  '558': Dependents Housing
+  '559': Communal Bath
+  '560': Detached House
+  '561': Attached House
+  '562': Manufactured House
+  '563': Residence
+  '570': Food Service
+  '572': Restaurant
+  '573': Bar
+  '574': Dining Hall
+  '578': Banquet Hall
+  '579': Convention Centre
+  '580': Publishing and Broadcasting
+  '582': Print Publishing
+  '594': Cinema
+  '60': Petroleum and/or Gas Extraction
+  '601': Radio Broadcasting
+  '604': Television Broadcasting
+  '610': Telecommunications
+  '612': Retail Telecommunications
+  '614': Wired Telecommunications
+  '615': Main Telephone Exchange
+  '616': Branch Telephone Exchange
+  '617': Wired Repeater
+  '620': Wireless Telecommunications
+  '621': Mobile Phone Service
+  '622': Wireless Repeater
+  '625': Satellite Telecommunications
+  '626': Satellite Ground Control
+  '632': Information Service
+  '633': Public Records
+  '640': Financial Services
+  '642': Central Banking
+  '643': Retail Banking
+  '651': Insurance
+  '662': Financial Market Administration
+  '663': Security Brokerage
+  '671': Fund Management
+  '680': Real Estate Activities
+  '681': Professional, Scientific and Technical
+  '691': Legal Activities
+  '696': Accounting
+  '70': Metal Ore Mining
+  '701': Head Office
+  '706': Business Management
+  '711': Architecture Consulting
+  '714': Engineering Design
+  '717': Surveying
+  '720': Scientific Research and Development
+  '721': Observation Station
+  '722': Weather Station
+  '725': Nuclear Research Centre
+  '730': Wind Tunnel
+  '741': Advertising
+  '752': Photography
+  '757': Veterinary
+  '760': Business and Personal Support Services
+  '761': Motor Vehicle Rental
+  '770': Employment Agency
+  '775': Travel Agency
+  '780': Security Enforcement
+  '781': Guard
+  '791': Custodial Service
+  '795': Landscaping Service
+  '801': Office Administration
+  '807': Call Centre
+  '808': Public Administration
+  '809': Headquarters
+  '81': Quarrying
+  '810': Administration
+  '811': Government
+  '812': Local Government
+  '813': Subnational Government
+  '814': National Government
+  '815': Palace
+  '817': Capitol
+  '818': Executive Activities
+  '819': Legislative Activities
+  '821': Polling Station
+  '822': Civil Activities
+  '825': Diplomacy
+  '826': Diplomatic Mission
+  '827': Embassy
+  '828': Consul
+  '829': Maritime Defence
+  '83': Chemical Mining
+  '830': Public Order, Safety and Security Services
+  '831': Public Order
+  '832': Safety
+  '833': Security Services
+  '835': Defence Activities
+  '836': Armoury
+  '837': Military Reserve Activities
+  '838': Military Recruitment
+  '839': CBRNE Civilian Support
+  '84': Peat Extraction
+  '840': Judicial Activities
+  '841': Law Enforcement
+  '842': Immigration Control
+  '843': Imprisonment
+  '844': Juvenile Corrections
+  '845': Firefighting
+  '846': Rescue and Paramedical Services
+  '847': Emergency Operations
+  '848': Civil Intelligence
+  '85': Salt Extraction
+  '850': Education
+  '851': Primary Education
+  '852': Secondary Education
+  '855': Higher Education
+  '857': Vocational Education
+  '859': Institution
+  '860': Human Health Activities
+  '861': In-patient Care
+  '862': Out-patient Care
+  '863': Urgent Medical Care
+  '864': Human Tissue Repository
+  '865': Public Health Activities
+  '866': Leprosy Care
+  '87': Mineral Mining
+  '871': Intermediate Care
+  '873': Psychiatric In-patient Care
+  '875': Residential Care
+  '881': Emergency Shelter
+  '882': Homeless Shelter
+  '883': Refugee Shelter
+  '884': Emergency Youth Shelter
+  '885': Day Care
+  '887': Social Work
+  '888': Emergency Relief Services
+  '890': Cultural, Arts and Entertainment
+  '891': Theatre
+  '892': Auditorium
+  '893': Community Centre
+  '894': Opera House
+  '895': Night Club
+  '9': Raising of Animals
+  '900': Sports, Amusement and Recreation
+  '902': Library
+  '905': Museum
+  '906': Aquarium
+  '907': Botanical and/or Zoological Reserve Activities
+  '909': Gambling
+  '91': Gas Oil Separation
+  '912': Sports Centre
+  '913': Fitness Centre
+  '914': Shooting Range
+  '915': Water Park
+  '919': Animal Boarding
+  '92': Drilling
+  '921': Recreation
+  '922': Amusement
+  '923': Hobbies and/or Leisure Activities
+  '930': Religious Activities
+  '931': Place of Worship
+  '932': Islamic Prayer Hall
+  '95': Ore Dressing
+  '950': Membership Organization
+  '954': Club
+  '955': Yacht-club
+  '960': Retail Service
+  '961': Laundry
+  '962': Beauty Treatment
+  '963': Funeral Services
+  '964': Cremation
+  '965': Mortuary Services
+  '966': Adult Entertainment
+  '967': Storage of Human Remains
+  '970': Meeting Place
+  '980': Death Care Services
+  '99': Manufacturing
+id: ffn
+label: Feature Function
+sourceType: GML_DICTIONARY

@@ -1,0 +1,12 @@
+entries:
+  '-999999': No Information
+  '1': Lake
+  '2': Pond
+  '3': Undifferentiated Water Body
+  '4': Reservoir
+  '5': Basin
+  '6': Water-hole
+  '7': Landlocked Sea
+id: iwt
+label: Inland Water Type
+sourceType: GML_DICTIONARY

@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  ldproxy:
+    image: iide/ldproxy:next
+    container_name: ldproxy_demo
+    ports:
+      - "7080:7080"
+    volumes:
+      - "$PWD:/ldproxy/data"
+    environment:
+      - EXTERNAL_URL=http://localhost:7080/rest/services
+      - ENABLE_ZOOMSTACK=false

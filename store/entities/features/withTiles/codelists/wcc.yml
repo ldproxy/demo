@@ -1,0 +1,12 @@
+entries:
+  '1': Channelized Stream
+  '2': Braided Stream
+  '3': Gorge
+  '4': Wadi
+  '6': Split Stream
+  '7': Normal Channel
+  '8': Lost Watercourse
+  '999': No Information
+id: wcc
+label: Watercourse Channel Type
+sourceType: GML_DICTIONARY

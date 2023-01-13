@@ -1,0 +1,30 @@
+---
+id: vineyards-tiles
+providerType: TILE
+providerSubType: FEATURES
+caches:
+- type: IMMUTABLE
+  storage: MBTILES
+  levels:
+    WebMercatorQuad:
+      min: 5
+      max: 11
+- type: DYNAMIC
+  storage: MBTILES
+  seeded: false
+  levels:
+    WebMercatorQuad:
+      min: 12
+      max: 16
+layerDefaults:
+  levels:
+    WebMercatorQuad:
+      min: 5
+      max: 16
+layers:
+  __all__: 
+    id: __all__
+    combine: ['*']
+  vineyards:
+    id: vineyards
+

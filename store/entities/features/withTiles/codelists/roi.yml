@@ -1,0 +1,10 @@
+entries:
+  '-999999': No Information
+  '1': International
+  '2': National Motorway
+  '3': National
+  '4': Secondary
+  '5': Local
+id: roi
+label: Route Designation Type
+sourceType: GML_DICTIONARY

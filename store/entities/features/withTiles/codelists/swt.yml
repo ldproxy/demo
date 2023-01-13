@@ -1,0 +1,9 @@
+entries:
+  '-999999': No Information
+  '4': Spring
+  '5': Water-hole
+  '6': Walled-in Spring
+  '7': Resurgence
+id: swt
+label: Natural Pool Type
+sourceType: GML_DICTIONARY

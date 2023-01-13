@@ -1,0 +1,16 @@
+entries:
+  '-999999': No Information
+  '1': Borrow-pit
+  '10': Quarry
+  '11': Contour Strip-mine
+  '12': Strip-mine
+  '13': Dredge
+  '3': Opencast
+  '4': Placer
+  '5': Prospect
+  '6': Area Strip-mine
+  '8': Peatery
+  '9': Below Surface
+id: mzn
+label: Extraction Mine Type
+sourceType: GML_DICTIONARY

@@ -1,0 +1,1963 @@
+---
+id: daraa
+createdAt: 1579958778636
+lastModified: 1579958778636
+entityStorageVersion: 2
+providerType: FEATURE
+featureProviderType: SQL
+connectionInfo:
+  database: api-resources/features/daraa.gpkg
+  dialect: GPKG
+sourcePathDefaults:
+  primaryKey: fid
+  sortKey: fid
+nativeCrs:
+  code: 4326
+  forceAxisOrder: LON_LAT
+typeValidation: NONE
+types:
+  AeronauticCrv:
+    sourcePath: /aeronauticcrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum: 
+          - GB075
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  AeronauticSrf:
+    sourcePath: /aeronauticsrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum: 
+          - GB015
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  AgriculturePnt:
+    sourcePath: /agriculturepnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum: 
+          - AM020
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  AgricultureSrf:
+    sourcePath: /agriculturesrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum: 
+          - EA040
+          - AM020
+          - EA010
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  CulturePnt:
+    sourcePath: /culturepnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AK121
+          - AL012
+          - AL030
+          - AL130
+          - BH075
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  CultureSrf:
+    sourcePath: /culturesrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AK120
+          - AL012
+          - AL030
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  FacilityPnt:
+    sourcePath: /facilitypnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL010
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  FacilitySrf:
+    sourcePath: /facilitysrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL010
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  HydrographyCrv:
+    sourcePath: /hydrographycrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - BH140
+          - BI020
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI024_HYP:
+        sourcePath: zi024_hyp
+        type: INTEGER
+        label: Hydrologic Persistence
+        constraints:
+          codelist: hyp
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      WCC:
+        sourcePath: wcc
+        type: INTEGER
+        label: Watercourse Channel Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+  HydrographyPnt:
+    sourcePath: /hydrographypnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - BH170
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      SWT:
+        sourcePath: swt
+        type: INTEGER
+        label: Natural Pool Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+      IWT:
+        sourcePath: iwt
+        type: INTEGER
+        label: Inland Water Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI024_HYP:
+        sourcePath: zi024_hyp
+        type: INTEGER
+        label: Hydrologic Persistence
+        constraints:
+          codelist: hyp
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  HydrographySrf:
+    sourcePath: /hydrographysrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - BH082
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      SWT:
+        sourcePath: swt
+        type: INTEGER
+        label: Natural Pool Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+      IWT:
+        sourcePath: iwt
+        type: INTEGER
+        label: Inland Water Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI024_HYP:
+        sourcePath: zi024_hyp
+        type: INTEGER
+        label: Hydrologic Persistence
+        constraints:
+          codelist: hyp
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      WCC:
+        sourcePath: wcc
+        type: INTEGER
+        label: Watercourse Channel Type
+        constraints:
+          codelist: wcc
+        transformations:
+          null: -999999
+  IndustrySrf:
+    sourcePath: /industrysrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AA010
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      MZN:
+        sourcePath: mzn
+        type: INTEGER
+        label: Extraction Mine Type
+        constraints:
+          codelist: mzn
+        transformations:
+          null: -999999
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  InformationPnt:
+    sourcePath: /informationpnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - ZD040
+          - ZD045
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  MilitarySrf:
+    sourcePath: /militarysrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - SU001
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  o2s_a:
+    sourcePath: /o2s_a
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      tag1:
+        sourcePath: tag1
+        type: STRING
+        label: Memorandum
+  o2s_l:
+    sourcePath: /o2s_l
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      tag1:
+        sourcePath: tag1
+        type: STRING
+        label: Memorandum
+  o2s_p:
+    sourcePath: /o2s_p
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      tag1:
+        sourcePath: tag1
+        type: STRING
+        label: Memorandum
+  PhysiographyCrv:
+    sourcePath: /physiographycrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - DB010
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  RecreationCrv:
+    sourcePath: /recreationcrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AK130
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  RecreationPnt:
+    sourcePath: /recreationpnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AK030
+          - AK170
+          - AK180
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  RecreationSrf:
+    sourcePath: /recreationsrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AK040
+          - AK060
+          - AK160
+          - AK170
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  SettlementPnt:
+    sourcePath: /settlementpnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL020
+          - AL105
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  SettlementSrf:
+    sourcePath: /settlementsrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL020
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  StructureCrv:
+    sourcePath: /structurecrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL260
+          - AQ150
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  StructurePnt:
+    sourcePath: /structurepnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL013
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  StructureSrf:
+    sourcePath: /structuresrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AL013
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI037_REL:
+        sourcePath: zi037_rel
+        type: INTEGER
+        label: Religious Designation
+        constraints:
+          codelist: rel
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  TransportationGroundCrv:
+    sourcePath: /transportationgroundcrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AN010
+          - AP010
+          - AP030
+          - AP040
+          - AP050
+          - AQ040
+          - AQ130
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      RTY:
+        sourcePath: rty
+        type: INTEGER
+        label: Roadway Type
+        constraints:
+          codelist: rty
+        transformations:
+          null: -999999
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      TRS:
+        sourcePath: trs
+        type: INTEGER
+        label: Transportation System Type
+        constraints:
+          codelist: trs
+        transformations:
+          null: -999999
+      RIN_ROI:
+        sourcePath: rin_roi
+        type: INTEGER
+        label: Route Designation Type
+        constraints:
+          codelist: roi
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      ZI016_WTC:
+        sourcePath: zi016_wtc
+        type: INTEGER
+        label: Road Weather Restriction
+        constraints:
+          codelist: wtc
+        transformations:
+          null: -999999
+      RIN_RTN:
+        sourcePath: rin_rtn
+        type: STRING
+        label: Route Designation
+        transformations:
+          null: No Information
+      RLE:
+        sourcePath: rle
+        type: INTEGER
+        label: Relative Level
+        constraints:
+          codelist: rle
+        transformations:
+          null: -999999
+      LOC:
+        sourcePath: loc
+        type: INTEGER
+        label: Vertical Relative Location
+        constraints:
+          codelist: loc
+        transformations:
+          null: -999999
+  TransportationGroundPnt:
+    sourcePath: /transportationgroundpnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AP033
+          - AP040
+          - AQ040
+          - AQ062
+          - AQ125
+          - AQ170
+          - BH070
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      RIN_ROI:
+        sourcePath: rin_roi
+        type: INTEGER
+        label: Route Designation Type
+        constraints:
+          codelist: roi
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      TRS:
+        sourcePath: trs
+        type: INTEGER
+        label: Transportation System Type
+        constraints:
+          codelist: trs
+        transformations:
+          null: -999999
+      TRS2:
+        sourcePath: trs2
+        type: INTEGER
+        label: Secondary Transportation System Type
+        constraints:
+          codelist: trs
+        transformations:
+          null: -999999
+  TransportationGroundSrf:
+    sourcePath: /transportationgroundsrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AP030
+          - AQ125
+          - AQ140
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      FFN:
+        sourcePath: ffn
+        type: INTEGER
+        label: Feature Function
+        constraints:
+          codelist: ffn
+        transformations:
+          null: -999999
+      TRS:
+        sourcePath: trs
+        type: INTEGER
+        label: Transportation System Type
+        constraints:
+          codelist: trs
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      ZI016_WTC:
+        sourcePath: zi016_wtc
+        type: INTEGER
+        label: Road Weather Restriction
+        constraints:
+          codelist: wtc
+        transformations:
+          null: -999999
+      RIN_ROI:
+        sourcePath: rin_roi
+        type: INTEGER
+        label: Route Designation Type
+        constraints:
+          codelist: roi
+        transformations:
+          null: -999999
+      RTY:
+        sourcePath: rty
+        type: INTEGER
+        label: Roadway Type
+        constraints:
+          codelist: rty
+        transformations:
+          null: -999999
+  TransportationWaterCrv:
+    sourcePath: /transportationwatercrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - BH020
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI024_HYP:
+        sourcePath: zi024_hyp
+        type: INTEGER
+        label: Hydrologic Persistence
+        constraints:
+          codelist: hyp
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      RLE:
+        sourcePath: rle
+        type: INTEGER
+        label: Relative Level
+        constraints:
+          codelist: rle
+        transformations:
+          null: -999999
+  UtilityInfrastructureCrv:
+    sourcePath: /utilityinfrastructurecrv
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AT005
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      CAB:
+        sourcePath: cab
+        type: INTEGER
+        label: Cable Type
+        constraints:
+          codelist: cab
+        transformations:
+          null: -999999
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  UtilityInfrastructurePnt:
+    sourcePath: /utilityinfrastructurepnt
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - AT042
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: POINT
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+  VegetationSrf:
+    sourcePath: /vegetationsrf
+    type: OBJECT
+    properties:
+      id:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+      F_CODE:
+        sourcePath: f_code
+        type: STRING
+        label: Feature Type Code
+        role: TYPE
+        constraints:
+          codelist: f_code
+          enum:
+          - EB010
+          - EB070
+          - EC015
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        geometryType: MULTI_POLYGON
+      ZI001_SDV:
+        sourcePath: zi001_sdv
+        type: DATETIME
+        label: Last Change
+      UFI:
+        sourcePath: ufi
+        type: STRING
+        label: Unique Entity Identifier
+      ZI005_FNA:
+        sourcePath: zi005_fna
+        type: STRING
+        label: Name
+      FCSUBTYPE:
+        sourcePath: fcsubtype
+        type: INTEGER
+        label: Feature Subtype Code
+        transformations:
+          null: -999999
+      ZI024_HYP:
+        sourcePath: zi024_hyp
+        type: INTEGER
+        label: Hydrologic Persistence
+        constraints:
+          codelist: hyp
+        transformations:
+          null: -999999
+      ZI006_MEM:
+        sourcePath: zi006_mem
+        type: STRING
+        label: Memorandum
+        transformations:
+          null: No Information
+      ZI001_SDP:
+        sourcePath: zi001_sdp
+        type: STRING
+        label: Source Description
+        transformations:
+          null: No Information
+      VEG:
+        sourcePath: veg
+        type: INTEGER
+        label: Vegetation Characteristic
+        constraints:
+          codelist: veg
+        transformations:
+          null: -999999

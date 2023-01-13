@@ -1,0 +1,11 @@
+
+.DS_Store
+cache
+tmp
+proj
+api-resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles
+api-resources/features/OS_Open_Zoomstack.gpkg
+api-resources/features/*.gpkg-journal
+api-resources/features/*.gpkg-shm
+api-resources/features/*.gpkg-wal
+\!*

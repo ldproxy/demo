@@ -1,0 +1,9 @@
+entries:
+  '-999999': No Information
+  '1': Motorway
+  '2': Limited Access Motorway
+  '3': Road
+  '4': Street
+id: rty
+label: Roadway Type
+sourceType: GML_DICTIONARY

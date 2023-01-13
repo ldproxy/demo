@@ -1,0 +1,9 @@
+entries:
+  '-999999': No Information
+  '1': Toll-gate
+  '2': Crossing
+  '3': Entrance
+  '4': Border Crossing
+id: gtc
+label: Gate Use
+sourceType: GML_DICTIONARY

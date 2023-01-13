@@ -1,0 +1,8 @@
+---
+serviceType: OGC_API
+api:
+- buildingBlock: STYLES
+  enabled: true
+  styleEncodings:
+  - HTML
+  - Mapbox

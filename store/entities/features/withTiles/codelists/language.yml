@@ -1,0 +1,7 @@
+entries:
+  'cym': Welsh
+  'eng': English
+  'gla': Scottish Gaelic
+id: language
+label: Name Languages
+sourceType: GML_DICTIONARY

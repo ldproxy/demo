@@ -1,0 +1,12 @@
+---
+api:
+- buildingBlock: COLLECTIONS
+  enabled: false
+- buildingBlock: FEATURES_CORE
+  enabled: false
+- buildingBlock: FEATURES_HTML
+  enabled: false
+- buildingBlock: GEO_JSON
+  enabled: false
+- buildingBlock: CRS
+  enabled: false

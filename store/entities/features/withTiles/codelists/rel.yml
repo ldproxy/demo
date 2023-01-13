@@ -1,0 +1,19 @@
+entries:
+  '-999999': No Information
+  '1': Buddhism
+  '10': Shia
+  '11': Sunni
+  '12': Nestorian
+  '13': Chaldean
+  '14': Mixed and/or No Designation
+  '2': Islam
+  '3': Roman Catholic
+  '4': Christian
+  '5': Judaism
+  '6': Orthodox
+  '7': Protestant
+  '8': Shinto
+  '9': Hinduism
+id: rel
+label: Religious Designation
+sourceType: GML_DICTIONARY

@@ -1,0 +1,19 @@
+entries:
+  '-999999': No Information
+  '10': Tethering
+  '11': Load Bearing
+  '12': Guide
+  '13': Barrier
+  '14': Restraining
+  '15': Towing
+  '19': Cableway
+  '2': Power Distribution Line
+  '3': Telephone
+  '4': Telegraph
+  '6': Power Transmission Line
+  '7': Digital Communication Line
+  '8': Communication Line
+  '9': Fibre-optic
+id: cab
+label: Cable Type
+sourceType: GML_DICTIONARY

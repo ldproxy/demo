@@ -1,0 +1,9 @@
+entries:
+  '-999999': No Information
+  '1': Perennial
+  '2': Intermittent
+  '3': Ephemeral
+  '4': Dry
+id: hyp
+label: Hydrologic Persistence
+sourceType: GML_DICTIONARY

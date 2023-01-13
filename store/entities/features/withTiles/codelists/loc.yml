@@ -1,0 +1,12 @@
+entries:
+  '-999999': No Information
+  '1': WGS 84 Ellipsoid
+  '2': WGS 84 EGM96 Geoid
+  '3': Mean Sea Level (MSL)
+  '4': North American Vertical Datum (NAVD) 1988
+  '5': National Geodetic Vertical Datum (NGVD) 1929
+  '6': Ground Level
+  '7': WGS 84 EGM08 Geoid
+id: loc
+label: Vertical Relative Location
+sourceType: GML_DICTIONARY

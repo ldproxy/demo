@@ -1,0 +1,1208 @@
+entries:
+  AA010: Extraction Mine
+  AA011: Shear Wall
+  AA020: Mine Shaft Superstructure
+  AA040: Rig
+  AA045: Borehole
+  AA050: Well
+  AA052: Hydrocarbons Field
+  AA054: Non-water Well
+  AB000: Disposal Site
+  AB010: Recycling Site
+  AB021: Liquid Diffuser
+  AB040: Aeration Basin
+  AB507: Waste Heap
+  AC010: Blast-furnace
+  AC020: Catalytic Cracker
+  AC030: Settling Pond
+  AC040: Hydrocarbon Products Facility
+  AC060: Industrial Furnace
+  AC070: Industrial Park
+  AC507: Sewage Treatment Plant
+  AD010: Electric Power Station
+  AD011: Power Generating Unit
+  AD020: Solar Panel
+  AD025: Solar Farm
+  AD030: Power Substation
+  AD041: Nuclear Reactor Containment
+  AD050: Heating Facility
+  AD055: Cooling Facility
+  AD060: Wind Farm
+  AF010: Smokestack
+  AF020: Conveyor
+  AF030: Cooling Tower
+  AF040: Crane
+  AF050: Excavating Machine
+  AF060: Engine Test Cell
+  AF070: Flare Pipe
+  AF080: Hopper
+  AG030: Shopping Complex
+  AG040: Office Park
+  AG050: Billboard
+  AH025: Engineered Earthwork
+  AH055: Fortified Building
+  AH060: Underground Bunker
+  AH070: Checkpoint
+  AI020: Caravan Park
+  AI021: Manufactured Home Park
+  AI030: Camp
+  AJ030: Holding Pen
+  AJ050: Windmill
+  AJ051: Wind Turbine
+  AJ055: Water Mill
+  AJ060: Farm
+  AJ070: Ranch
+  AJ080: Stable
+  AJ085: Barn
+  AJ090: Cattle Dipping Tank
+  AJ100: Agricultural Colony
+  AJ110: Greenhouse
+  AK015: Bandshell
+  AK020: Amusement Park Attraction
+  AK030: Amusement Park
+  AK040: Sports Ground
+  AK050: Tennis Court(s)
+  AK060: Camp-site
+  AK061: Picnic Site
+  AK070: Drive-in Theatre
+  AK080: Outdoor Theatre Screen
+  AK090: Fairground
+  AK100: Golf Course
+  AK101: Golf Driving Range
+  AK110: Grandstand
+  AK120: Park
+  AK121: Lookout
+  AK123: Bench
+  AK124: Picnic Table
+  AK130: Racetrack
+  AK140: Planter
+  AK141: Statue Pedestal
+  AK150: Ski-jump
+  AK155: Ski-run
+  AK160: Stadium
+  AK161: Scoreboard
+  AK164: Amphitheatre
+  AK170: Swimming Pool
+  AK180: Zoo
+  AK200: Spa
+  AL010: Facility
+  AL011: Installation
+  AL012: Archaeological Site
+  AL013: Building
+  AL014: Non-building Structure
+  AL016: Building Overhang
+  AL017: Fire Hydrant
+  AL018: Building Superstructure
+  AL019: Shed
+  AL020: Built-up Area
+  AL022: Populated Place
+  AL024: Neighbourhood
+  AL025: Cairn
+  AL030: Cemetery
+  AL035: Grave
+  AL036: Tomb
+  AL037: Mass Grave
+  AL050: Display Sign
+  AL060: Dragon's Teeth
+  AL065: Minefield
+  AL070: Fence
+  AL073: Flagpole
+  AL080: Gantry
+  AL090: Grave Marker
+  AL099: Hut
+  AL105: Settlement
+  AL110: Light Support Structure
+  AL120: Missile Site
+  AL121: Anti-aircraft Artillery Site
+  AL130: Memorial Monument
+  AL140: Particle Accelerator
+  AL142: Astronomical Observatory
+  AL155: Overhead Obstruction
+  AL165: Pipeline Crossing Point
+  AL170: Public Square
+  AL175: Courtyard
+  AL180: Retail Stand
+  AL195: Ramp
+  AL200: Ruins
+  AL201: Interest Site
+  AL208: Shanty Town
+  AL211: Transportation Route Protection Structure
+  AL241: Tower
+  AL250: Underground Dwelling
+  AL260: Wall
+  AL270: Industrial Farm
+  AL351: Space Facility
+  AL371: Manor House
+  AL375: Castle
+  AL376: Castle Complex
+  AL400: Building Unit
+  AL410: Spatial Unit
+  AL420: Spatial Unit Group
+  AL430: Utility Network
+  AL510: Tethered Balloon
+  AM010: Storage Depot
+  AM011: Shipping Container
+  AM020: Grain Storage Structure
+  AM030: Grain Elevator
+  AM040: Mineral Pile
+  AM060: Surface Bunker
+  AM065: Munition Storage Facility
+  AM070: Storage Tank
+  AM071: Tank Farm
+  AM075: Fuel Storage Facility
+  AM076: Underground Storage Formation
+  AM080: Water Tower
+  AN010: Railway
+  AN050: Railway Sidetrack
+  AN060: Railway Yard
+  AN075: Railway Turntable
+  AN076: Roundhouse
+  AN080: Railway Switch
+  AN085: Railway Signal
+  AP010: Cart Track
+  AP020: Road Interchange
+  AP030: Road
+  AP033: Engineered Turnaround Site
+  AP040: Gate
+  AP041: Vehicle Barrier
+  AP050: Trail
+  AP055: Tank Trail
+  AP056: Tank Crossing
+  AP080: Traffic Monitor Site
+  AQ035: Sidewalk
+  AQ036: Curb
+  AQ040: Bridge
+  AQ045: Bridge Span
+  AQ050: Bridge Superstructure
+  AQ055: Bridge Tower
+  AQ056: Bridge Pier
+  AQ059: Transportation Route Characteristic Change
+  AQ060: Control Tower
+  AQ062: Crossing
+  AQ063: Causeway Structure
+  AQ065: Culvert
+  AQ068: Transportation Block
+  AQ070: Ferry Crossing
+  AQ075: Ice Route
+  AQ080: Ferry Station
+  AQ090: Entrance and/or Exit
+  AQ095: Tunnel Mouth
+  AQ105: Buried Utility
+  AQ110: Mooring Mast
+  AQ111: Prepared Watercourse Crossing
+  AQ113: Pipeline
+  AQ114: Storm Drain
+  AQ115: Utility Access Point
+  AQ116: Pumping Station
+  AQ118: Sharp Curve
+  AQ120: Steep Grade
+  AQ125: Transportation Station
+  AQ126: Transportation Stop
+  AQ130: Tunnel
+  AQ135: Roadside Rest Area
+  AQ140: Vehicle Lot
+  AQ141: Parking Garage
+  AQ150: Stair
+  AQ151: Arcade
+  AQ160: Traffic Light
+  AQ161: Street Lamp
+  AQ162: Street Sign
+  AQ170: Motor Vehicle Station
+  AQ200: Regulatory Sign
+  AT005: Cable
+  AT010: Dish Aerial
+  AT011: Aerial
+  AT012: Aerial Farm
+  AT041: Cableway
+  AT042: Pylon
+  AT045: Radar Station
+  BA000: Water Line
+  BA005: High Water Line
+  BA010: Land Water Boundary
+  BA021: Nearshore
+  BA022: Backshore
+  BA023: Foreshore
+  BA024: Shoreline
+  BA030: Island
+  BA040: Tidal Water
+  BA050: Beach
+  BA070: Waterbody Bar
+  BA075: Sand Waves
+  BB005: Harbour
+  BB009: Port
+  BB010: Anchorage
+  BB015: Roadstead
+  BB019: Anchor
+  BB020: Berth
+  BB030: Bollard
+  BB050: Calling-in Point
+  BB080: Dolphin
+  BB081: Shoreline Construction
+  BB082: Shoreline Ramp
+  BB090: Dry Dock
+  BB095: Dock
+  BB100: Fishing Stakes
+  BB110: Fish Weir
+  BB112: Fish Trap Area
+  BB115: Nautical Gridiron
+  BB149: Boat Landing
+  BB150: Beach Landing Site
+  BB151: Landing Steps
+  BB155: Maritime Signal Station
+  BB160: Mooring Ring
+  BB199: Floating Dry Dock
+  BB201: Small Craft Facility
+  BB241: Shipyard
+  BB270: Pilot Boarding Place
+  BC010: Maritime Navigation Beacon
+  BC020: Buoy
+  BC033: Radar Range
+  BC034: Maritime Radiobeacon
+  BC040: Maritime Navigation Light
+  BC041: Maritime Navigation Light Support
+  BC042: Maritime Navigation Retro-reflector
+  BC055: Maritime Navigation Marker
+  BC060: Light Sector
+  BC070: Light Vessel
+  BC080: Insubstantial Navigation Mark
+  BC100: Leading Line
+  BC101: Fog Signal
+  BC103: Sound Signal Device
+  BC120: Maritime Notice Board
+  BD001: Explosive Naval Mine
+  BD002: Small Bottom Object
+  BD003: Large Bottom Object
+  BD015: Submarine Spring
+  BD020: Crib
+  BD030: Discoloured Water
+  BD050: Foul Ground
+  BD061: Aquatic Vegetation
+  BD072: Pontoon
+  BD074: Mooring Chain
+  BD076: Booming Ground
+  BD100: Structural Pile
+  BD115: Offshore Construction
+  BD120: Reef
+  BD121: Pingo
+  BD123: Floating Barrier
+  BD125: Fish Haven
+  BD130: Hazardous Rock
+  BD140: Snag
+  BD180: Wreck
+  BD181: Hulk
+  BE010: Depth Curve
+  BE015: Depth Contour
+  BE019: Depth Area
+  BE020: Sounding
+  BE021: Low Water Line
+  BE030: Track Swath
+  BE040: Track Line
+  BE050: Beach Profile
+  BF010: Bottom Characteristic Region
+  BF012: Hull Integrity Test Sample Site
+  BG010: Water Movement Data Location
+  BG012: Water Turbulence
+  BG013: Water Current Region
+  BG020: Tide Gauge Station
+  BG030: Tidal Stream Observation Station
+  BH010: Aqueduct
+  BH012: Qanat Shaft
+  BH015: Bog
+  BH020: Navigable Canal
+  BH030: Ditch
+  BH040: Water Treatment Bed
+  BH050: Mariculture Site
+  BH051: Fish Farm Facility
+  BH065: Water Race
+  BH070: Ford
+  BH075: Fountain
+  BH077: Hummock
+  BH082: Inland Waterbody
+  BH090: Land Subject to Inundation
+  BH092: Inundated Land
+  BH095: Wetland
+  BH100: Moat
+  BH110: Penstock
+  BH116: Aquifer
+  BH120: Rapids
+  BH135: Rice Field
+  BH140: River
+  BH141: Inland Waterbody Bank
+  BH145: Vanishing Point
+  BH150: Salt Flat
+  BH155: Salt Evaporator
+  BH160: Sabkha
+  BH165: Spillway
+  BH170: Natural Pool
+  BH180: Waterfall
+  BH190: Lagoon
+  BH191: Channel
+  BH192: Thalweg
+  BH220: Waterwork
+  BH230: Water Well
+  BH240: Irrigation System
+  BH250: Shallow Water Area
+  BI005: Vessel Lift
+  BI006: Ship Elevator
+  BI010: Cistern
+  BI020: Dam
+  BI030: Lock
+  BI031: Lock Basin
+  BI040: Sluice Gate
+  BI044: Flood Control Structure
+  BI045: Basin Gate
+  BI050: Water Intake Tower
+  BI060: Fish Ladder
+  BI070: Gauging Station
+  BJ020: Moraine
+  BJ030: Glacier
+  BJ031: Crevasse
+  BJ040: Ice Cliff
+  BJ060: Ice Peak
+  BJ065: Ice Shelf
+  BJ070: Pack Ice
+  BJ080: Polar Ice
+  BJ099: Ice-cap
+  BJ100: Snow Field and/or Ice-field
+  BJ110: Tundra
+  BK010: Acoustic Station
+  CA010: Elevation Contour
+  CA020: Ridge Line
+  CA030: Spot Elevation
+  DA005: Asphalt Lake
+  DA010: Soil Surface Region
+  DB000: Land Area
+  DB001: Land Morphology Area
+  DB010: Steep Terrain Face
+  DB028: Cave Chamber
+  DB029: Cave Mouth
+  DB031: Hill
+  DB061: Crevice
+  DB070: Cut
+  DB071: Cut Line
+  DB080: Depression
+  DB090: Embankment
+  DB100: Esker
+  DB110: Geologic Fault
+  DB115: Geothermal Outlet
+  DB150: Mountain Pass
+  DB160: Rock Formation
+  DB170: Sand Dunes
+  DB180: Volcano
+  DB181: Submerged Volcano
+  DB185: Crater
+  DB190: Volcanic Dyke
+  DB211: Landslide Mass
+  EA010: Crop Land
+  EA020: Hedgerow
+  EA030: Plant Nursery
+  EA031: Botanic Garden
+  EA040: Orchard
+  EA050: Vineyard
+  EA055: Hop Field
+  EB010: Grassland
+  EB020: Thicket
+  EB060: Heathland
+  EB070: Brush
+  EC005: Tree
+  EC010: Cane
+  EC015: Forest
+  EC020: Oasis
+  EC040: Cleared Way
+  EC050: Grove
+  EC060: Forest Clearing
+  EC100: Wildland Fire Perimeter
+  ED010: Marsh
+  ED020: Swamp
+  EE010: Logging Site
+  EE020: Unvegetated Land
+  EE030: Desert
+  EE060: Bank Vegetation Zone
+  EE100: Economic Reserve
+  FA000: Administrative Boundary
+  FA002: Geopolitical Entity
+  FA003: Administrative Subdivision
+  FA004: Geopolitical Line
+  FA005: Access Zone
+  FA012: Contaminated Region
+  FA015: Firing Range
+  FA041: Contact Zone
+  FA082: Protected Water Gathering Ground
+  FA091: Geophysical Data Track Line
+  FA100: Test Site
+  FA110: International Date Line
+  FA125: Border Crossing
+  FA130: Humanitarian Relief Administrative Region
+  FA135: Electric Power Management Region
+  FA140: Telecommunications Management Region
+  FA165: Training Site
+  FA210: Conservation Area
+  FA520: Emergency Planning Zone
+  FA530: Disaster Site
+  FC021: Maritime Limit
+  FC033: Dumping Ground
+  FC034: Dredged Area
+  FC037: Maritime Caution Area
+  FC041: Traffic Separation Scheme
+  FC046: Waterbody Area
+  FC047: Waterbody Morphology Area
+  FC050: Naval Firing and/or Practice Area
+  FC055: Naval Operations Area
+  FC100: Measured Distance Line
+  FC101: Theodolite Reference Line
+  FC102: Marine Range Centre-line
+  FC130: Maritime Radar Reference Line
+  FC165: Maritime Route
+  FC177: Swept Area
+  FC178: Hull Integrity Test Site
+  FC179: Side Scan Sonar Coverage
+  FC180: Hull Integrity Test Site Bottom Feature
+  FC185: Commercial Shipping Activity Region
+  FC186: Fishing Vessel Activity Region
+  FC187: Fishery Species Distribution
+  FD100: Oceanographic Front
+  GA005: Airspace
+  GA006: Airspace Usage
+  GA007: Airspace Volume
+  GA010: Air Traffic Service (ATS) Route Segment
+  GA011: Air Traffic Service (ATS) Route Segment Direction
+  GA012: Air Traffic Service (ATS) Route Significant Point
+  GA013: Air Traffic Service (ATS) Route Crossing Information
+  GA021: Safe Altitude Area (SAA)
+  GA022: Safe Altitude Area (SAA) Sector
+  GA023: Terminal Arrival Altitude (TAA)
+  GA024: Terminal Arrival Altitude (TAA) Sector
+  GA027: Terminal Instrument Procedure
+  GA028: Terminal Instrument Procedure Transition
+  GA029: Terminal Instrument Procedure Segment Point
+  GA032: Aeronautical Radio Navigation Installation Point
+  GA033: Aeronautical Radio Navigation Installation
+  GA034: Aeronautical Radio Navigation Service
+  GA036: VHF Omnidirectional Radio (VOR) Beacon
+  GA037: Tactical Air Navigation Aid (TACAN) Beacon
+  GA038: Non-Directional Radio Beacon (NDB)
+  GA039: Marker Radio Beacon
+  GA041: Distance Measuring Equipment (DME)
+  GA043: Radio Navigation Service Limitation
+  GA045: Enroute Air Traffic Service (ATS) Route
+  GA049: Instrument Approach Procedure (IAP)
+  GA050: Instrument Approach Procedure (IAP) Segment
+  GA055: Way-point
+  GA058: Aviation Designated Point
+  GA060: Holding Procedure
+  GA091: Instrument Landing System (ILS) Localizer
+  GA093: Microwave Landing System (MLS) Azimuth
+  GA094: Microwave Landing System (MLS) Elevation
+  GA096: Special Navigation System
+  GA097: Special Navigation System Station
+  GA098: Instrument Landing System (ILS) Glide Path
+  GA099: Compass Locator
+  GA100: Localizer-type Directional Aid (LDA)
+  GA105: Simplified Directional Facility (SDF)
+  GA210: Procedure Segment Leg
+  GA215: Terminal Instrument Procedure Minima
+  GA220: Standard Instrument Arrival (STAR)
+  GA230: Standard Instrument Departure (SID)
+  GA250: Procedure Transition Segment
+  GA260: Initial Approach Segment
+  GA270: Intermediate Approach Segment
+  GA280: Final Approach Segment (FAS)
+  GA281: Final Approach Segment (FAS) Data Block
+  GA290: Missed Approach Segment
+  GA291: Missed Approach Information
+  GA500: Arrival Segment
+  GA510: Departure Segment
+  GA520: Air Refuelling Procedure
+  GA530: Air Refuelling Track
+  GA535: Air Refuelling Route
+  GA540: Air Refuelling Anchor Pattern
+  GA550: Air Refuelling Point
+  GA800: Search and Rescue Service (SAR)
+  GA801: Search and Rescue Unit
+  GA802: Search and Rescue Responsible Organization
+  GA803: Search and Rescue Region
+  GB001: Aerodrome
+  GB005: Land Aerodrome
+  GB007: Aerodrome Boundary
+  GB008: Aerodrome Markings
+  GB009: Aerodrome Installation Location
+  GB011: Aerodrome Movement Area Lighting
+  GB012: Aeronautical Ground Light
+  GB013: Aerodrome Beacon
+  GB014: Aerodrome Fuel Filling Stand
+  GB015: Apron
+  GB016: Aircraft Stand
+  GB017: Aerodrome Hot Spot
+  GB018: Isolated Aircraft Parking Position
+  GB020: Arresting System
+  GB025: Blast Barrier
+  GB026: Transponder Landing System Station
+  GB027: Automated Aerodrome Weather Station
+  GB028: Aerodrome Surface Detection Station
+  GB030: Helipad
+  GB032: Final Approach and Take-off Area (FATO)
+  GB033: Touchdown and Lift-off Area (TLOF)
+  GB035: Heliport
+  GB036: Final Approach and Take-off Area (FATO) Safety Area
+  GB037: Aerodrome Elevation Point
+  GB038: Runway Centre-line Point
+  GB040: Launch Pad
+  GB044: Stopway Endpoint
+  GB045: Stopway
+  GB047: Aerodrome Reference Point (ARP)
+  GB050: Defensive Revetment
+  GB051: Runway Intersection
+  GB052: Runway Direction
+  GB055: Runway
+  GB056: Runway Endpoint
+  GB057: Movement Area Shoulder
+  GB060: Runway Radar Reflector
+  GB064: Runway Element
+  GB065: Water Aerodrome
+  GB069: Land and Hold Short Operations (LAHSO) Hold Short Point
+  GB070: Seaplane Run
+  GB075: Taxiway
+  GB076: Taxiway Element
+  GB077: Intermediate Holding Position
+  GB080: Wind Direction Indicator
+  GB090: Runway Threshold
+  GB091: Runway End Safety Area (RESA)
+  GB092: Runway Holding Position
+  GB093: Runway Turn Pad
+  GB096: Clearway
+  GB161: De-icing Anti-icing Area
+  GB162: Aeronautical Radio Navigation Service Checkpoint
+  GB163: Altimeter Check Location
+  GB200: Aerodrome Service Road
+  GB222: Low Air Manoeuvre Pylon
+  GB230: Aircraft Hangar
+  GB250: Hardened Aircraft Shelter
+  GB300: Aerodrome Movement Area
+  GB480: Visual Approach Slope Indicator System (VASIS)
+  GB485: Approach Lighting System
+  HC100: Linguistic Entity
+  HC200: Communication Organisation
+  HC210: Media Content
+  HC220: Media Product
+  HC230: Online Content Service
+  HC240: Telecommunications Service
+  HD100: Collective Living Quarters
+  HD110: Household
+  HD120: Housing Unit
+  HD130: Human Population
+  HD140: Institutional Group
+  HD150: Living Quarters
+  HD160: Living Quarters Amenity
+  HD170: Population
+  HD180: Population Migration Information
+  HD300: Closure Information
+  HD310: Educational Organisation
+  HD320: Educational Organisation Programme Implementation Assessment
+  HD330: Educational Organisation Setting Assessment
+  HD340: Educational Programme
+  HD350: Educational Setting Resource Inventory
+  HE100: Business Environment
+  HE110: Economic Role Specification
+  HE120: Economy Summary
+  HE130: Goods Information
+  HE140: Labour Force
+  HE150: Labour Organisation
+  HE160: Market Information
+  HE170: Product Information
+  HE180: Product Trading Information
+  HE190: Role Specification
+  HE200: Service Information
+  HE210: Social Condition
+  HE220: Special Administrative Division
+  HG100: Allocated Resource
+  HG110: Asset Holding
+  HG120: Organisation External Role Specification
+  HG130: Organisation Internal Role Specification
+  HG200: Belief
+  HG210: Belief System
+  HG220: Governance Information
+  HG230: Group Member Physical Characteristics
+  HG240: Leadership Role Specification
+  HG250: Name Information
+  HG260: Social Role Specification
+  HG300: Kinship Structure
+  HG310: Kinship Term
+  HG320: Marriage Practice Information
+  HG400: Belief System Derivation Relationship
+  HG410: Belief System Family Relationship
+  HG420: Religion
+  HG430: Sociocultural Practice Information
+  HH100: Disease
+  HH110: Health Intervention
+  HH120: Health Summary
+  HH130: Health Threat
+  HH140: Healthcare Resource
+  HH150: Location Health Summary
+  HH160: Population Health Summary
+  HL100: Cultural Site Registration
+  HL110: Site Cultural Significance
+  HL120: Site Sentiment
+  HR100: Basic Administrative Unit
+  HR110: Land Administration Party
+  HR120: Land Administration Party Group
+  HR130: Land Administration Record
+  HR140: Land Administration Source
+  HR150: Mortgage
+  HR160: Resource Responsibility
+  HR170: Resource Restriction
+  HR180: Resource Right
+  HR190: Resource RRR Transaction
+  HR200: RRR
+  HR210: Social Tenure Inventory
+  HR220: Spatial Source
+  HR230: Transaction
+  HR240: Zoning Restriction
+  HT100: Route Information
+  HT110: Route Stop Information
+  HT120: Transportation Resource
+  HT130: Transportation Resource Use
+  HT140: Transportation Service Information
+  IA040: Land Parcel
+  NA100: Mountain
+  NA170: Drainage Basin
+  NA171: Drainage Limit
+  SA050: Slope Region
+  SA080: Statistical Geographic Area
+  SA090: Pollutant Discharge Location
+  SU001: Military Installation
+  SU004: Cantonment Area
+  SU030: Installation Boundary
+  ZA100: Activity Linguistic Use
+  ZA110: Actor Contribution
+  ZA130: Actor Relationship
+  ZA140: Actor Sentiment Contribution
+  ZA150: Actor Cooperative Relationship
+  ZA160: Belief Contribution
+  ZA170: Belief System Contribution
+  ZA180: Actor Competitive Relationship
+  ZA190: Contributing Cultural Factor
+  ZA200: Economic Role Performance
+  ZA210: Household Membership
+  ZA220: Institutional Group Membership
+  ZA230: Kinship Relationship
+  ZA240: Language Geography Relationship
+  ZA250: Media Distribution
+  ZA260: Media Electronic Distribution
+  ZA270: Media Physical Distribution
+  ZA280: Organisation External Role
+  ZA290: Organisation Internal Role
+  ZA300: Relationship Entity
+  ZA310: Residency Relationship
+  ZA320: Significant Event Contribution
+  ZA330: Site Religious Significance
+  ZA340: Social Group Location
+  ZA350: Social Group Use Contribution
+  ZA360: Social Role
+  ZA370: Actor Subgroup Relationship
+  ZA380: Actor Subordination Relationship
+  ZA390: Actor Supergroup Relationship
+  ZA400: Actor Superordination Relationship
+  ZA410: Property Evaluation
+  ZB030: Boundary Monument
+  ZB036: Distance Mark
+  ZB050: Survey Point
+  ZB080: Sensor Calibration Point
+  ZC040: Local Magnetic Anomaly
+  ZC050: Isogonic Line
+  ZC100: Consumable Entity
+  ZC101: Expendable Munition
+  ZC102: Ammunition
+  ZC103: Air-dropped Bomb
+  ZC104: Depth Charge
+  ZC105: Grenade
+  ZC106: Explosive Mine
+  ZC107: Explosive Landmine
+  ZC108: Missile
+  ZC109: Rocket
+  ZC110: Torpedo
+  ZC111: Improvised-Explosive-Device (IED)
+  ZD012: Geographic Information Location
+  ZD020: Void Collection Area
+  ZD040: Named Location
+  ZD045: Annotated Location
+  ZD070: Water Measurement Location
+  ZD100: Device Entity
+  ZD101: Control System
+  ZD102: Device Component
+  ZD103: Electrical Device
+  ZD104: Electrical Power Generator
+  ZD105: Electronic Device
+  ZD106: Electronic Communications Device
+  ZD107: Burst Terminal
+  ZD108: Modem
+  ZD109: Multiplexer
+  ZD110: Optical Communications Device
+  ZD111: Radio Communications Device
+  ZD112: Communications Station
+  ZD113: Communications Switch
+  ZD114: Communications Switchboard
+  ZD115: Telephone
+  ZD116: Teletypewriter
+  ZD117: Semi-trailer Truck
+  ZD118: Navigational Electronics Device
+  ZD119: Distribution Device
+  ZD120: Petroleum, Oil, and Lubricant (POL) Device
+  ZD121: Petroleum, Oil, and Lubricant (POL) Container
+  ZD122: Petroleum, Oil, and Lubricant (POL) Conduit
+  ZD123: Healthcare Device
+  ZD124: Medical Device
+  ZD125: Field Hospital Device
+  ZD126: Machine
+  ZD127: Engine
+  ZD128: Compression-ignition Engine
+  ZD129: Spark-ignition Engine
+  ZD130: Gas Turbine Engine
+  ZD131: Military Support Device
+  ZD132: Air Drop Device
+  ZD133: Air Drop Container
+  ZD134: Air Drop Extraction Parachute
+  ZD135: Air Drop Parachute System
+  ZD136: Air Drop Platform
+  ZD137: Air Drop Retro-rocket System
+  ZD138: Autonomous Air Drop Delivery System
+  ZD139: Drop Zone Assembly Aid
+  ZD140: Ejection System
+  ZD141: Parafoil
+  ZD142: Bridging Device
+  ZD143: Fascine
+  ZD144: Portable Footbridge
+  ZD145: Portable Assault Bridge
+  ZD146: Line of Communication Bridge
+  ZD147: Heavy Equipment Bridge
+  ZD148: Countermine Device
+  ZD149: Mine-clearing Device
+  ZD150: Bangalore Torpedo
+  ZD151: Magnetic Signature Duplicator
+  ZD152: Mine-clearing Multi-system
+  ZD153: Mine-clearing Line Charge (MICLIC)
+  ZD154: Mine-clearing Rocket System
+  ZD155: Mine-clearing Roller System
+  ZD156: Mine Detector
+  ZD157: Mine Delivery Device
+  ZD158: Airborne Mine Delivery Device
+  ZD159: Projectile Mine Delivery Device
+  ZD160: Mine Delivery Canister
+  ZD161: Mechanical Mine Emplacement Device
+  ZD162: Obscurant Device
+  ZD163: Smoke Generator
+  ZD164: Smoke Canister
+  ZD165: Sensor
+  ZD166: Acoustic Sensor
+  ZD167: Electromagnetic Sensor
+  ZD168: Direct View Optical Sensor
+  ZD169: Image Intensifier Sensor
+  ZD170: Laser Range Finder
+  ZD171: Laser Warning Receiver
+  ZD172: Electro-optical and Infrared (EO-IR) Sensor
+  ZD173: Television Sensor
+  ZD174: Thermal Imaging Sensor
+  ZD175: Electronic Warfare Support Measures Device
+  ZD176: Identify Friend or Foe (IFF) Sensor
+  ZD177: Non-acoustic Antisubmarine Warfare (ASW) Sensor
+  ZD178: Radar Sensor
+  ZD179: Airborne Radar Sensor
+  ZD180: Ground Radar Sensor
+  ZD181: Air Defence Artillery (ADA) Radar
+  ZD182: Artillery Locating Radar
+  ZD183: Early Warning Radar
+  ZD184: Ground Surveillance Radar
+  ZD185: Target Track and Engagement Radar
+  ZD186: Naval Radar Sensor
+  ZD187: Seismic Sensor
+  ZD188: Transport Device
+  ZD189: Vehicle
+  ZD190: Aircraft
+  ZD192: Fixed-wing Manned Aircraft
+  ZD193: Rotary-wing Manned Aircraft
+  ZD195: Fixed-wing Unmanned Aerial Vehicle (UAV)
+  ZD196: Rotary-wing Unmanned Aerial Vehicle (UAV)
+  ZD197: Ground Vehicle
+  ZD198: Ground Ambulance
+  ZD199: Armoured Tracked Ambulance
+  ZD200: Armoured Wheeled Ambulance
+  ZD201: Truck Wheeled Ambulance
+  ZD202: Armoured Combat Vehicle
+  ZD203: Armoured Recovery Vehicle
+  ZD204: Armoured Ground Platform
+  ZD205: Half-tracked Armoured Vehicle
+  ZD206: Heavy Armoured Combat Vehicle
+  ZD207: Light Armoured Combat Vehicle
+  ZD208: Light Tank
+  ZD209: Main Battle Tank
+  ZD210: Artillery Command Vehicle
+  ZD211: Engineering Vehicle
+  ZD212: Armoured Bridge Launcher
+  ZD213: Crane Vehicle
+  ZD214: Earth-moving Equipment
+  ZD215: Mobile Excavator
+  ZD216: Trencher
+  ZD217: Bulldozer
+  ZD218: Grader
+  ZD219: Multipurpose Earth Mover
+  ZD220: Scraper
+  ZD221: Petroleum, Oil, and Lubricant (POL) Vehicle
+  ZD222: Petroleum, Oil, and Lubricant (POL) Pipe-layer
+  ZD223: Petroleum, Oil, and Lubricant (POL) Tanker
+  ZD224: Wheeled Cargo Transport
+  ZD225: Cargo Truck
+  ZD226: Dump Truck
+  ZD227: Trailer
+  ZD228: Truck Tractor
+  ZD229: Utility Truck
+  ZD230: Unmanned Ground Vehicle
+  ZD231: Maritime Vessel
+  ZD232: Bridge Support Boat
+  ZD233: Ferry
+  ZD234: Amphibious Transporter
+  ZD235: Naval Auxiliary Ship
+  ZD236: Naval Combatant Craft
+  ZD237: Naval Combatant Ship
+  ZD238: Naval Support Craft
+  ZD239: Naval Submarine
+  ZD240: Spacecraft
+  ZD241: Satellite
+  ZD242: Space Launch Vehicle
+  ZD243: Weapon
+  ZD244: Anti-tank Gun
+  ZD245: Artillery
+  ZD246: Cannon
+  ZD247: Coastal Defence Artillery
+  ZD248: Fortress Artillery
+  ZD249: Mortar
+  ZD250: Flame, Thermobaric, or Incendiary Weapon
+  ZD251: Backpack Jet Flamethrower
+  ZD252: Self-propelled Flame Weapon
+  ZD253: Thermobaric Weapon System
+  ZD254: Grenade Launcher
+  ZD255: Integrated Weapon System
+  ZD256: Active Protection System
+  ZD257: Air Defence System
+  ZD258: Air Defence Artillery (ADA) Manual Gun System
+  ZD259: Air Defence Artillery (ADA) Automatic System
+  ZD260: Anti-tank Guided Missile System
+  ZD261: Ballistic Missile Defence System
+  ZD262: Directed Energy Weapon System
+  ZD263: Laser Weapon
+  ZD264: Short-range Ballistic Missile System
+  ZD265: Surface-to-Air Missile (SAM) System
+  ZD266: Light Armoured Vehicle Armament
+  ZD267: Missile Launcher
+  ZD268: Surface-to-Air Missile (SAM) Launcher
+  ZD269: Surface-to-Surface Missile (SSM) Launcher
+  ZD270: Short-range Ballistic Missile Launcher
+  ZD271: Naval Gun
+  ZD272: Rocket Launcher
+  ZD273: Small Arms Weapon
+  ZD274: Carbine
+  ZD275: Handgun
+  ZD276: Pistol
+  ZD277: Revolver
+  ZD278: Machine Gun
+  ZD279: General-purpose Machine Gun
+  ZD280: Heavy Machine Gun
+  ZD281: Light Machine Gun
+  ZD282: Submachine Gun
+  ZD283: Recoilless Gun
+  ZD284: Rifle
+  ZD285: Sniper Rifle
+  ZD286: Rocket-propelled Grenade (RPG) Launcher
+  ZD287: Assault Rifle
+  ZD288: Light Weapon
+  ZD289: General-purpose Rifle
+  ZD290: Man-portable Air Defence System
+  ZD291: Transporter-Erector-Launcher
+  ZD292: Air Defence Artillery (ADA) Fire Control System
+  ZD293: Command, Control, Communications, Computers, and Intelligence (C4I) System
+  ZD294: Mine-clearing Flail
+  ZD295: Mine-clearing Plough
+  ZD296: Body Armour System
+  ZD297: Chemical Weapon Detector
+  ZD298: Biological Weapon Detector
+  ZD299: Personal Protective Mask
+  ZD300: Personal Welfare Support Device
+  ZD301: Personal Safety Device
+  ZD302: Personal Defence Device
+  ZD303: Fixed-wing Aircraft
+  ZD304: Rotary-wing Aircraft
+  ZD550: Geomorphic Extreme
+  ZD551: Geomorphic Break-line
+  ZG901: Geometry Object (ISO TC211)
+  ZG902: Geometry Primitive (ISO TC211)
+  ZG903: Geometry Point (ISO TC211)
+  ZG904: Geometry Curve (ISO TC211)
+  ZG905: Geometry Surface (ISO TC211)
+  ZG906: Geometry Orientable Primitive (ISO TC211)
+  ZG907: Geometry Orientable Curve (ISO TC211)
+  ZG908: Geometry Orientable Surface (ISO TC211)
+  ZG909: Geometry Curve Segment (ISO TC211)
+  ZG910: Geometry Line String (ISO TC211)
+  ZG911: Geometry Line Segment (ISO TC211)
+  ZG912: Geometry Geodesic String (ISO TC211)
+  ZG913: Geometry Geodesic (ISO TC211)
+  ZG914: Geometry Surface Patch (ISO TC211)
+  ZG915: Geometry Polygon (ISO TC211)
+  ZG916: Geometry Surface Boundary (ISO TC211)
+  ZG917: Geometry Composite (ISO TC211)
+  ZG918: Geometry Composite Curve (ISO TC211)
+  ZG919: Geometry Ring (ISO TC211)
+  ZI001: Data Source
+  ZI004: Data Process Step
+  ZI005: Geographic Name Information
+  ZI006: Note
+  ZI007: Point Position Information
+  ZI008: Curve Position Information
+  ZI009: Surface Position Information
+  ZI012: Sounding Metadata
+  ZI013: Crop Information
+  ZI014: Manufacturing Information
+  ZI015: Geographic Name Collection
+  ZI016: Route Pavement Information
+  ZI017: Track Information
+  ZI018: Wireless Distribution Information
+  ZI019: Aerodrome Pavement Information
+  ZI020: Geopolitical Entity Designation
+  ZI021: Administrative Subdivision Designation
+  ZI022: Feature Entity Collection
+  ZI023: Device Entity Collection
+  ZI024: Water Resource Information
+  ZI025: Hydrographic Vertical Positioning Information
+  ZI026: Physical Object Metadata
+  ZI027: Property Metadata
+  ZI028: Feature Entity
+  ZI029: Position Information
+  ZI030: Temporal Entity
+  ZI031: Dataset
+  ZI032: Pylon Information
+  ZI033: Series
+  ZI034: Entity
+  ZI035: Entity Collection
+  ZI036: Information Entity
+  ZI042: Aerodrome Parking Information
+  ZI043: Runway Declared Distance Information
+  ZI044: Actor Entity
+  ZI045: Organisation
+  ZI048: Power Generation Information
+  ZI049: Nuclear Reactor Information
+  ZI050: Industrial Classification Information
+  ZI051: Fire Fighting Capability Information
+  ZI052: Electric Power Congestion Information
+  ZI053: EPA Program Information
+  ZI054: EPA Risk Management Plan
+  ZI055: Hazardous Material Information
+  ZI056: Service Population Information
+  ZI057: Military Real Property Information
+  ZI058: Financial Transaction Information
+  ZI059: Financial Service Information
+  ZI060: Hydrocarbons Pipeline Information
+  ZI061: Disaster Information
+  ZI062: Educational Information
+  ZI063: Medical Service Information
+  ZI064: FCC-registered Antenna Structure Information
+  ZI065: FCC-licensed Wireless Service Information
+  ZI066: Wired Telecommunication Information
+  ZI067: Sports Organisation
+  ZI068: Sports League
+  ZI069: Sports Team
+  ZI070: Track
+  ZI071: Cave Information
+  ZI072: Aerodrome Billeting Information
+  ZI073: Aerodrome Construction Planning Information
+  ZI074: Physical Entity Collection
+  ZI075: Aerodrome Fuel Dispensing Information
+  ZI076: Aerodrome Fuel Information
+  ZI077: Aerodrome Messing Facility Information
+  ZI078: Aerodrome Operational Significance Information
+  ZI079: Aerodrome Security Service
+  ZI080: Aerodrome Service Information
+  ZI081: Aerodrome Sewage Disposal Service
+  ZI082: Aircraft Characteristics
+  ZI083: Aviation Hydraulic Fluid Maintenance Service
+  ZI084: Aviation Nitrogen Maintenance Service
+  ZI085: Aviation Oil Maintenance Service
+  ZI086: Aviation Oxygen Maintenance Service
+  ZI087: Customs and Immigration Service
+  ZI088: Aerodrome Electrical Power Service
+  ZI089: Instrument Flight Rules (IFR) Takeoff Minimum Information
+  ZI090: Emergency Medical Service
+  ZI091: Emergency Response Service
+  ZI092: Aircraft Rescue and Firefighting Service
+  ZI093: Crash and Wreckage Removal Service
+  ZI094: Aircraft Maintenance Service
+  ZI095: Jet Aircraft Starting Unit Service
+  ZI096: Ground Power Equipment Information
+  ZI097: Water Supply Service
+  ZI098: Emergency Response Service Equipment Information
+  ZI099: Off Base Housing Information
+  ZI100: Radio Communications Service
+  ZI101: Radio Transmission Information
+  ZI102: Operating Time Information
+  ZI103: Magnetic Variation Information
+  ZI104: Instrument Approach Condition Information
+  ZI105: Aviation Designated Point Information
+  ZI106: Aviation Designated Point Location Information
+  ZI107: Maritime Navigation Landmark Information
+  ZI108: Place Information
+  ZI109: Ownership Group
+  ZI110: Person
+  ZI111: Social Group
+  ZI112: Religious Group
+  ZI113: Ethnic Group
+  ZI114: Analytic Conclusion
+  ZI115: Event
+  ZI116: Time Information
+  ZI117: Time Point Information
+  ZI118: Time Interval Information
+  ZI120: Event Collection
+  ZI121: Event Sequence
+  ZI122: Event Effect
+  ZI123: Event Participation
+  ZI124: Conflict Event
+  ZI125: Property Realisation
+  ZI126: Property Specification
+  ZI127: Physical Address Information
+  ZI128: Location Information
+  ZI129: US Address Information
+  ZI130: Domain Metadata
+  ZI131: Device Survey
+  ZI132: Person Place Information
+  ZI133: Device Place Information
+  ZI134: Physical Entity Collection Place Information
+  ZI135: Feature Place Information
+  ZI136: Legal Constraints
+  ZI137: Resource Party Organisation
+  ZI138: Consumable Entity Place Information
+  ZI139: Consumable Entity Collection
+  ZI140: Consumable Survey
+  ZJ001: Resource Metadata Relation
+  ZR106: Data Quality
+  ZR117: Resource Lineage (ISO TC211)
+  ZR800: Portrayal Catalogue Reference (ISO TC211)
+  ZR801: Notice (IC DES)
+  ZR802: Resource Content Information (ISO TC211)
+  ZR803: Feature Catalogue Information (ISO TC211)
+  ZR804: Coverage Information (ISO TC211)
+  ZR805: Image Information (ISO TC211)
+  ZR806: Coverage Attribute Group Information (ISO TC211)
+  ZR807: Range Dimension Information (ISO TC211)
+  ZR808: Sample Dimension Characteristics (ISO TC211)
+  ZR809: Electromagnetic Band Specification (ISO TC 211)
+  ZR810: Service Identification (ISO TC211)
+  ZR811: Service Operation Metadata (ISO TC211)
+  ZR812: Service Operation Chain Metadata (ISO TC211)
+  ZR813: Service Operation Parameter (ISO TC211)
+  ZR814: Service Coupled Resource (ISO TC211)
+  ZR815: Basic Quality Measure (ISO TC211)
+  ZR816: Measure Parameter (ISO TC211)
+  ZR817: Measure Source Reference (ISO TC211)
+  ZR818: Quality Measure (ISO TC211)
+  ZR824: Resource Spatial Representation (ISO TC211)
+  ZR825: Gridded Spatial Representation Characteristics (ISO TC211)
+  ZR826: Georectified Grid Representation Characteristics (ISO TC211)
+  ZR827: Georeferencable Grid Representation Characteristics (ISO TC211)
+  ZR828: Vector Spatial Representation Characteristics (ISO TC211)
+  ZR901: Temporal Extent (ISO TC211)
+  ZR902: Resource Constraints (ISO TC211)
+  ZR904: Quality Element (ISO TC211)
+  ZR908: Geographic Bounding Object (ISO TC211)
+  ZR909: Geographic Bounding Box (ISO TC211)
+  ZR910: Geographic Description (ISO TC211)
+  ZR911: Geographic Extent (ISO TC211)
+  ZR914: Legal Constraints (ISO TC211)
+  ZR915: Security Constraints (ISO TC211)
+  ZR918: Temporal Geometric Primitive (ISO TC211)
+  ZR919: Temporal Instant (ISO TC211)
+  ZR920: Temporal Period (ISO TC211)
+  ZR921: Temporal Primitive (ISO TC211)
+  ZR922: Data Quality (ISO TC211)
+  ZR923: Vertical Extent (ISO TC211)
+  ZR924: Data Lineage
+  ZR925: Resource Process Step (ISO TC211)
+  ZR926: Resource Source (ISO TC211)
+  ZR927: Application Schema Information (ISO TC211)
+  ZR928: Data Identification (ISO TC211)
+  ZR929: Digital Transfer Options (ISO TC211)
+  ZR930: Data Distribution (ISO TC211)
+  ZR931: Data Distributor (ISO TC211)
+  ZR932: Data Format (ISO TC211)
+  ZR933: Keywords (ISO TC211)
+  ZR934: Resource Metadata (ISO TC211)
+  ZR935: Reference System Specification (ISO TC211)
+  ZR936: Resource Identification (ISO TC211)
+  ZR938: Coordinate Reference System (ISO TC211)
+  ZR939: Identified Object Base (ISO TC211)
+  ZR940: Compound Coordinate Reference System (ISO TC211)
+  ZR941: Single Coordinate Reference System (ISO TC211)
+  ZR942: Vertical Coordinate Reference System (ISO TC211)
+  ZR943: Electronic Records Management Information
+  ZR944: Record Disposition
+  ZR945: Disposition Hold
+  ZR946: Resource Maintenance Information (ISO TC211)
+  ZR947: Metadata Scope (ISO TC 211)
+  ZR948: Data Identification
+  ZR949: Digital Transfer Options
+  ZR950: Resource Constraints
+  ZR951: Resource Party (ISO TC211)
+  ZR952: Resource Party Individual (ISO TC211)
+  ZR953: Resource Party Organisation (ISO TC211)
+  ZR954: Browse Graphic (ISO TC211)
+  ZR955: Resource Usage (ISO TC211)
+  ZR956: Associated Resource (ISO TC211)
+  ZR957: Keyword Class (ISO TC211)
+  ZR959: Resource Order Process (ISO TC211)
+  ZR960: Record Type (ISO TC211)
+  ZR961: Field Type (ISO TC211)
+  ZR962: Spatio-temporal Extent (ISO TC211)
+  ZR963: Data Completeness (ISO TC211)
+  ZR964: Data Completeness Commission (ISO TC211)
+  ZR965: Data Completeness Omission (ISO TC211)
+  ZR966: Data Logical Consistency (ISO TC211)
+  ZR967: Data Conceptual Consistency (ISO TC211)
+  ZR968: Data Domain Consistency (ISO TC211)
+  ZR969: Data Format Consistency (ISO TC211)
+  ZR970: Data Topological Consistency (ISO TC211)
+  ZR971: Data Positional Accuracy (ISO TC211)
+  ZR972: Data Absolute External Positional Accuracy (ISO TC211)
+  ZR973: Data Relative Internal Positional Accuracy (ISO TC211)
+  ZR974: Data Gridded Data Positional Accuracy (ISO TC211)
+  ZR975: Data Temporal Quality (ISO TC211)
+  ZR976: Data Accuracy of Time Measurement (ISO TC211)
+  ZR977: Data Temporal Consistency (ISO TC211)
+  ZR978: Data Temporal Validity (ISO TC211)
+  ZR979: Data Thematic Accuracy (ISO TC211)
+  ZR980: Data Thematic Classification Correctness (ISO TC211)
+  ZR981: Data Non-quantitative Attribute Correctness (ISO TC211)
+  ZR982: Data Quantitative Attribute Accuracy (ISO TC211)
+  ZR983: Data Quality Usability Element (ISO TC211)
+  ZR984: Metaquality (ISO TC211)
+  ZR985: Metaquality Confidence (ISO TC211)
+  ZR986: Metaquality Representativity (ISO TC211)
+  ZR987: Metaquality Homogeneity (ISO TC211)
+  ZR988: Data Quality Measure Reference (ISO TC211)
+  ZR989: Data Quality Evaluation Method (ISO TC211)
+  ZR990: Data Evaluation Method (ISO TC211)
+  ZR991: Full Inspection Method (ISO TC211)
+  ZR992: Indirect Evaluation Method (ISO TC211)
+  ZR993: Sample-based Inspection Method (ISO TC211)
+  ZR994: Data Quality Aggregation Derivation (ISO TC211)
+  ZR995: Data Quality Result (ISO TC211)
+  ZR996: Data Quality Conformance Result (ISO TC211)
+  ZR997: Data Quality Quantitative Result (ISO TC211)
+  ZR998: Data Quality Descriptive Result (ISO TC211)
+  ZR999: Standalone Quality Report Information (ISO TC211)
+  ZV010: Anti-shipping Activity
+  ZV020: Earthquake
+  ZV030: Wildland Fire
+  ZV040: Tornado Touchdown
+  ZV050: Tsunami Source Event
+  ZV051: Tsunami Runup
+  ZV060: Sporting Event
+  ZV061: Sporting Event Series
+  ZV070: Volcanic Eruption
+id: f_code
+label: NAS Feature Codes
+sourceType: GML_DICTIONARY

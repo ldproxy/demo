@@ -1,0 +1,114 @@
+---
+id: daraa-tiles
+providerType: TILE
+providerSubType: FEATURES
+caches:
+- type: IMMUTABLE
+  storage: MBTILES
+  levels:
+    WebMercatorQuad:
+      min: 6
+      max: 11
+    WorldCRS84Quad:
+      min: 5
+      max: 10
+    WorldMercatorWGS84Quad:
+      min: 6
+      max: 11
+- type: DYNAMIC
+  storage: MBTILES
+  seeded: false
+  levels:
+    WebMercatorQuad:
+      min: 12
+      max: 18
+    WorldCRS84Quad:
+      min: 11
+      max: 17
+    WorldMercatorWGS84Quad:
+      min: 12
+      max: 18
+layerDefaults:
+  levels:
+    WebMercatorQuad:
+      min: 6
+      max: 18
+      default: 13
+    WorldCRS84Quad:
+      min: 5
+      max: 17
+      default: 12
+    WorldMercatorWGS84Quad:
+      min: 6
+      max: 18
+      default: 13
+layers:
+  __all__: 
+    id: __all__
+    combine: ['*']
+  AeronauticCrv:
+    id: AeronauticCrv
+  AeronauticSrf:
+    id: AeronauticSrf
+  AgriculturePnt:
+    id: AgriculturePnt
+  AgricultureSrf:
+    id: AgricultureSrf
+  CulturePnt:
+    id: CulturePnt
+  CultureSrf:
+    id: CultureSrf
+  FacilityPnt:
+    id: FacilityPnt
+  FacilitySrf:
+    id: FacilitySrf
+  HydrographyCrv:
+    id: HydrographyCrv
+  HydrographyPnt:
+    id: HydrographyPnt
+  HydrographySrf:
+    id: HydrographySrf
+  IndustrySrf:
+    id: IndustrySrf
+  InformationPnt:
+    id: InformationPnt
+  MilitarySrf:
+    id: MilitarySrf
+  o2s_a:
+    id: o2s_a
+  o2s_l:
+    id: o2s_l
+  o2s_p:
+    id: o2s_p
+  PhysiographyCrv:
+    id: PhysiographyCrv
+  RecreationCrv:
+    id: RecreationCrv
+  RecreationPnt:
+    id: RecreationPnt
+  RecreationSrf:
+    id: RecreationSrf
+  SettlementPnt:
+    id: SettlementPnt
+  SettlementSrf:
+    id: SettlementSrf
+  StructureCrv:
+    id: StructureCrv
+  StructurePnt:
+    id: StructurePnt
+  StructureSrf:
+    id: StructureSrf
+  TransportationGroundCrv:
+    id: TransportationGroundCrv
+  TransportationGroundPnt:
+    id: TransportationGroundPnt
+  TransportationGroundSrf:
+    id: TransportationGroundSrf
+  TransportationWaterCrv:
+    id: TransportationWaterCrv
+  UtilityInfrastructureCrv:
+    id: UtilityInfrastructureCrv
+  UtilityInfrastructurePnt:
+    id: UtilityInfrastructurePnt
+  VegetationSrf:
+    id: VegetationSrf

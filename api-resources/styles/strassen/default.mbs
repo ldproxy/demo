@@ -1,0 +1,959 @@
+{
+   "version": 8, 
+   "id": "default", 
+   "name": "Abschnitte/Äste mit Unfällen", 
+   "center": [7, 51], 
+   "zoom": 10, 
+   "sources": {
+      "strassen": {
+         "type": "vector", 
+         "tiles": ["{serviceUrl}/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt"], 
+         "minzoom": 4, 
+         "maxzoom": 14, 
+         "attribution": "Landesbetrieb Straßenbau Nordrhein-Westfalen (Straßen.NRW)"
+      }, 
+      "base": {
+         "type": "raster", 
+         "tiles": [
+            "https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_light_grau/default/WEBMERCATOR/{z}/{y}/{x}.png"
+         ], 
+         "maxzoom": 18, 
+         "attribution": "&copy; <a href=\"http://www.bkg.bund.de\" target=\"_new\">Bundesamt f&uuml;r Kartographie und Geod&auml;sie</a> 2023, <a href=\"https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.html\" target=\"_new\">Datenquellen</a>"
+      }
+   }, 
+   "glyphs": "https://dev.adv-smart.de/fonts/{fontstack}/{range}.pbf", 
+   "layers": [
+      {"id": "Hintergrundkarte", "type": "raster", "source": "base"}, 
+      {
+         "id": "Kontur_Autobahn_Abfahrt", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1], [12, 4], [13, 7], [14, 9], [20, 18.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Autobahn_Abfahrt_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1], [12, 4], [13, 7], [14, 9], [20, 18.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Kreisstr_einblenden", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 9, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [9, 0.5], [11, 1] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Kreisstr_einblenden_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 10, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [9, 0.5], [11, 1] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Kreisstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.4], [12, 5], [13, 8], [14, 10], [20, 19.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Kreisstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.4], [12, 5], [13, 8], [14, 10], [20, 19.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Landesstr_Staatsstr_einblenden", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 7, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [7, 0.5], [8, 1] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Landesstr_Staatsstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.4], [12, 5], [13, 8], [14, 10], [20, 19.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Landesstr_Staatsstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.4], [12, 5], [13, 8], [14, 10], [20, 19.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Bundesstr_einblenden", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 5, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [5, 0.5], [7, 1] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Bundesstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 2], [12, 7], [13, 9], [14, 12], [20, 35] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Bundesstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 2], [12, 7], [13, 9], [14, 12], [20, 35] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Autobahn_getrennt", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 2], [12, 7], [13, 9], [14, 12], [20, 35] ]
+            }
+         }
+      }, 
+      {
+         "id": "Kontur_Autobahn_getrennt_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#999999", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 2], [12, 7], [13, 9], [14, 12], [20, 35] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_Abfahrt_einblenden", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 1, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "butt", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 0.6, 
+            "line-width": {
+               "stops": [ [10, 1], [12, 5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_Abfahrt_einblenden_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 9, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "butt", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 0.6, 
+            "line-width": {
+               "stops": [ [10, 1], [12, 5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_Abfahrt", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 0.8], [12, 2.5], [13, 5.5], [14, 7.5], [20, 17] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_Abfahrt_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 0.8], [12, 2.5], [13, 5.5], [14, 7.5], [20, 17] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Kreisstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Kreisstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "K"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#C0C0C0", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Landesstr_Staatsstr_ohne_Tunnel_Bruecke", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 8, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFF369", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Landesstr_Staatsstr_ohne_Tunnel_Bruecke_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 10, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFF369", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Landesstr_Staatsstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFF369", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Landesstr_Staatsstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "L"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFF369", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [10, 1.2], [12, 3.5], [13, 6.5], [14, 8.5], [20, 18] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Bundesstr_ohne_Tunnel_Bruecke", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 7, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFCB4F", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  1.8], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Bundesstr_ohne_Tunnel_Bruecke_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 9, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFCB4F", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  1.8], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Bundesstr", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFCB4F", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  1.8], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Bundesstr_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#FFCB4F", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  1.8], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt_ohne_Tunnel_Bruecke", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 1, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [ 5,  1.0], 
+                  [10,  2.5], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt_ohne_Tunnel_Bruecke_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 9, 
+         "maxzoom": 11, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [ 5,  1.0], 
+                  [10,  2.5], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  2.5], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [
+                  [10,  2.5], 
+                  [12,  5.5], 
+                  [13,  7.5], 
+                  [14, 10.5], 
+                  [20, 33.5]  
+               ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt_Fahrbahnachse", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 16, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [14, 10.5], [20, 33.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Decker_Autobahn_getrennt_Fahrbahnachse_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 16, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {"line-cap": "round", "visibility": "visible"}, 
+         "paint": {
+            "line-color": "#598fec", 
+            "line-opacity": 1, 
+            "line-width": {
+               "stops": [ [14, 10.5], [20, 33.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Mittellinie_Autobahn", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#ffffff", 
+            "line-opacity": 1, 
+            "line-width": {
+               "base": 1.2, 
+               "stops": [ [9, 0.2], [13, 0.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Mittellinie_Autobahn_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "A"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#ffffff", 
+            "line-opacity": 1, 
+            "line-width": {
+               "base": 1.2, 
+               "stops": [ [9, 0.2], [13, 0.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Mittellinie_Bundesstrasse", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Abschnitt"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#ffffff", 
+            "line-opacity": 1, 
+            "line-width": {
+               "base": 1.2, 
+               "stops": [ [9, 0.2], [13, 0.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Mittellinie_Bundesstrasse_Ast", 
+         "type": "line", 
+         "source": "strassen", 
+         "source-layer": "abschnitteaeste", 
+         "minzoom": 11, 
+         "maxzoom": 22, 
+         "filter": [
+            "all", 
+            ["==", "absast", "Ast"], 
+            ["==", "strasse.klasse", "B"]
+         ], 
+         "layout": {
+            "line-cap"  : "round"  , 
+            "line-join" : "round"  , 
+            "visibility": "visible"  
+         }, 
+         "paint": {
+            "line-color": "#ffffff", 
+            "line-opacity": 1, 
+            "line-width": {
+               "base": 1.2, 
+               "stops": [ [9, 0.2], [13, 0.5] ]
+            }
+         }
+      }, 
+      {
+         "id": "Unfälle 2019", 
+         "type": "symbol", 
+         "source": "strassen", 
+         "source-layer": "unfaelle", 
+         "minzoom": 10, 
+         "layout": {
+            "text-font": ["Noto Sans Regular"], 
+            "text-field": "★", 
+            "text-size": [
+               "interpolate", 
+               ["linear"], 
+               ["zoom"], 
+               10, 
+               10, 
+               12, 
+               30, 
+               20, 
+               60
+            ], 
+            "text-ignore-placement": true, 
+            "text-allow-overlap": true
+         }, 
+         "paint": {
+            "text-color": [
+               "case", 
+               [ "==", ["get", "hauptunft"], "Abbiegeunfall" ], 
+               "yellow", 
+               [ "==", ["get", "hauptunft"], "Fahrunfall" ], 
+               "green", 
+               [ "==", ["get", "hauptunft"], "Einbiege-/Kreuzungs-Unfall" ], 
+               "tomato", 
+               [ "==", ["get", "hauptunft"], "Längsunfall" ], 
+               "orange", 
+               [
+                  "==", 
+                  ["get", "hauptunft"], 
+                  "Unfall durch Straße überschreitenden Fußgänger"
+               ], 
+               "white", 
+               [
+                  "==", 
+                  ["get", "hauptunft"], 
+                  "Unfall durch haltendes oder parkendes Fahrzeug"
+               ], 
+               "lightblue", 
+               [ "==", ["get", "hauptunft"], "Sonstiger Unfall" ], 
+               "deepskyblue", 
+               "darkblue"
+            ], 
+            "text-halo-color": "rgba(80, 80, 80, 0.5)", 
+            "text-halo-width": 1, 
+            "text-opacity": 0.9
+         }
+      }
+   ]
+}

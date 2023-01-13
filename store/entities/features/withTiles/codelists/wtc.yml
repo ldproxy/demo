@@ -1,0 +1,10 @@
+entries:
+  '-999999': No Information
+  '1': All-weather
+  '2': Fair-weather
+  '3': Winter Only
+  '4': Limited All-weather
+  '5': Closed in Winter
+id: wtc
+label: Road Weather Restriction
+sourceType: GML_DICTIONARY

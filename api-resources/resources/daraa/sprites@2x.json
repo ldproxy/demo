@@ -1,0 +1,226 @@
+{
+    "square": {
+        "width": 64,
+        "height": 64,
+        "x": 0,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "square_b": {
+        "width": 64,
+        "height": 64,
+        "x": 0,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "circle_b": {
+        "width": 64,
+        "height": 64,
+        "x": 64,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "mosque_b_sm": {
+        "width": 64,
+        "height": 64,
+        "x": 128,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "school_b_sm": {
+        "width": 64,
+        "height": 64,
+        "x": 192,
+        "y": 0,
+        "pixelRatio": 1
+    },
+	"mosque_b": {
+        "width": 64,
+        "height": 64,
+        "x": 256,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "school_b": {
+        "width": 64,
+        "height": 64,
+        "x": 320,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "pylon_b": {
+        "width": 64,
+        "height": 64,
+        "x": 384,
+        "y": 0,
+        "pixelRatio": 1
+    },
+    "pylon_wilson_b": {
+        "width": 64,
+        "height": 64,
+        "x": 448,
+        "y": 0,
+        "pixelRatio": 1
+    },
+	
+	
+	"square_w": {
+        "width": 64,
+        "height": 64,
+        "x": 0,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "circle_w": {
+        "width": 64,
+        "height": 64,
+        "x": 64,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "mosque_w_sm": {
+        "width": 64,
+        "height": 64,
+        "x": 128,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "school_w_sm": {
+        "width": 64,
+        "height": 64,
+        "x": 192,
+        "y": 64,
+        "pixelRatio": 1
+    },
+	"mosque_w": {
+        "width": 64,
+        "height": 64,
+        "x": 256,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "school_w": {
+        "width": 64,
+        "height": 64,
+        "x": 320,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "pylon_w": {
+        "width": 64,
+        "height": 64,
+        "x": 384,
+        "y": 64,
+        "pixelRatio": 1
+    },
+    "pylon_wilson_w": {
+        "width": 64,
+        "height": 64,
+        "x": 448,
+        "y": 64,
+        "pixelRatio": 1
+    },
+	
+
+	"friend_b": {
+        "width": 64,
+        "height": 64,
+        "x": 0,
+        "y": 128,
+        "pixelRatio": 1
+    },
+    "neutral_b": {
+        "width": 64,
+        "height": 64,
+        "x": 64,
+        "y": 128,
+        "pixelRatio": 1
+    },
+    "suspect_joker_b": {
+        "width": 64,
+        "height": 64,
+        "x": 128,
+        "y": 128,
+        "pixelRatio": 1
+    },
+    "hostile_faker_b": {
+        "width": 64,
+        "height": 64,
+        "x": 192,
+        "y": 128,
+        "pixelRatio": 1
+    },
+	"mine_b": {
+        "width": 64,
+        "height": 64,
+        "x": 256,
+        "y": 128,
+        "pixelRatio": 1
+    },
+    "group_b": {
+        "width": 64,
+        "height": 64,
+        "x": 320,
+        "y": 128,
+        "pixelRatio": 1
+    },
+    "emergency_b": {
+        "width": 64,
+        "height": 64,
+        "x": 384,
+        "y": 128,
+        "pixelRatio": 1
+    },
+	
+
+	"friend_w": {
+        "width": 64,
+        "height": 64,
+        "x": 0,
+        "y": 192,
+        "pixelRatio": 1
+    },
+    "neutral_w": {
+        "width": 64,
+        "height": 64,
+        "x": 64,
+        "y": 192,
+        "pixelRatio": 1
+    },
+    "suspect_joker_w": {
+        "width": 64,
+        "height": 64,
+        "x": 128,
+        "y": 192,
+        "pixelRatio": 1
+    },
+    "hostile_faker_w": {
+        "width": 64,
+        "height": 64,
+        "x": 192,
+        "y": 192,
+        "pixelRatio": 1
+    },
+	"mine_w": {
+        "width": 64,
+        "height": 64,
+        "x": 256,
+        "y": 192,
+        "pixelRatio": 1
+    },
+    "group_w": {
+        "width": 64,
+        "height": 64,
+        "x": 320,
+        "y": 192,
+        "pixelRatio": 1
+    },
+    "emergency_w": {
+        "width": 64,
+        "height": 64,
+        "x": 384,
+        "y": 192,
+        "pixelRatio": 1
+    }
+	
+}

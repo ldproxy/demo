@@ -1,0 +1,29 @@
+entries:
+  '-999999': No Information
+  '1': Aeronautical
+  '10': Pipeline
+  '11': Portage
+  '12': Railway
+  '13': Road
+  '15': Truck
+  '16': Underground Railway
+  '17': Inland Waterway
+  '18': Pack-road
+  '2': Aqueduct
+  '20': Taxiway
+  '21': Pipeline Maintenance
+  '22': Power Line Maintenance
+  '23': Drove
+  '24': Rescue Road
+  '25': Runway
+  '3': Automotive
+  '30': Cableway
+  '4': Bus
+  '5': Canal
+  '6': Caravan Route
+  '7': Maritime
+  '8': No Transportation System
+  '9': Pedestrian
+id: trs
+label: Transportation System Type
+sourceType: GML_DICTIONARY

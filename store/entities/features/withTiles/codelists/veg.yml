@@ -1,0 +1,14 @@
+entries:
+  '-999999': No Information
+  '10': Tropical Grass
+  '50': Wood
+  '56': Without Trees
+  '61': Algae
+  '62': Sea Grass
+  '75': Brush
+  '8': Grassland
+  '83': Meadow
+  '9': Grassland with Trees
+id: veg
+label: Vegetation Characteristic
+sourceType: GML_DICTIONARY

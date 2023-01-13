@@ -1,0 +1,24 @@
+---
+id: earthatnight
+entityStorageVersion: 2
+label: Earth at Night 
+description: |-
+  The Earth at night, released by NASA. For more information, see NASA Earth Observatory <a href="https://earthobservatory.nasa.gov/features/NightLights" target="_blank">"Night Lights"</a>.
+  Raster tiles on zoom levels 0 to 6 were derived from a 54000x27000 pixel GeoTIFF image using <a href="https://github.com/mapbox/rio-mbtiles" target="_blank">rio-mbtiles</a>.
+serviceType: OGC_API
+enabled: ${ENABLE_EARTHATNIGHT:-true}
+metadata:
+  creatorName: NASA Earth Observatory
+  creatorUrl: https://earthobservatory.nasa.gov/features/NightLights
+  licenseName: Public Domain
+api:
+- buildingBlock: COMMON
+  additionalLinks:
+  - href: https://earthobservatory.nasa.gov/features/NightLights
+    title: 'NASA Earth Observatory: "Night Lights" webpage'
+    rel: related
+- buildingBlock: TILES
+  enabled: true
+  tileProvider:
+    type: MBTILES
+    filename: dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles

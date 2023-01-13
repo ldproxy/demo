@@ -1,0 +1,8 @@
+entries:
+  '-999999': No Information
+  '1': Raised
+  '2': Level
+  '3': Depressed
+id: rle
+label: Relative Level
+sourceType: GML_DICTIONARY

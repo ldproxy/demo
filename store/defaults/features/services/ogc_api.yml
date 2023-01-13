@@ -1,0 +1,23 @@
+---
+serviceType: OGC_API
+api:
+- buildingBlock: FEATURES_CORE
+  coordinatePrecision:
+    metre: 2
+    degree: 7
+- buildingBlock: JSON_FG
+  enabled: true
+- buildingBlock: FLATGEOBUF
+  enabled: true
+- buildingBlock: SCHEMA
+  enabled: true
+- buildingBlock: QUERYABLES
+  enabled: true
+- buildingBlock: FILTER
+  enabled: true
+- buildingBlock: PROJECTIONS
+  enabled: true
+- buildingBlock: GEOMETRY_SIMPLIFICATION
+  enabled: true    
+- buildingBlock: SORTING
+  enabled: true

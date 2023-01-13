@@ -1,0 +1,80 @@
+{
+  "bearing" : 0.0,
+  "version" : 8,
+  "pitch" : 0.0,
+  "name" : "default",
+  "center": [
+    7.35, 
+    49.8
+  ],
+  "zoom": 8,
+  "sources" : {
+    "vineyards" : {
+      "type" : "vector",
+      "tiles" : [ "{serviceUrl}/collections/vineyards/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt" ],
+      "maxzoom" : 16
+    },
+    "basemap" : {
+      "type" : "raster",
+      "tiles": [
+        "https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_grau/default/WEBMERCATOR/{z}/{y}/{x}.png"
+      ],
+      "maxzoom": 18,
+      "attribution": "&copy; <a href=\"http://www.bkg.bund.de\" target=\"_new\">Bundesamt f&uuml;r Kartographie und Geod&auml;sie</a> 2023, <a href=\"https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.html\" target=\"_new\">Datenquellen</a>"
+    }
+  },
+  "glyphs": "https://go-spatial.github.io/carto-assets/fonts/{fontstack}/{range}.pbf",
+  "layers" : [ {
+    "id": "background",
+    "type": "raster",
+    "source" : "basemap",
+    "layout" : {
+      "visibility" : "visible"
+    }
+  }, {
+    "type" : "fill",
+    "source-layer" : "vineyards",
+    "layout" : {
+      "visibility" : "visible"
+    },
+    "paint" : {
+      "fill-color" : ["rgb", 0, 255, 0],
+      "fill-opacity" : 0.75
+    },
+    "id" : "vineyards_fill",
+    "source" : "vineyards"
+  }, {
+    "type" : "line",
+    "source-layer" : "vineyards",
+    "layout" : {
+      "visibility" : "visible"
+    },
+    "paint" : {
+      "line-color" : "#408040",
+      "line-width" : 0.5
+    },
+    "id" : "vineyards_line",
+    "source" : "vineyards"
+  }, {
+    "type" : "symbol",
+    "id" : "vineyards_symbol",
+    "source" : "vineyards",
+    "source-layer" : "vineyards",
+    "layout" : {
+      "text-field": [ "step",
+        ["zoom"],
+        "",
+        12,
+        ["get", "name"] 
+      ],
+      "text-size": 10,
+      "text-padding": 18,
+      "text-justify": "auto"
+    },
+    "paint":{
+      "text-color": "#006000",
+      "text-halo-width": 2,
+      "text-halo-blur": 2
+    }
+  } ]
+}
