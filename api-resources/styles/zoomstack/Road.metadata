@@ -1,0 +1,47 @@
+{
+  "pointOfContact": "cartodesign@os.uk",
+  "accessConstraints": "unclassified",
+  "keywords": [ "Ordnance Survey", "Zoomstack" ],
+  "scope": "Style",
+  "links": [
+    {
+      "href": "https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets",
+      "rel": "via",
+      "type": "text/html",
+      "title": "The GitHub repository from which the styles and styling resources have been derived"
+    },
+    {
+      "href": "http://www.ordnancesurvey.co.uk/resources/carto-design/cartographic-stylesheets.html",
+      "rel": "describedby",
+      "type": "text/html",
+      "title": "More information about how to download, apply and customise our stylesheets including a Stylesheet User Guide"
+    },
+    {
+      "href": "http://www.ordnancesurvey.co.uk/business-and-government/products/os-open-zoomstack.html",
+      "rel": "describedby",
+      "type": "text/html",
+      "title": "More information about OS Open Zoomstack, including a guide to getting started"
+    },
+    {
+      "href": "https://www.ordnancesurvey.co.uk/resources/carto-design/",
+      "rel": "describedby",
+      "type": "text/html",
+      "title": "More information about cartographic design at Ordnance Survey"
+    },
+    {
+      "href": "{serviceUrl}/resources/LayerOrderQML.PNG",
+      "rel": "describedby",
+      "type": "image/png",
+      "title": "Layer Order in QGIS",
+      "templated": true
+    },
+    {
+      "href": "{serviceUrl}/resources/LayerOrderSLD.PNG",
+      "rel": "describedby",
+      "type": "image/png",
+      "title": "Layer Order in SLD",
+      "templated": true
+    }
+  ],
+  "description": "Styles for OS Open Zoomstack are available in four encodings: QGIS Style (QML), ArcGIS Layer (LYR), SLD 1.0 and Mapbox Style.<br><br>The first three style encodings are designed for use together with the Zoomstack feature data as it is distributed as a GeoPackage file and via this API. The Mapbox Style documents are designed to style the Zoomstack vector tiles distributed as a Mbtiles file and via this API.<br><br>The ArcGIS and Mapbox style encoding includes all layers while the QGIS and SLD style encodings are by feature type.<br><br>By using these stylesheets you are accepting the terms of the <a href='http://www.nationalarchives.gov.uk/doc/open-government-licence/' target='_blank'>Open Government Licence</a>.<br><br>Colour Vision Deficiency styles, Accessibility disclaimer: While the styles are suitable for as many types of colour vision deficiency (CVD) as possible, this is the first release, and OS recognises that the styles may not be perfect for all people with colour blindness. If you have any feedback on our styles, please feel free to let us know at cartodesign@os.uk. The styles are only partially compliant with the Web Content Accessibility Guidelines, version 2.1 AA standard, due to the non compliance listed below.<br><br>Non accessible content:<br>* Due to the nature of map products and their need to incorporate an inclusive design to all users, both with and without colour blindness, they fall outside the scope of WCAG 2.1 AA success criteria clause 1.4.11, regarding non-text contrast."
+}

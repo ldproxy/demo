@@ -24,3 +24,5 @@ api:
   legalUrl: 'https://www.interactive-instruments.de/en/about/impressum/'
   privacyName: Privacy Notice
   privacyUrl: 'https://www.interactive-instruments.de/en/about/datenschutzerklarung/'
+- buildingBlock: CRS
+  suppressGlobalCrsList: true

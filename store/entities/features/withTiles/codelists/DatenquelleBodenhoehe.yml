@@ -1,0 +1,16 @@
+entries:
+  1000: Verschneidung mit DGM
+  1100: Verschneidung mit DGM1
+  1200: Verschneidung mit DGM2
+  1300: Verschneidung mit DGM5
+  1400: Verschneidung mit DGM10
+  1500: Verschneidung mit DGM25
+  1600: Verschneidung mit DGM50
+  1700: Verschneidung mit DGM200
+  1800: Verschneidung mit DGM1000
+  2000: Einzelmessung
+  3000: Photogrammetrie (Manuell)
+  4000: Photogrammetrie (Automatisch)
+id: DatenquelleBodenhoehe
+label: Datenquelle Bodenhöhe
+sourceType: TEMPLATES

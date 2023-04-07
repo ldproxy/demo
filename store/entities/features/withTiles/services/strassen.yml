@@ -184,10 +184,9 @@ collections:
       sortables:
       - nknr
       - nkname
-    - buildingBlock: FEATURES_HTML
-      style: NONE
+    - buildingBlock: HTML
+      defaultStyle: NONE
     - buildingBlock: TILES
-      style: NONE
       zoomLevels:
         WebMercatorQuad:
           min: 9
@@ -249,10 +248,9 @@ collections:
       - tkblattnr
       - nknr
       - npbuchs
-    - buildingBlock: FEATURES_HTML
-      style: NONE
+    - buildingBlock: HTML
+      defaultStyle: NONE
     - buildingBlock: TILES
-      style: NONE
       zoomLevels:
         WebMercatorQuad:
           min: 10
@@ -401,7 +399,8 @@ collections:
       - strzust2
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{hauptunft}} ({{unfkat.bez}})'
-      style: NONE
+    - buildingBlock: HTML
+      defaultStyle: NONE
     - buildingBlock: TILES
       enabled: false
     - buildingBlock: GEOMETRY_SIMPLIFICATION

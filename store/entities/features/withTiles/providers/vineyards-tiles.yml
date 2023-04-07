@@ -8,14 +8,14 @@ caches:
   levels:
     WebMercatorQuad:
       min: 5
-      max: 11
+      max: 12
 - type: DYNAMIC
   storage: MBTILES
   seeded: false
   levels:
     WebMercatorQuad:
-      min: 12
-      max: 16
+      min: 13
+      max: 18
 layerDefaults:
   levels:
     WebMercatorQuad:

@@ -1,5 +1,17 @@
-version: '3.7'
+version: '3.9'
 services:
+  db:
+    image: postgis/postgis:14-3.3-alpine
+    container_name: db_demo
+    command: postgres -c 'max_connections=250'
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: cologne_lod2
+    volumes:
+      - ./cologne_lod2/cologne_lod2.sql.gz:/docker-entrypoint-initdb.d/cologne_lod2.sql.gz
+    tmpfs:
+      - /var/lib/postgresql/data
+
   ldproxy:
     image: iide/ldproxy:next
     container_name: ldproxy_demo
@@ -10,3 +22,4 @@ services:
     environment:
       - EXTERNAL_URL=http://localhost:7080/rest/services
       - ENABLE_ZOOMSTACK=false
+      - ENABLE_COLOGNE=false

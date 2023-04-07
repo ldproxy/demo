@@ -8,4 +8,5 @@ api-resources/features/OS_Open_Zoomstack.gpkg
 api-resources/features/*.gpkg-journal
 api-resources/features/*.gpkg-shm
 api-resources/features/*.gpkg-wal
+store/overrides/
 \!*
