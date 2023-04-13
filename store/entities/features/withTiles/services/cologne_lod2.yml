@@ -89,6 +89,8 @@ api:
   - HTML
 - buildingBlock: HTML
   defaultStyle: surface-type
+  basemapUrl: https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png
+  basemapAttribution: '&copy; basemap.de / BKG'
 - buildingBlock: GLTF
   enabled: true
   withNormals: true

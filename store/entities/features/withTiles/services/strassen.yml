@@ -37,8 +37,8 @@ api:
       flatten: '.'
 - buildingBlock: HTML
   collectionDescriptionsInOverview: true
-  basemapUrl: https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web_light_grau/default/WEBMERCATOR/{z}/{y}/{x}.png
-  basemapAttribution: '&copy; <a href="http://www.bkg.bund.de" target="_new">Bundesamt f&uuml;r Kartographie und Geod&auml;sie</a> 2023, <a href="https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.html" target="_new">Datenquellen</a>'
+  basemapUrl: https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png
+  basemapAttribution: '&copy; basemap.de / BKG'
   defaultStyle: default
 - buildingBlock: FEATURES_HTML
   mapPosition: TOP
