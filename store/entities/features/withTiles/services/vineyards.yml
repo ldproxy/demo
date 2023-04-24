@@ -69,10 +69,6 @@ api:
   seedingOptions:
     maxThreads: 1
 - buildingBlock: STYLES
-  enabled: true
-  styleEncodings:
-  - Mapbox
-  - HTML
   deriveCollectionStyles: true
 collections:
   vineyards:
@@ -80,28 +76,14 @@ collections:
     label: vineyards
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      itemType: feature
-      queryables:
-        spatial:
-        - geometry
-        temporal:
-        - date
-        q:
-        - name
-        - region
-        - subregion
-        - cluster
-        - village
-        - searchfield1
-        - searchfield2
-        other:
-        - registerId
-        - area_ha
+    - buildingBlock: QUERYABLES
+      included:
+      - '*'
+      excluded:
+      - village_info
+      - cadastraldistrict
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
       - region
       - subregion

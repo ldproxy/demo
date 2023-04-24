@@ -64,18 +64,14 @@ collections:
     label: airports
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - name
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{name}}'
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name 
     - buildingBlock: TILES
       enabled: false
@@ -84,13 +80,12 @@ collections:
     label: boundaries
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
     - buildingBlock: TILES
@@ -100,20 +95,15 @@ collections:
     label: contours
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
-        other:
         - height
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}} {{height | append:''m''}}'
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - height
     - buildingBlock: TILES
       enabled: false
@@ -122,11 +112,11 @@ collections:
     label: district_buildings
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: TILES
       enabled: false
   etl:
@@ -134,11 +124,11 @@ collections:
     label: etl
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: TILES
       enabled: false
   foreshore:
@@ -146,11 +136,11 @@ collections:
     label: foreshore
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: TILES
       enabled: false
   greenspace:
@@ -158,12 +148,12 @@ collections:
     label: greenspace
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -176,11 +166,11 @@ collections:
     label: land
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: TILES
@@ -190,12 +180,12 @@ collections:
     label: local_buildings
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - uuid
+    - buildingBlock: SORTING
+      included:
         - uuid
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{uuid}}'
@@ -208,16 +198,12 @@ collections:
     label: names
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
         - name1
         - name2
-        other:
         - name1language
         - name2language
     - buildingBlock: TILES
@@ -230,8 +216,7 @@ collections:
         name2language:
           codelist: language
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name1
       - name2
   national_parks:
@@ -239,11 +224,11 @@ collections:
     label: national_parks
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
+    - buildingBlock: SORTING
+      enabled: false
     - buildingBlock: TILES
       enabled: false
   rail:
@@ -251,12 +236,12 @@ collections:
     label: rail
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -267,12 +252,9 @@ collections:
     label: railway_stations
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
         - name
     - buildingBlock: FEATURES_HTML
@@ -280,8 +262,7 @@ collections:
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
     - buildingBlock: TILES
       enabled: false
@@ -290,24 +271,19 @@ collections:
     label: roads_local
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
         - name
         - number
-        other:
         - level
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{number | append:'' - ''}}{{name | append:'' - ''}}{{type}}'
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
       - number
     - buildingBlock: TILES
@@ -317,24 +293,19 @@ collections:
     label: roads_national
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
         - name
         - number
-        other:
         - level
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{number}}{{name | prepend:'' - ''}}'
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
       - number
     - buildingBlock: TILES
@@ -344,24 +315,19 @@ collections:
     label: roads_regional
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
         - type
         - name
         - number
-        other:
         - level
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{number}}{{name | prepend:'' - ''}}'
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
       - number
     - buildingBlock: TILES
@@ -371,12 +337,12 @@ collections:
     label: sites
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -387,12 +353,12 @@ collections:
     label: surfacewater
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -403,12 +369,12 @@ collections:
     label: urban_areas
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -419,12 +385,12 @@ collections:
     label: waterlines
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
@@ -435,12 +401,12 @@ collections:
     label: woodland
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geom
-        q:
+        - type
+    - buildingBlock: SORTING
+      included:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'

@@ -44,25 +44,16 @@ collections:
       spatialComputed: true
       temporalComputed: true
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
-        - geometry
-        temporal:
-        - gwsdate
-        - gwedate
-        q:
-        - name
-        - capname
-        other:
-        - gwcode
-      coordinatePrecision:
-        metre: 2
-        degree: 7
+    - buildingBlock: QUERYABLES
+      included:
+      - geometry
+      - gwsdate
+      - gwedate
+      - name
+      - capname
+      - gwcode
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - name
       - capname
       - gwcode

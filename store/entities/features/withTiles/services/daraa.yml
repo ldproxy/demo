@@ -80,19 +80,10 @@ collections:
       that provide positional information for direction or otherwise assisting in
       the navigation of airborne aircraft.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: AeronauticCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -119,19 +110,10 @@ collections:
       that provide positional information for direction or otherwise assisting in
       the navigation of airborne aircraft.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: AeronauticSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -154,19 +136,10 @@ collections:
     description: 'Agricultural: Information about activities and man-made features
       involved in the raising of crops and animals, for food and non-food purposes.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: AgriculturePnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -189,19 +162,10 @@ collections:
     description: 'Agricultural: Information about activities and man-made features
       involved in the raising of crops and animals, for food and non-food purposes.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: AgricultureSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -221,19 +185,10 @@ collections:
     description: 'Cultural: Information about features on the landscape that have
       been constructed by man.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: CulturePnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - ZI037_REL
     - buildingBlock: JSON_FG
@@ -256,19 +211,10 @@ collections:
     description: 'Cultural: Information about features on the landscape that have
       been constructed by man.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: CultureSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - ZI037_REL
     - buildingBlock: JSON_FG
@@ -289,19 +235,10 @@ collections:
     id: FacilityPnt
     label: Facility (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: FacilityPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
         - ZI037_REL
@@ -325,19 +262,10 @@ collections:
     id: FacilitySrf
     label: Facility (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: FacilitySrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
         - ZI037_REL
@@ -364,19 +292,10 @@ collections:
     id: HydrographyCrv
     label: Hydrography (Curves)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: HydrographyCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - WCC
     - buildingBlock: JSON_FG
@@ -399,19 +318,10 @@ collections:
     id: HydrographyPnt
     label: Hydrography (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: HydrographyPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - IWT
     - buildingBlock: JSON_FG
@@ -439,19 +349,10 @@ collections:
     id: HydrographySrf
     label: Hydrography (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: HydrographySrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - IWT
         - WCC
@@ -479,19 +380,10 @@ collections:
     id: IndustrySrf
     label: Industry (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: IndustrySrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - MZN
     - buildingBlock: JSON_FG
@@ -518,19 +410,10 @@ collections:
       are significant for reasons other than the existence of a specific categorized
       (typed) feature.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: InformationPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -554,19 +437,10 @@ collections:
       military areas or support facilities and/or structures that are used to prevent
       or resist enemy attacks.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: MilitarySrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -586,15 +460,8 @@ collections:
     extent:
       temporalComputed: false   
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: o2s_a
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{id}}'
@@ -607,15 +474,8 @@ collections:
     extent:
       temporalComputed: false   
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: o2s_l
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{id}}'
@@ -628,15 +488,8 @@ collections:
     extent:
       temporalComputed: false   
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: o2s_p
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{id}}'
@@ -649,19 +502,10 @@ collections:
     description: 'Physiography: Information about the natural features of the Earth''s
       surface or subsurface, as well as their formations.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: PhysiographyCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -682,19 +526,10 @@ collections:
     id: RecreationCrv
     label: Recreation (Curves)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: RecreationCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -715,19 +550,10 @@ collections:
     id: RecreationPnt
     label: Recreation (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: RecreationPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
     - buildingBlock: JSON_FG
@@ -751,19 +577,10 @@ collections:
     id: RecreationSrf
     label: Recreation (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: RecreationSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -784,19 +601,10 @@ collections:
     id: SettlementPnt
     label: Settlement (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: SettlementPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -817,19 +625,10 @@ collections:
     id: SettlementSrf
     label: Settlement (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: SettlementSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
     - buildingBlock: JSON_FG
@@ -850,19 +649,10 @@ collections:
     id: StructureCrv
     label: Structure (Curves)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: StructureCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -883,19 +673,10 @@ collections:
     id: StructurePnt
     label: Structure (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: StructurePnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - ZI005_FNA
         - FFN
@@ -920,19 +701,10 @@ collections:
     id: StructureSrf
     label: Structure (Surfaces)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: StructureSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - ZI037_REL
     - buildingBlock: JSON_FG
@@ -958,19 +730,10 @@ collections:
     description: 'Transportation: Information about the principal means of overland
       movement of people and goods from one location to another.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: TransportationGroundCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - ZI005_FNA
         - RTY
@@ -1001,30 +764,21 @@ collections:
         LOC:
           codelist: loc
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - F_CODE
       - ZI001_SDV
       - RTY
+      - RIN_ROI
   TransportationGroundPnt:
     id: TransportationGroundPnt
     label: Transportation - Ground (Points)
     description: 'Transportation: Information about the principal means of overland
       movement of people and goods from one location to another.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: TransportationGroundPnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
         - RIN_ROI
@@ -1057,19 +811,10 @@ collections:
     description: 'Transportation: Information about the principal means of overland
       movement of people and goods from one location to another.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: TransportationGroundSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - FFN
         - RIN_ROI
@@ -1105,19 +850,10 @@ collections:
     description: 'Transportation: Information about the principal means of over water
       movement of people and goods from one location to another.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: TransportationWaterCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -1142,19 +878,10 @@ collections:
     id: UtilityInfrastructureCrv
     label: Utility Infrastructure (Curves)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: UtilityInfrastructureCrv
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
         - CAB
     - buildingBlock: JSON_FG
@@ -1175,19 +902,10 @@ collections:
     id: UtilityInfrastructurePnt
     label: Utility Infrastructure (Points)
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: UtilityInfrastructurePnt
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:
@@ -1207,19 +925,10 @@ collections:
     description: 'Vegetation: Information about the plant life in an area, or the
       lack thereof.'
     api:
-    - buildingBlock: FEATURES_CORE
-      enabled: true
-      featureType: VegetationSrf
-      minimumPageSize: 1
-      defaultPageSize: 10
-      maxPageSize: 10000
-      showsFeatureSelfLink: false
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - ZI001_SDV
-        other:
         - F_CODE
     - buildingBlock: JSON_FG
       featureType:

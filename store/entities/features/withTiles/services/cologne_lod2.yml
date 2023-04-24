@@ -70,23 +70,10 @@ api:
   enabled: true
   textSequences: true
   version: V11
-- buildingBlock: JSON_FG
-  enabled: true
-- buildingBlock: FILTER
-  enabled: true
-- buildingBlock: PROJECTIONS
-  enabled: true
-- buildingBlock: QUERYABLES
-  enabled: true
-- buildingBlock: SCHEMA
-  enabled: false
-- buildingBlock: SORTING
-  enabled: true
 - buildingBlock: STYLES
   enabled: true
   styleEncodings:
   - 3D Tiles
-  - HTML
 - buildingBlock: HTML
   defaultStyle: surface-type
   basemapUrl: https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png
@@ -138,32 +125,29 @@ collections:
     label: building
     enabled: true
     api:
-    - buildingBlock: FEATURES_CORE
-      queryables:
-        spatial:
-        - bbox
-        - lod2Solid
-        temporal:
-        - creationDate
-        other:
-        - gml_id
-        - name
-        - function
-        - roofType
-        - measuredHeight
-        - storeysAboveGround
-        - address.ThoroughfareName
-        - address.ThoroughfareNumber
-        - address.PostalCode
-        - address.LocalityName
-        - consistsOfBuildingPart.roofType
-        - consistsOfBuildingPart.measuredHeight
-        - consistsOfBuildingPart.storeysAboveGround
-    - buildingBlock: SORTING
-      sortables:
+    - buildingBlock: QUERYABLES
+      included:
+      - bbox
+      - lod2Solid
+      - creationDate
+      - gml_id
       - name
+      - function
+      - roofType
       - measuredHeight
       - storeysAboveGround
+      - address.ThoroughfareName
+      - address.ThoroughfareNumber
+      - address.PostalCode
+      - address.LocalityName
+      - consistsOfBuildingPart.roofType
+      - consistsOfBuildingPart.measuredHeight
+      - consistsOfBuildingPart.storeysAboveGround
+    - buildingBlock: SORTING
+      included:
+      - name
+      - measuredHeight
+      #- storeysAboveGround
     - buildingBlock: JSON_FG
       featureType: 
       - Building

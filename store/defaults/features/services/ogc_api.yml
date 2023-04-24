@@ -2,6 +2,7 @@
 serviceType: OGC_API
 api:
 - buildingBlock: FEATURES_CORE
+  itemType: feature
   coordinatePrecision:
     metre: 2
     degree: 7

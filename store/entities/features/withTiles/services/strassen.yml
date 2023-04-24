@@ -89,19 +89,14 @@ collections:
       href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/AbschnitteAeste_EPSG25832_Shape.zip'
       hreflang: de
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - netzstand
-        q:
         - kennung
         - strasse.bez
         - absnr
         - vwbez.name
-        other:
         - strasse.klasse
         - strasse.nummer
         - strasse.zusatz
@@ -110,8 +105,7 @@ collections:
         - laenge_m
         - vwbez.knz
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - kennung
       - absnr
       - absast
@@ -162,26 +156,20 @@ collections:
       href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/Netzknoten_EPSG25832_Shape.zip'
       hreflang: de
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - netzstand
-        q:
         - nknr
         - nkname
         - nkart.bez
         - nkpktf.bez
         - asart.bez
-        other:
         - nkart.knz
         - nkpktf.knz
         - asart.knz
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - nknr
       - nkname
     - buildingBlock: HTML
@@ -223,26 +211,20 @@ collections:
       href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/NULLPUNKTE_EPSG25832_Shape.zip'
       hreflang: de
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - netzstand
-        q:
         - nk
         - nkname
         - npart.bez
-        other:
         - tkblattnr
         - nknr
         - npbuchs
         - npart.knz
         - klassif
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - nk
       - nkname
       - tkblattnr
@@ -287,22 +269,17 @@ collections:
       href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/Unfaelle_EPSG25832_Shape.zip'
       hreflang: de
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - unfzeit
         - netzstand
-        q:
         - abs.title
         - hauptunft
         - unfart
         - unfkat.bez
         - strzust1
         - strzust2
-        other:
         - stat
         - fahrtri
         - unfkat.knz
@@ -310,8 +287,7 @@ collections:
         abs.href:
           stringFormat: '{{serviceUrl}}/collections/abschnitteaeste/items/{{value}}'
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - stat
       - fahrtri
       - hauptunft
@@ -359,15 +335,11 @@ collections:
       href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/Unfaelle_EPSG25832_Shape.zip'
       hreflang: de
     api:
-    - buildingBlock: FEATURES_CORE
-      itemType: feature
-      queryables:
-        spatial:
+    - buildingBlock: QUERYABLES
+      included:
         - geometry
-        temporal:
         - unfzeit
         - netzstand
-        q:
         - abs.kennung
         - abs.strasse.bez
         - abs.absnr
@@ -377,7 +349,6 @@ collections:
         - unfkat.bez
         - strzust1
         - strzust2
-        other:
         - abs.strasse.klasse
         - abs.strasse.nummer
         - abs.strasse.zusatz
@@ -389,8 +360,7 @@ collections:
         - fahrtri
         - unfkat.knz
     - buildingBlock: SORTING
-      enabled: true
-      sortables:
+      included:
       - stat
       - fahrtri
       - hauptunft
