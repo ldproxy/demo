@@ -1,0 +1,8 @@
+---
+id: zoomstack-tiles
+providerType: TILE
+providerSubType: MBTILES
+tilesets:
+  __all__:
+    id: __all__
+    source: zoomstack/OS_Open_Zoomstack.mbtiles

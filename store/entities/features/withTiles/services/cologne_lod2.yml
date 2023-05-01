@@ -114,7 +114,6 @@ api:
   subtreeLevels: 3
   seeding:
     runOnStartup: true
-    runPeriodic: false
     purge: false
     maxThreads: 1
 - buildingBlock: FLATGEOBUF

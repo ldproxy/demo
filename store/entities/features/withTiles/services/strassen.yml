@@ -45,28 +45,6 @@ api:
 - buildingBlock: TILES
   enabled: true
   # mapClientType: OPEN_LAYERS
-  center:
-  - 7.5
-  - 51.5
-  zoomLevels:
-    WebMercatorQuad:
-      min: 4
-      max: 14
-      default: 8
-    gdi_de_25832:
-      min: 0
-      max: 10
-      default: 4
-    AdV_25832:
-      min: 0
-      max: 10
-      default: 4
-    EU_25832:
-      min: 0
-      max: 10
-      default: 4
-  seedingOptions:
-    maxThreads: 4
 - buildingBlock: STYLES
   enabled: true
   resourcesEnabled: false

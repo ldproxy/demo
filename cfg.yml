@@ -4,7 +4,7 @@ store:
 server:
   externalUrl: ${EXTERNAL_URL:-https://demo.ldproxy.net}
 backgroundTasks:
-  maxThreads: 4
+  maxThreads: 8
 logging:
   level: OFF
   sqlQueries: OFF

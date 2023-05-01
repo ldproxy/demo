@@ -1,0 +1,8 @@
+---
+id: earthatnight-tiles
+providerType: TILE
+providerSubType: MBTILES
+tilesets:
+  earthatnight:
+    id: earthatnight
+    source: earthatnight/dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles

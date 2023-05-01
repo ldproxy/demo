@@ -413,7 +413,7 @@ types:
         label: Station [m]
         description: Station auf dem Abschnitt/Ast [m]
         sourcePath: stat
-        type: INTEGER
+        type: FLOAT
         constraints:
           min: 0
       fahrtri:
@@ -608,7 +608,7 @@ types:
         label: Station [m]
         description: Station auf dem Abschnitt/Ast [m]
         sourcePath: stat
-        type: INTEGER
+        type: FLOAT
         constraints:
           min: 0
       fahrtri:
