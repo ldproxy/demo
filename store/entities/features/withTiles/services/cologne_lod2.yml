@@ -146,7 +146,7 @@ collections:
       included:
       - name
       - measuredHeight
-      #- storeysAboveGround
+      - storeysAboveGround
     - buildingBlock: JSON_FG
       featureType: 
       - Building

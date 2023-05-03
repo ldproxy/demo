@@ -21,10 +21,14 @@ seeding:
 tilesets:
   vineyards:
     id: vineyards
+    center:
+      lon: 7.35
+      lat: 49.8
     levels:
       WebMercatorQuad:
         min: 5
         max: 18
+        default: 8 
     transformations:
       WebMercatorQuad:
       - min: 5

@@ -31,6 +31,9 @@ caches:
 seeding:
   maxThreads: 3
 tilesetDefaults:
+  center:
+    lon: 36.1033
+    lat: 32.6264
   levels:
     WebMercatorQuad:
       min: 6
