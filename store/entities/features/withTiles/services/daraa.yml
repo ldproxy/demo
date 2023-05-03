@@ -47,6 +47,12 @@ api:
   - Mapbox
   - HTML
   - 'SLD 1.0'
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true
+  includePredefined:
+  - WebMercatorQuad
+  - WorldCRS84Quad
+  - WorldMercatorWGS84Quad
 - buildingBlock: TILES
   enabled: true
   # mapClientType: OPEN_LAYERS
