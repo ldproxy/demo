@@ -15,7 +15,7 @@ caches:
   levels:
     WebMercatorQuad:
       min: 13
-      max: 18
+      max: 16
 seeding:
   maxThreads: 2
 tilesets:
@@ -27,7 +27,7 @@ tilesets:
     levels:
       WebMercatorQuad:
         min: 5
-        max: 18
+        max: 16
         default: 8 
     transformations:
       WebMercatorQuad:

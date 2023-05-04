@@ -51,11 +51,8 @@ api:
   - ArcGIS
   - QGIS
   deriveCollectionStyles: true
-  managerEnabled: true
-  validationEnabled: true
 - buildingBlock: RESOURCES
   enabled: true
-  managerEnabled: true
 collections:
   airports:
     id: airports
