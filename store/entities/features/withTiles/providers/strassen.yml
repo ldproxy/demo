@@ -18,7 +18,7 @@ typeValidation: NONE
 types:
   abschnitteaeste:
     label: Abschnitte und Äste 
-    description: 'Als Abschnitt wird ein gerichteter Teil des Straßennetzes bezeichnet, der zwischen zwei aufeinander folgenden Netzknoten liegt. Er wird durch die in den Netzknoten festgelegten Nullpunkte begrenzt.<br>Als Ast wird der Teil des Straßennetzes bezeichnet, der die Abschnitte untereinander verkehrlich verknüpft und deshalb Teil des Netzknotens ist. Er wird durch die im Netzknoten festgelegten Nullpunkte begrenzt. Eine Festlegung von Ästen erfolgt nur, wenn sie Bestandteil des aufzunehmenden Straßennetzes sind.<br>Weitere Begriffsdefinition siehe: <a href="http://www.bast.de/BASt_2017/DE/Verkehrstechnik/Publikationen/Regelwerke/V-asbkernsystem.pdf?__blob=publicationFile&v=3" target="_blank">Anweisung Straßeninformationsbank - ASB Version 2.03, Segment: Kernsystem</a>'
+    description: 'Als Abschnitt wird ein gerichteter Teil des Straßennetzes bezeichnet, der zwischen zwei aufeinander folgenden Netzknoten liegt. Er wird durch die in den Netzknoten festgelegten Nullpunkte begrenzt.<br>Als Ast wird der Teil des Straßennetzes bezeichnet, der die Abschnitte untereinander verkehrlich verknüpft und deshalb Teil des Netzknotens ist. Er wird durch die im Netzknoten festgelegten Nullpunkte begrenzt. Eine Festlegung von Ästen erfolgt nur, wenn sie Bestandteil des aufzunehmenden Straßennetzes sind.<br>Weitere Begriffsdefinition siehe: <a href="https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf" target="_blank">Anweisung Straßeninformationsbank - ASB Version 2.03, Segment: Kernsystem</a>'
     sourcePath: /abschnitteaeste_line
     type: OBJECT
     properties:
