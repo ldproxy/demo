@@ -118,6 +118,8 @@ api:
     maxThreads: 1
 - buildingBlock: FLATGEOBUF
   enabled: false
+- buildingBlock: CSV
+  enabled: false
 collections:
   building:
     id: building
