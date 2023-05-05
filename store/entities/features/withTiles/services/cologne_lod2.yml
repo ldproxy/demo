@@ -120,6 +120,8 @@ api:
   enabled: false
 - buildingBlock: CSV
   enabled: false
+- buildingBlock: SCHEMA
+  enabled: false
 collections:
   building:
     id: building

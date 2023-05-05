@@ -193,7 +193,7 @@ collections:
     - rel: enclosure
       type: application/x-shape
       title: 'Download der Daten als Shapefile'
-      href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/NULLPUNKTE_EPSG25832_Shape.zip'
+      href: 'https://www.opengeodata.nrw.de/produkte/transport_verkehr/strassennetz/Nullpunkte_EPSG25832_Shape.zip'
       hreflang: de
     api:
     - buildingBlock: QUERYABLES
