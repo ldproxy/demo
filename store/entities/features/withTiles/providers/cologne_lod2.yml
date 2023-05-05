@@ -22,23 +22,59 @@ types:
     sourcePath: /building{filter=objectclass_id=26}
     type: OBJECT
     objectType: Building
+    allOf:
+    - schema: '#/fragments/city_object'
+      properties:
+        gml_id:
+          role: ID
+        bbox:
+          role: PRIMARY_GEOMETRY
+        creationDate:
+          role: PRIMARY_INSTANT  
+    - schema: '#/fragments/abstract_building'
+    - properties:
+        consistsOfBuildingPart:
+          label: Gebäudeteile
+          sourcePath: '[id=building_parent_id]building'
+          type: OBJECT_ARRAY
+          objectType: BuildingPart
+          allOf:
+          - schema: '#/fragments/city_object'
+          - schema: '#/fragments/abstract_building'
+          - properties:
+              id:
+                label: Objekt-ID
+                sourcePath: id
+                type: INTEGER
+              building_parent_id:
+                label: Gebäude-Objekt-ID
+                sourcePath: building_parent_id
+                type: INTEGER
+                transformations:
+                  remove: ALWAYS
+fragments:
+  city_object:
+    sourcePath: '[id=id]cityobject'
     properties:
       gml_id:
         label: ALKIS-ID
-        sourcePath: '[id=id]cityobject/gmlid'
+        sourcePath: 'gmlid'
         type: STRING
-        role: ID
       name:
         label: Name
-        description: 'Only set for proper building names.'
-        sourcePath: '[id=id]cityobject/name'
+        sourcePath: name
         type: STRING
       bbox:
         label: Bounding Box
-        sourcePath: '[id=id]cityobject/envelope'
+        sourcePath: envelope
         type: GEOMETRY
         geometryType: POLYGON
-        role: PRIMARY_GEOMETRY
+      creationDate:
+        label: Erzeugungsdatum
+        sourcePath: creation_date
+        type: DATE
+  abstract_building:
+    properties:
       measuredHeight:
         label: Gebäudehöhe [m]
         description: 'Height of the building as the difference in meters between the highest reference point and the lowest reference point of the building.'
@@ -55,11 +91,6 @@ types:
         type: STRING
         constraints:
           codelist: RoofType
-      creationDate:
-        label: Erzeugungsdatum
-        sourcePath: '[id=id]cityobject/creation_date'
-        type: DATE
-        role: PRIMARY_INSTANT
       function:
         label: Gebäudefunktion
         description: 'The meaning of the individual values results from the codelist <a href="https://repository.gdi-de.org/schemas/adv/citygml/Codelisten/BuildingFunctionTypeAdV.xml" target="_blank">BuildingFunctionTypeAdV.xml</a>.'
@@ -72,6 +103,7 @@ types:
         description: 'ALKIS-Objektidentifikator'
         sourcePath: '[id=cityobject_id]external_reference'
         type: OBJECT_ARRAY
+        objectType: ExternalReference
         properties:
           name:
             label: Bezeichnung
@@ -117,11 +149,12 @@ types:
         label: Geometrietyp 2D Referenz
         sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''Geometrietyp2DReferenz''}/strval'
         type: STRING
-        # TODO codelists
+        # TODO codelist constraint
       address:
         label: Adresse
         sourcePath: '[id=building_id]building_address'
         type: OBJECT_ARRAY
+        objectType: Address
         properties:
           id:
             label: Objekt-ID
@@ -173,216 +206,16 @@ types:
         sourcePath: '[id=cityobject_id]surface_geometry_multi'
         type: OBJECT_ARRAY
         objectType: ThematicSurface
-        properties:
-          gml_id:
-            label: ID
-            sourcePath: '[id=id]cityobject/gmlid'
-            type: STRING
-          creationDate:
-            label: Erzeugungsdatum
-            sourcePath: '[id=id]cityobject/creation_date'
-            type: DATE
-            transformations:
-              dateFormat: 'yyyy-MM-dd'
-          surfaceType:
-            label: Flächentyp
-            sourcePath: surface_type
-            type: STRING
-          lod2MultiSurface:
-            label: Geometrie (LoD 2)
-            sourcePath: geom
-            type: GEOMETRY
-            geometryType: MULTI_POLYGON
-            forcePolygonCCW: false
-      #lod2TerrainIntersection:
-      #  sourcePath: lod2_terrain_intersection
-      #  type: GEOMETRY
-      #  geometryType: MULTI_LINE_STRING
-      consistsOfBuildingPart:
-        label: Gebäudeteile
-        sourcePath: '[id=building_parent_id]building'
-        type: OBJECT_ARRAY
-        objectType: BuildingPart
-        properties:
-          id:
-            label: Objekt-ID
-            sourcePath: id
-            type: INTEGER
-          gml_id:
-            label: GML-ID
-            sourcePath: '[id=id]cityobject/gmlid'
-            type: STRING
-          name:
-            label: Name
-            description: 'Nur bei Gebäudeeigennamen gesetzt.'
-            sourcePath: '[id=id]cityobject/name'
-            type: STRING
-          bbox:
-            label: Bounding Box
-            sourcePath: '[id=id]cityobject/envelope'
-            type: GEOMETRY
-            geometryType: POLYGON
-          measuredHeight:
-            label: Gebäudehöhe [m]
-            description: 'Höhe des Gebäudes aus der Differenz in Metern zwischen dem höchsten Bezugspunkt und dem tiefsten Bezugspunkt des Gebäudes.'
-            sourcePath: measured_height
-            type: FLOAT
-          storeysAboveGround:
-            label: Geschosse
-            sourcePath: storeys_above_ground
-            type: INTEGER
-          roofType:
-            label: Dachform
-            description: 'Die Bedeutung der einzelnen Werte ergibt aus der Codelist <a href="https://repository.gdi-de.org/schemas/adv/citygml/Codelisten/RoofTypeTypeAdV.xml" target="_blank">RoofTypeTypeAdV.xml</a>.'
-            sourcePath: roof_type
-            type: STRING
-            constraints:
-              codelist: RoofType
-          creationDate:
-            label: Erzeugungsdatum
-            sourcePath: '[id=id]cityobject/creation_date'
-            type: DATE
-            role: PRIMARY_INSTANT
-          function:
-            label: Gebäudefunktion
-            description: 'Die Bedeutung der einzelnen Werte ergibt aus der Codelist <a href="https://repository.gdi-de.org/schemas/adv/citygml/Codelisten/BuildingFunctionTypeAdV.xml" target="_blank">BuildingFunctionTypeAdV.xml</a>.'
-            sourcePath: function
-            type: STRING
-            constraints:
-              codelist: BuildingFunctionType
-          externalReferences:
-            label: Fachdatenverbindungen
-            description: 'ALKIS-Objektidentifikator'
-            sourcePath: '[id=cityobject_id]external_reference'
-            type: OBJECT_ARRAY
-            properties:
-              name:
-                label: Bezeichnung
-                sourcePath: name
-                type: STRING
-              informationSystem:
-                label: Informationssystem
-                sourcePath: infosys
-                type: STRING
-          bezugspunktDach:
-            label: Bezugspunkt Dach
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''BezugspunktDach''}/strval'
-            type: STRING
-            constraints:
-              codelist: BezugspunktDach
-          datenquelleBodenhoehe:
-            label: Datenquelle Bodenhöhe
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''DatenquelleBodenhoehe''}/strval'
-            type: STRING
-            constraints:
-              codelist: DatenquelleBodenhoehe
-          datenquelleDachhoehe:
-            label: Datenquelle Dachhöhe
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''DatenquelleDachhoehe''}/strval'
-            type: STRING
-            constraints:
-              codelist: DatenquelleDachhoehe
-          datenquelleLage:
-            label: Datenquelle Lage
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''DatenquelleLage''}/strval'
-            type: STRING
-            constraints:
-              codelist: DatenquelleLage
-          gemeindeschluessel:
-            label: Gemeindeschlüssel
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''Gemeindeschluessel''}/strval'
-            type: STRING
-          grundrissaktualitaet:
-            label: Grundrissaktualität
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''Grundrissaktualitaet''}/strval'
-            type: DATE
-          geometrietyp2dReferenz:
-            label: Geometrietyp 2D Referenz
-            sourcePath: '[id=cityobject_id]cityobject_genericattrib{filter=attrname=''Geometrietyp2DReferenz''}/strval'
-            type: STRING
-            # TODO codelists
-          address:
-            label: Adresse
-            sourcePath: '[id=building_id]building_address'
-            type: OBJECT_ARRAY
-            properties:
-              id:
-                label: Objekt-ID
-                sourcePath: id
-                type: INTEGER
-                transformations:
-                  remove: ALWAYS  
-              multiPoint:
-                sourcePath: multi_point
-                type: GEOMETRY
-                geometryType: MULTI_POINT
-                forcePolygonCCW: false
-              ThoroughfareName:
-                label: Straße
-                sourcePath: street
-                type: STRING
-              ThoroughfareNumber:
-                label: Hausnummer
-                sourcePath: house_number
-                type: STRING
-              PostalCode:
-                label: Postleitzahl
-                sourcePath: zip_code
-                type: STRING
-              LocalityName:
-                label: Stadt
-                sourcePath: city
-                type: STRING
-              AdministrativeArea:
-                label: Verwaltungsbezirk
-                sourcePath: state
-                type: STRING
-              CountryName:
-                label: Land
-                sourcePath: country
-                type: STRING
-          lod2Solid:
-            label: Geometrie (LoD 2)
-            sourcePath: '[lod2_solid_id=id]solid_geometry/geom'
-            type: GEOMETRY
-            geometryType: MULTI_POLYGON
-            forcePolygonCCW: false
-            constraints:
-              composite: true
-              closed: true
-          surfaces:
-            label: Begrenzungsflächen (LoD 2)
-            sourcePath: '[id=cityobject_id]surface_geometry_multi'
-            type: OBJECT_ARRAY
-            objectType: ThematicSurface
-            properties:
-              gml_id:
-                label: ID
-                sourcePath: '[id=id]cityobject/gmlid'
-                type: STRING
-              creationDate:
-                label: Erzeugungsdatum
-                sourcePath: '[id=id]cityobject/creation_date'
-                type: DATE
-                transformations:
-                  dateFormat: 'yyyy-MM-dd'
-              surfaceType:
-                label: Flächentyp
-                sourcePath: surface_type
-                type: STRING
-              lod2MultiSurface:
-                label: Geometrie (LoD 2)
-                sourcePath: geom
-                type: GEOMETRY
-                geometryType: MULTI_POLYGON
-                forcePolygonCCW: false
-          #lod2TerrainIntersection:
-          #  sourcePath: lod2terrainintersection
-          #  type: GEOMETRY
-          #  geometryType: MULTI_LINE_STRING
-          building_parent_id:
-            label: Gebäude-Objekt-ID
-            sourcePath: building_parent_id
-            type: INTEGER
-            transformations:
-              remove: ALWAYS
+        allOf:
+        - schema: '#/fragments/city_object'
+        - properties:
+            surfaceType:
+              label: Flächentyp
+              sourcePath: surface_type
+              type: STRING
+            lod2MultiSurface:
+              label: Geometrie (LoD 2)
+              sourcePath: geom
+              type: GEOMETRY
+              geometryType: MULTI_POLYGON
+              forcePolygonCCW: false
