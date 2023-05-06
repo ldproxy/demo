@@ -42,9 +42,7 @@ api:
     title: 'OS Open Zoomstack as a GeoPackage'
 - buildingBlock: TILES
   enabled: true
-  tileProvider:
-    type: MBTILES
-    filename: OS_Open_Zoomstack.mbtiles
+  collectionTiles: false
 - buildingBlock: STYLES
   styleEncodings:
   - Mapbox
@@ -53,11 +51,8 @@ api:
   - ArcGIS
   - QGIS
   deriveCollectionStyles: true
-  managerEnabled: true
-  validationEnabled: true
 - buildingBlock: RESOURCES
   enabled: true
-  managerEnabled: true
 collections:
   airports:
     id: airports
@@ -73,8 +68,6 @@ collections:
     - buildingBlock: SORTING
       included:
       - name 
-    - buildingBlock: TILES
-      enabled: false
   boundaries:
     id: boundaries
     label: boundaries
@@ -88,8 +81,6 @@ collections:
       enabled: false
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   contours:
     id: contours
     label: contours
@@ -105,8 +96,6 @@ collections:
     - buildingBlock: SORTING
       included:
       - height
-    - buildingBlock: TILES
-      enabled: false
   district_buildings:
     id: district_buildings
     label: district_buildings
@@ -116,8 +105,6 @@ collections:
       included:
         - geom
     - buildingBlock: SORTING
-      enabled: false
-    - buildingBlock: TILES
       enabled: false
   etl:
     id: etl
@@ -129,8 +116,6 @@ collections:
         - geom
     - buildingBlock: SORTING
       enabled: false
-    - buildingBlock: TILES
-      enabled: false
   foreshore:
     id: foreshore
     label: foreshore
@@ -140,8 +125,6 @@ collections:
       included:
         - geom
     - buildingBlock: SORTING
-      enabled: false
-    - buildingBlock: TILES
       enabled: false
   greenspace:
     id: greenspace
@@ -159,8 +142,6 @@ collections:
       itemLabelFormat: '{{type}}'
     - buildingBlock: HTML
       defaultStyle: NONE
-    - buildingBlock: TILES
-      enabled: false
   land:
     id: land
     label: land
@@ -173,8 +154,6 @@ collections:
       enabled: false
     - buildingBlock: HTML
       defaultStyle: NONE
-    - buildingBlock: TILES
-      enabled: false
   local_buildings:
     id: local_buildings
     label: local_buildings
@@ -191,8 +170,6 @@ collections:
       itemLabelFormat: '{{uuid}}'
     - buildingBlock: HTML
       defaultStyle: NONE
-    - buildingBlock: TILES
-      enabled: false
   names:
     id: names
     label: names
@@ -206,8 +183,6 @@ collections:
         - name2
         - name1language
         - name2language
-    - buildingBlock: TILES
-      enabled: false
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{name1}}{{name2 | prepend:'' / ''}}'
       transformations:
@@ -229,8 +204,6 @@ collections:
         - geom
     - buildingBlock: SORTING
       enabled: false
-    - buildingBlock: TILES
-      enabled: false
   rail:
     id: rail
     label: rail
@@ -245,8 +218,6 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   railway_stations:
     id: railway_stations
     label: railway_stations
@@ -264,8 +235,6 @@ collections:
     - buildingBlock: SORTING
       included:
       - name
-    - buildingBlock: TILES
-      enabled: false
   roads_local:
     id: roads_local
     label: roads_local
@@ -286,8 +255,6 @@ collections:
       included:
       - name
       - number
-    - buildingBlock: TILES
-      enabled: false
   roads_national:
     id: roads_national
     label: roads_national
@@ -308,8 +275,6 @@ collections:
       included:
       - name
       - number
-    - buildingBlock: TILES
-      enabled: false
   roads_regional:
     id: roads_regional
     label: roads_regional
@@ -330,8 +295,6 @@ collections:
       included:
       - name
       - number
-    - buildingBlock: TILES
-      enabled: false
   sites:
     id: sites
     label: sites
@@ -346,8 +309,6 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   surfacewater:
     id: surfacewater
     label: surfacewater
@@ -362,8 +323,6 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   urban_areas:
     id: urban_areas
     label: urban_areas
@@ -378,8 +337,6 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   waterlines:
     id: waterlines
     label: waterlines
@@ -394,8 +351,6 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false
   woodland:
     id: woodland
     label: woodland
@@ -410,5 +365,3 @@ collections:
         - type
     - buildingBlock: FEATURES_HTML
       itemLabelFormat: '{{type}}'
-    - buildingBlock: TILES
-      enabled: false

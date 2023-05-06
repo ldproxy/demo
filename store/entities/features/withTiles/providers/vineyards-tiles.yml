@@ -15,16 +15,37 @@ caches:
   levels:
     WebMercatorQuad:
       min: 13
-      max: 18
-layerDefaults:
-  levels:
-    WebMercatorQuad:
-      min: 5
       max: 16
-layers:
-  __all__: 
-    id: __all__
-    combine: ['*']
+seeding:
+  maxThreads: 2
+tilesets:
   vineyards:
     id: vineyards
-
+    center:
+      lon: 7.35
+      lat: 49.8
+    levels:
+      WebMercatorQuad:
+        min: 5
+        max: 16
+        default: 8 
+    transformations:
+      WebMercatorQuad:
+      - min: 5
+        max: 7
+        merge: true
+        groupBy:
+        - region
+      - min: 8
+        max: 8
+        merge: true
+        groupBy:
+        - region
+        - subregion
+      - min: 9
+        max: 9
+        merge: true
+        groupBy:
+        - region
+        - subregion
+        - cluster

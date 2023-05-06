@@ -10,6 +10,8 @@ api:
   enabled: true
 - buildingBlock: FLATGEOBUF
   enabled: true
+- buildingBlock: CSV
+  enabled: true
 - buildingBlock: SCHEMA
   enabled: true
 - buildingBlock: QUERYABLES

@@ -61,13 +61,7 @@ api:
   defaultStyle: default
 - buildingBlock: TILES
   enabled: true
-  zoomLevels:
-    WebMercatorQuad:
-      min: 5
-      max: 16
-      default: 8
-  seedingOptions:
-    maxThreads: 1
+  tileProviderTileset: vineyards
 - buildingBlock: STYLES
   deriveCollectionStyles: true
 collections:
@@ -101,24 +95,3 @@ collections:
         date:
           remove: IN_COLLECTION
           dateFormat: dd/MM/yyyy
-    - buildingBlock: TILES
-      rules:
-        WebMercatorQuad:
-        - min: 5
-          max: 7
-          merge: true
-          groupBy:
-          - region
-        - min: 8
-          max: 8
-          merge: true
-          groupBy:
-          - region
-          - subregion
-        - min: 9
-          max: 9
-          merge: true
-          groupBy:
-          - region
-          - subregion
-          - cluster

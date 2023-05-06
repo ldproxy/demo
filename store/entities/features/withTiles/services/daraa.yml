@@ -47,28 +47,16 @@ api:
   - Mapbox
   - HTML
   - 'SLD 1.0'
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true
+  includePredefined:
+  - WebMercatorQuad
+  - WorldCRS84Quad
+  - WorldMercatorWGS84Quad
 - buildingBlock: TILES
   enabled: true
   # mapClientType: OPEN_LAYERS
   style: 'topographic-with-basemap'
-  center:
-  - 36.1033
-  - 32.6264
-  zoomLevels:
-    WebMercatorQuad:
-      min: 6
-      max: 18
-      default: 13
-    WorldCRS84Quad:
-      min: 5
-      max: 17
-      default: 12
-    WorldMercatorWGS84Quad:
-      min: 6
-      max: 18
-      default: 13
-  seedingOptions:
-    maxThreads: 4
 collections:
   AeronauticCrv:
     id: AeronauticCrv

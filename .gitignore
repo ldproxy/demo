@@ -9,4 +9,5 @@ api-resources/features/*.gpkg-journal
 api-resources/features/*.gpkg-shm
 api-resources/features/*.gpkg-wal
 store/overrides/
+.backup
 \!*

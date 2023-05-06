@@ -19,6 +19,4 @@ api:
     rel: related
 - buildingBlock: TILES
   enabled: true
-  tileProvider:
-    type: MBTILES
-    filename: dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles
+  tileProviderTileset: earthatnight

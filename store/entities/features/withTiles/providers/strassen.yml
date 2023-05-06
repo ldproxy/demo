@@ -18,7 +18,7 @@ typeValidation: NONE
 types:
   abschnitteaeste:
     label: Abschnitte und Äste 
-    description: 'Als Abschnitt wird ein gerichteter Teil des Straßennetzes bezeichnet, der zwischen zwei aufeinander folgenden Netzknoten liegt. Er wird durch die in den Netzknoten festgelegten Nullpunkte begrenzt.<br>Als Ast wird der Teil des Straßennetzes bezeichnet, der die Abschnitte untereinander verkehrlich verknüpft und deshalb Teil des Netzknotens ist. Er wird durch die im Netzknoten festgelegten Nullpunkte begrenzt. Eine Festlegung von Ästen erfolgt nur, wenn sie Bestandteil des aufzunehmenden Straßennetzes sind.<br>Weitere Begriffsdefinition siehe: <a href="http://www.bast.de/BASt_2017/DE/Verkehrstechnik/Publikationen/Regelwerke/V-asbkernsystem.pdf?__blob=publicationFile&v=3" target="_blank">Anweisung Straßeninformationsbank - ASB Version 2.03, Segment: Kernsystem</a>'
+    description: 'Als Abschnitt wird ein gerichteter Teil des Straßennetzes bezeichnet, der zwischen zwei aufeinander folgenden Netzknoten liegt. Er wird durch die in den Netzknoten festgelegten Nullpunkte begrenzt.<br>Als Ast wird der Teil des Straßennetzes bezeichnet, der die Abschnitte untereinander verkehrlich verknüpft und deshalb Teil des Netzknotens ist. Er wird durch die im Netzknoten festgelegten Nullpunkte begrenzt. Eine Festlegung von Ästen erfolgt nur, wenn sie Bestandteil des aufzunehmenden Straßennetzes sind.<br>Weitere Begriffsdefinition siehe: <a href="https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf" target="_blank">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>'
     sourcePath: /abschnitteaeste_line
     type: OBJECT
     properties:
@@ -114,7 +114,7 @@ types:
         role: PRIMARY_GEOMETRY
   netzknoten:
     label: Netzknoten
-    description: 'Netzknoten sind sämtliche plangleichen (höhengleichen) und planfreien (höhenungleichen) Knotenpunkte, die sich aus der verkehrlichen Verknüpfung zweier oder mehrerer Straßen des aufzunehmenden Straßennetzes untereinander ergeben. In Sonderfällen können zusätzliche Netzknoten erforderlich werden.<br>Weitere Begriffsdefinition siehe: <a href="http://www.bast.de/BASt_2017/DE/Verkehrstechnik/Publikationen/Regelwerke/V-asbkernsystem.pdf?__blob=publicationFile&v=3" target="_blank">Anweisung Straßeninformationsbank - ASB Version 2.03, Segment: Kernsystem</a>'
+    description: 'Netzknoten sind sämtliche plangleichen (höhengleichen) und planfreien (höhenungleichen) Knotenpunkte, die sich aus der verkehrlichen Verknüpfung zweier oder mehrerer Straßen des aufzunehmenden Straßennetzes untereinander ergeben. In Sonderfällen können zusätzliche Netzknoten erforderlich werden.<br>Weitere Begriffsdefinition siehe: <a href="https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf" target="_blank">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>'
     sourcePath: /netzknoten_point
     type: OBJECT
     properties:
@@ -232,7 +232,7 @@ types:
         role: PRIMARY_GEOMETRY
   nullpunkte:
     label: Nullpunkte
-    description: 'Die Gliederung des gesamten Straßennetzes in Abschnitte und Äste erfordert eine exakte und eindeutige Festlegung ihrer Anfangs- und Endpunkte an denen die Stationierung beginnt und bzw. endet. Diese Anfangs- und Endpunkte werden als Nullpunkte bezeichnet und sind einem Netzknoten zugeordnet.<br>Weitere Begriffsdefinition siehe: <a href="http://www.bast.de/BASt_2017/DE/Verkehrstechnik/Publikationen/Regelwerke/V-asbkernsystem.pdf?__blob=publicationFile&v=3" target="_blank">Anweisung Straßeninformationsbank - ASB Version 2.03, Segment: Kernsystem</a>'
+    description: 'Die Gliederung des gesamten Straßennetzes in Abschnitte und Äste erfordert eine exakte und eindeutige Festlegung ihrer Anfangs- und Endpunkte an denen die Stationierung beginnt und bzw. endet. Diese Anfangs- und Endpunkte werden als Nullpunkte bezeichnet und sind einem Netzknoten zugeordnet.<br>Weitere Begriffsdefinition siehe: <a href="https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf" target="_blank">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>'
     sourcePath: /nullpunkte_point
     type: OBJECT
     properties:
@@ -306,7 +306,7 @@ types:
         role: PRIMARY_GEOMETRY
   unfaelle:
     label: Unfälle
-    description: 'In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href="https://www.bast.de/BASt_2017/DE/Verkehrstechnik/Statistik/statistik-node.html" target="_blank">https://www.bast.de/BASt_2017/DE/Verkehrstechnik/Statistik/statistik-node.html</a>.'
+    description: 'In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href="https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html" target="_blank">Infrastruktur-, Verkehrs- und Unfalldaten</a>.'
     sourcePath: /unfaelle_point
     type: OBJECT
     properties:
@@ -413,7 +413,7 @@ types:
         label: Station [m]
         description: Station auf dem Abschnitt/Ast [m]
         sourcePath: stat
-        type: INTEGER
+        type: FLOAT
         constraints:
           min: 0
       fahrtri:
@@ -431,7 +431,7 @@ types:
         role: PRIMARY_GEOMETRY
   unfaelle2:
     label: Unfälle (alternative Darstellung)
-    description: 'In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href="https://www.bast.de/BASt_2017/DE/Verkehrstechnik/Statistik/statistik-node.html" target="_blank">https://www.bast.de/BASt_2017/DE/Verkehrstechnik/Statistik/statistik-node.html</a>.'
+    description: 'In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href="https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html" target="_blank">Infrastruktur-, Verkehrs- und Unfalldaten</a>.'
     sourcePath: /unfaelle_point
     type: OBJECT
     properties:
@@ -608,7 +608,7 @@ types:
         label: Station [m]
         description: Station auf dem Abschnitt/Ast [m]
         sourcePath: stat
-        type: INTEGER
+        type: FLOAT
         constraints:
           min: 0
       fahrtri:

@@ -24,35 +24,40 @@ caches:
   levels:
     WebMercatorQuad:
       min: 11
-      max: 12
+      max: 14
     gdi_de_25832:
       min: 6
-      max: 8
+      max: 10
     AdV_25832:
       min: 6
-      max: 8
+      max: 10
     EU_25832:
-      min: 8
-      max: 8
-layerDefaults:
+      min: 6
+      max: 10
+seeding:
+  maxThreads: 3
+tilesetDefaults:
+  center:
+    lon: 7.0
+    lat: 51.0
   levels:
     WebMercatorQuad:
       min: 4
       max: 14
-      default: 8
+      default: 10
     gdi_de_25832:
       min: 0
       max: 10
-      default: 4
+      default: 6
     AdV_25832:
       min: 0
       max: 10
-      default: 4
+      default: 6
     EU_25832:
       min: 0
       max: 10
-      default: 4
-layers:
+      default: 6
+tilesets:
   __all__: 
     id: __all__
     combine: ['*']

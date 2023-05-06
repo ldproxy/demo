@@ -28,7 +28,12 @@ caches:
     WorldMercatorWGS84Quad:
       min: 12
       max: 18
-layerDefaults:
+seeding:
+  maxThreads: 3
+tilesetDefaults:
+  center:
+    lon: 36.1033
+    lat: 32.6264
   levels:
     WebMercatorQuad:
       min: 6
@@ -42,7 +47,7 @@ layerDefaults:
       min: 6
       max: 18
       default: 13
-layers:
+tilesets:
   __all__: 
     id: __all__
     combine: ['*']
