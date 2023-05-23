@@ -9,7 +9,7 @@ nativeCrs:
 nativeTimeZone: Europe/Berlin
 connectionInfo:
   database: cologne_lod2
-  host: db
+  host: ${DB_HOST:-db}
   user: postgres
   password: cG9zdGdyZXM=
   schemas:
