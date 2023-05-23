@@ -17,18 +17,22 @@ caches:
       min: 13
       max: 16
 seeding:
-  maxThreads: 2
+  maxThreads: 1
+tilesetDefaults:
+  center:
+    lon: 7.35
+    lat: 49.8
+  levels:
+    WebMercatorQuad:
+      min: 5
+      max: 16
+      default: 8 
 tilesets:
+  __all__: 
+    id: __all__
+    combine: ['*']
   vineyards:
     id: vineyards
-    center:
-      lon: 7.35
-      lat: 49.8
-    levels:
-      WebMercatorQuad:
-        min: 5
-        max: 16
-        default: 8 
     transformations:
       WebMercatorQuad:
       - min: 5
@@ -49,3 +53,9 @@ tilesets:
         - region
         - subregion
         - cluster
+  gewanne:
+    id: gewanne
+    levels:
+      WebMercatorQuad:
+        min: 11
+        max: 16

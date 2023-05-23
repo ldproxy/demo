@@ -80,3 +80,28 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+  gewanne:
+    label: Gewanne
+    description: |
+      A "Gewann" is a registered name for a small geographical unit that can be used on the label of a wine from that unit, similar to the French "Lieu-Dit".
+    sourcePath: /gewannen
+    type: OBJECT
+    properties:
+      registerId:
+        sourcePath: gewanne_nr
+        type: STRING
+        role: ID
+        label: Gewann register number
+      name:
+        sourcePath: gewanne_na
+        type: STRING
+        label: Gewann name
+      searchfield:
+        sourcePath: suchfeld
+        type: STRING
+        label: Search field
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON

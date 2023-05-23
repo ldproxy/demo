@@ -61,7 +61,6 @@ api:
   defaultStyle: default
 - buildingBlock: TILES
   enabled: true
-  tileProviderTileset: vineyards
 - buildingBlock: STYLES
   deriveCollectionStyles: true
 collections:
@@ -95,3 +94,17 @@ collections:
         date:
           remove: IN_COLLECTION
           dateFormat: dd/MM/yyyy
+  gewanne:
+    id: gewanne
+    label: gewanne
+    enabled: true
+    api:
+    - buildingBlock: QUERYABLES
+      included:
+      - '*'
+    - buildingBlock: SORTING
+      included:
+      - name
+      - registerId
+    - buildingBlock: FEATURES_HTML
+      featureTitleTemplate: '{{searchfield}}'

@@ -18,8 +18,11 @@ To generate the GeoPackage:
 
 ```sh
 curl "http://weinlagen.lwk-rlp.de/geoserver/lwk/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=lwk:Weinlagen&outputFormat=shape-zip" -o Weinlagen.zip
+curl "http://weinlagen.lwk-rlp.de/geoserver/lwk/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=lwk:gewannen&outputFormat=shape-zip" -o gewannen.zip
 unzip Weinlagen.zip
-ogr2ogr -f "GPKG" Weinlagen.gpkg Weinlagen/Weinlagen.shp -oo encoding="ISO-8859-1" -nlt MULTIPOLYGON
+unzip gewannen.zip
+ogr2ogr -f "GPKG" Weinlagen.gpkg Weinlagen.shp -oo encoding="ISO-8859-1" -nlt MULTIPOLYGON
+ogr2ogr -f "GPKG" Weinlagen.gpkg gewannen.shp -oo encoding="ISO-8859-1" -nlt MULTIPOLYGON -append
 ```
 
 Tools:

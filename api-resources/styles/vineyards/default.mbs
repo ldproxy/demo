@@ -1,81 +1,93 @@
 {
-  "bearing" : 0.0,
-  "version" : 8,
-  "pitch" : 0.0,
-  "name" : "default",
-  "center": [
-    7.35, 
-    49.8
-  ],
-  "zoom": 8,
-  "sources" : {
-    "vineyards" : {
-      "type" : "vector",
-      "tiles" : [ "{serviceUrl}/collections/vineyards/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt" ],
-      "maxzoom" : 16
-    },
-    "basemap" : {
-      "type" : "raster",
-      "tileSize": 256,
+  "bearing": 0.0, 
+  "version": 8, 
+  "pitch": 0.0, 
+  "name": "default", 
+  "center": [7.35, 49.8], 
+  "zoom": 8, 
+  "sources": {
+    "vineyards": {
+      "type": "vector", 
+      "tiles": ["{serviceUrl}/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt"], 
+      "maxzoom": 16
+    }, 
+    "basemap": {
+      "type": "raster", 
+      "tileSize": 256, 
       "tiles": [
         "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png"
       ], 
-      "attribution": "&copy; basemap.de / BKG",
+      "attribution": "&copy; basemap.de / BKG", 
       "maxzoom": 19
     }
-  },
-  "glyphs": "https://go-spatial.github.io/carto-assets/fonts/{fontstack}/{range}.pbf",
-  "layers" : [ {
-    "id": "background",
-    "type": "raster",
-    "source" : "basemap",
-    "layout" : {
-      "visibility" : "visible"
+  }, 
+  "glyphs": "https://sg.geodatenzentrum.de/gdz_basemapde_vektor/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background", 
+      "type": "raster", 
+      "source": "basemap", 
+      "layout": {"visibility": "visible"}
+    }, 
+    {
+      "type": "fill", 
+      "source-layer": "vineyards", 
+      "layout": {"visibility": "visible"}, 
+      "paint": { "fill-color": ["rgb", 0, 255, 0], "fill-opacity": 0.75 }, 
+      "id": "vineyards_fill", 
+      "source": "vineyards"
+    }, 
+    {
+      "type": "line", 
+      "source-layer": "vineyards", 
+      "layout": {"visibility": "visible"}, 
+      "paint": {"line-color": "#408040", "line-width": 0.5}, 
+      "id": "vineyards_line", 
+      "source": "vineyards"
+    }, 
+    {
+      "type": "fill", 
+      "source-layer": "gewanne", 
+      "layout": {"visibility": "visible"}, 
+      "paint": {"fill-color": "#00b000", "fill-opacity": 0.75}, 
+      "id": "gewanne_fill", 
+      "source": "vineyards"
+    }, 
+    {
+      "type": "symbol", 
+      "id": "vineyards_symbol", 
+      "source": "vineyards", 
+      "source-layer": "vineyards", 
+      "layout": {
+        "text-field": [ "step", ["zoom"], "", 12, ["get", "name"] ], 
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 10, 
+        "text-padding": 18, 
+        "text-justify": "auto"
+      }, 
+      "paint": {
+        "text-color": "#006000", 
+        "text-halo-width": 2, 
+        "text-halo-blur": 2
+      }
+    }, 
+    {
+      "type": "symbol", 
+      "id": "gewanne_symbol", 
+      "source": "vineyards", 
+      "source-layer": "gewanne", 
+      "layout": {
+        "text-field": [ "step", ["zoom"], "", 14, ["get", "name"] ], 
+        "text-font": ["Noto Sans Italic"],
+        "text-size": 8, 
+        "text-padding": 18, 
+        "text-justify": "auto"
+      }, 
+      "paint": {
+        "text-color": "#001000", 
+        "text-halo-width": 2, 
+        "text-halo-blur": 2
+      }
     }
-  }, {
-    "type" : "fill",
-    "source-layer" : "vineyards",
-    "layout" : {
-      "visibility" : "visible"
-    },
-    "paint" : {
-      "fill-color" : ["rgb", 0, 255, 0],
-      "fill-opacity" : 0.75
-    },
-    "id" : "vineyards_fill",
-    "source" : "vineyards"
-  }, {
-    "type" : "line",
-    "source-layer" : "vineyards",
-    "layout" : {
-      "visibility" : "visible"
-    },
-    "paint" : {
-      "line-color" : "#408040",
-      "line-width" : 0.5
-    },
-    "id" : "vineyards_line",
-    "source" : "vineyards"
-  }, {
-    "type" : "symbol",
-    "id" : "vineyards_symbol",
-    "source" : "vineyards",
-    "source-layer" : "vineyards",
-    "layout" : {
-      "text-field": [ "step",
-        ["zoom"],
-        "",
-        12,
-        ["get", "name"] 
-      ],
-      "text-size": 10,
-      "text-padding": 18,
-      "text-justify": "auto"
-    },
-    "paint":{
-      "text-color": "#006000",
-      "text-halo-width": 2,
-      "text-halo-blur": 2
-    }
-  } ]
+  ]
 }
