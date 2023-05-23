@@ -315,6 +315,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       unfzeit:
         label: Unfallzeitpunkt
         sourcePath: unfzeit
@@ -396,19 +397,9 @@ types:
       abs:
         label: Abschnitt/Ast
         description: 16-stellige Kennung des Abschnittes oder Astes
-        type: OBJECT
-        objectType: Link
-        properties:
-          title:
-            sourcePath: abs
-            type: STRING
-            label: Beschreibung
-          href:
-            sourcePath: abs
-            type: STRING
-            label: Verweis
-            transformations:
-              stringFormat: '{{serviceUrl}}/collections/abschnitteaeste/items/{{value}}'
+        type: FEATURE_REF
+        refType: abschnitteaeste
+        sourcePath: abs
       stat:
         label: Station [m]
         description: Station auf dem Abschnitt/Ast [m]
@@ -440,6 +431,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       unfzeit:
         label: Unfallzeitpunkt
         sourcePath: unfzeit

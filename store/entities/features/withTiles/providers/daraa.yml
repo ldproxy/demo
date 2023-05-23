@@ -24,6 +24,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -75,6 +76,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -126,6 +128,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -177,6 +180,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -230,6 +234,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -293,6 +298,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -354,6 +360,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -421,6 +428,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -488,6 +496,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -556,6 +565,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -631,6 +641,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -714,6 +725,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -773,6 +785,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -825,6 +838,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -876,6 +890,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -892,6 +907,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -908,6 +924,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -924,6 +941,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -975,6 +993,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1026,6 +1045,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1087,6 +1107,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1141,6 +1162,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1193,6 +1215,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1252,6 +1275,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1304,6 +1328,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1371,6 +1396,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1430,6 +1456,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1541,6 +1568,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1630,6 +1658,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1723,6 +1752,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1790,6 +1820,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1849,6 +1880,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
@@ -1900,6 +1932,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING

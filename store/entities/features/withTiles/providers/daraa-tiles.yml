@@ -29,7 +29,7 @@ caches:
       min: 12
       max: 18
 seeding:
-  maxThreads: 3
+  maxThreads: 2
 tilesetDefaults:
   center:
     lon: 36.1033

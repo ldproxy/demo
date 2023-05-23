@@ -27,6 +27,7 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
+        scope: QUERIES
       name:
         label: Country name
         sourcePath: cntry_name

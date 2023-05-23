@@ -28,6 +28,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       name:
         label: Name
         sourcePath: name
@@ -46,6 +47,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -67,6 +69,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -93,6 +96,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -107,6 +111,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -121,6 +126,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -135,6 +141,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -165,6 +172,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -179,6 +187,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       uuid:
         label: Unique identifier
         sourcePath: uuid
@@ -197,6 +206,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -259,6 +269,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -273,6 +284,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -297,6 +309,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -327,6 +340,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -367,6 +381,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -406,6 +421,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -446,6 +462,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -471,6 +488,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -494,6 +512,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -516,6 +535,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type
@@ -542,6 +562,7 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
+        scope: QUERIES
       type:
         label: Type
         sourcePath: type

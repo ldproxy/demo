@@ -41,17 +41,6 @@ types:
           allOf:
           - schema: '#/fragments/city_object'
           - schema: '#/fragments/abstract_building'
-          - properties:
-              id:
-                label: Objekt-ID
-                sourcePath: id
-                type: INTEGER
-              building_parent_id:
-                label: Gebäude-Objekt-ID
-                sourcePath: building_parent_id
-                type: INTEGER
-                transformations:
-                  remove: ALWAYS
 fragments:
   city_object:
     sourcePath: '[id=id]cityobject'

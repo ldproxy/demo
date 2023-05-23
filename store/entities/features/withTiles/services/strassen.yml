@@ -31,10 +31,6 @@ api:
     forceAxisOrder: NONE
   - code: 3857
     forceAxisOrder: NONE
-- buildingBlock: GEO_JSON
-  transformations:
-    '*':
-      flatten: '.'
 - buildingBlock: HTML
   collectionDescriptionsInOverview: true
   basemapUrl: https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png
