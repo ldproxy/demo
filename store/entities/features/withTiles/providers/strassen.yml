@@ -112,6 +112,12 @@ types:
         type: GEOMETRY
         geometryType: LINE_STRING
         role: PRIMARY_GEOMETRY
+      unfaelle:
+        label: Unfälle
+        description: Unfälle auf dem Abschnitt oder Ast
+        type: FEATURE_REF_ARRAY 
+        refType: unfaelle
+        sourcePath: '[abs=abs]unfaelle_point/fid'
   netzknoten:
     label: Netzknoten
     description: 'Netzknoten sind sämtliche plangleichen (höhengleichen) und planfreien (höhenungleichen) Knotenpunkte, die sich aus der verkehrlichen Verknüpfung zweier oder mehrerer Straßen des aufzunehmenden Straßennetzes untereinander ergeben. In Sonderfällen können zusätzliche Netzknoten erforderlich werden.<br>Weitere Begriffsdefinition siehe: <a href="https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf" target="_blank">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>'
@@ -397,7 +403,7 @@ types:
       abs:
         label: Abschnitt/Ast
         description: 16-stellige Kennung des Abschnittes oder Astes
-        type: FEATURE_REF
+        type: FEATURE_REF 
         refType: abschnitteaeste
         sourcePath: abs
       stat:
