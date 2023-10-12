@@ -1,0 +1,594 @@
+---
+id: zoomstack
+createdAt: 1614412062943
+lastModified: 1697133220412
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 27700
+  forceAxisOrder: NONE
+connectionInfo:
+  dialect: GPKG
+  database: OS_Open_Zoomstack.gpkg
+queryGeneration:
+  computeNumberMatched: false
+types:
+  airports:
+    sourcePath: /airports
+    type: OBJECT
+    label: Airports
+    description: A centre point for all major airports including a name.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      name:
+        sourcePath: name
+        type: STRING
+        label: Name
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  boundaries:
+    sourcePath: /boundaries
+    type: OBJECT
+    label: Boundaries
+    description: National boundary lines between England - Scotland and England - Wales.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - National
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  contours:
+    sourcePath: /contours
+    type: OBJECT
+    label: Contours
+    description: These contours lines have a 10-metre interval with an index every 50 metres. Each contour contains a value.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Index
+          - Normal
+      height:
+        sourcePath: height
+        type: FLOAT
+        label: Height (metres)
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  district_buildings:
+    sourcePath: /district_buildings
+    type: OBJECT
+    label: District Buildings
+    description: Generalised building footprints at district resolution.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  etl:
+    sourcePath: /etl
+    type: OBJECT
+    label: ETL
+    description: Electricity Transmission Lines.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  foreshore:
+    sourcePath: /foreshore
+    type: OBJECT
+    label: Foreshore
+    description: These polygons depict the part of the shore or beach which lies between the Mean Low Water Mark and Mean High Water Mark.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  greenspace:
+    sourcePath: /greenspace
+    type: OBJECT
+    label: Greenspace
+    description: Polygon features representing the extent of places such as parks and sports facilities that are likely to be accessible to the public.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Allotments Or Community Growing Spaces
+          - Bowling Green
+          - Cemetery
+          - Golf Course
+          - Other Sports Facility
+          - Play Space
+          - Playing Field
+          - Public Park Or Garden
+          - Religious Grounds
+          - Tennis Court
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  land:
+    sourcePath: /land
+    type: OBJECT
+    label: Land
+    description: This layer depicts the shape of Great Britain.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  local_buildings:
+    sourcePath: /local_buildings
+    type: OBJECT
+    label: Local Buildings
+    description: Generalised building footprints at local resolution. The buildings have a unique identifier which can be used to style features distinctly. The identifier will not be persistent between product versions and therefore there will be no change history information for a feature.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      uuid:
+        sourcePath: uuid
+        type: STRING
+        label: Unique identifier
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  names:
+    sourcePath: /names
+    type: OBJECT
+    label: Names
+    description: Use this point layer to render contextual labels on your map.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Country
+          - Capital
+          - City
+          - Town
+          - Village
+          - Hamlet
+          - Small Settlements
+          - Suburban Area
+          - Woodland
+          - Landform
+          - Landcover
+          - Water
+          - Greenspace
+          - Sites
+          - Motorway Junction
+          - National Park
+      name1:
+        sourcePath: name1
+        type: STRING
+        label: First Name
+      name1language:
+        sourcePath: name1language
+        type: STRING
+        label: First Name - Language
+        constraints:
+          enum:
+          - cym
+          - eng
+          - gla
+      name2:
+        sourcePath: name2
+        type: STRING
+        label: Second Name
+      name2language:
+        sourcePath: name2language
+        type: STRING
+        label: Second Name - Language
+        constraints:
+          enum:
+          - cym
+          - eng
+          - gla
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  national_parks:
+    sourcePath: /national_parks
+    type: OBJECT
+    label: National Parks
+    description: Theses polygons depict the extent of the 15 National Parks in Great Britain.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  rail:
+    sourcePath: /rail
+    type: OBJECT
+    label: Rail
+    description: "Lines representing the railway network. They are broken where they pass under bridges, buildings or other obstructing detail."
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Multi Track
+          - Single Track
+          - Narrow Gauge
+          - Tunnel
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  railway_stations:
+    sourcePath: /railway_stations
+    type: OBJECT
+    label: Railway Stations
+    description: This layer contains a point for all stations and includes a name.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Light Rapid Transit Station
+          - Light Rapid Transit Station And London Underground Station
+          - Light Rapid Transit Station And Railway Station
+          - London Underground Station
+          - Railway Station
+          - Railway Station And London Underground Station
+      name:
+        sourcePath: name
+        type: STRING
+        label: Name
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  roads_local:
+    sourcePath: /roads_local
+    type: OBJECT
+    label: Local Roads
+    description: Lines representing the road network. A road is defined as a metalled way for vehicles.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Local
+          - Minor
+          - Guided Busway
+      name:
+        sourcePath: name
+        type: STRING
+        label: Name
+      number:
+        sourcePath: number
+        type: STRING
+        label: Number
+      level:
+        sourcePath: level
+        type: INTEGER
+        label: Level
+        constraints:
+          enum:
+          - 0
+          - 1
+          - 2
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  roads_national:
+    sourcePath: /roads_national
+    type: OBJECT
+    label: National Roads
+    description: Lines representing the road network. A road is defined as a metalled way for vehicles.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Primary
+          - Motorway
+      name:
+        sourcePath: name
+        type: STRING
+        label: Name
+      number:
+        sourcePath: number
+        type: STRING
+        label: Number
+      level:
+        sourcePath: level
+        type: INTEGER
+        label: Level
+        constraints:
+          enum:
+          - 0
+          - 1
+          - 2
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  roads_regional:
+    sourcePath: /roads_regional
+    type: OBJECT
+    label: Regional Roads
+    description: Lines representing the road network. A road is defined as a metalled way for vehicles.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - A Road
+          - B Road
+          - Tunnels
+      name:
+        sourcePath: name
+        type: STRING
+        label: Name
+      number:
+        sourcePath: number
+        type: STRING
+        label: Number
+      level:
+        sourcePath: level
+        type: INTEGER
+        label: Level
+        constraints:
+          enum:
+          - 0
+          - 1
+          - 2
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  sites:
+    sourcePath: /sites
+    type: OBJECT
+    label: Sites
+    description: Polygon features that represent the area or extent of certain types of function or activity.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Air Transport
+          - Education
+          - Medical Care
+          - Road Transport
+          - Water Transport
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  surfacewater:
+    sourcePath: /surfacewater
+    type: OBJECT
+    label: Surface Water
+    description: These polygons represent inland water bodies that are sufficiently wide enough to be captured as an area.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Local
+          - Regional
+          - National
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  urban_areas:
+    sourcePath: /urban_areas
+    type: OBJECT
+    label: Urban Areas
+    description: These are generalised polygons representing built-up areas for use at smaller scales.
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Regional
+          - National
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+  waterlines:
+    sourcePath: /waterlines
+    type: OBJECT
+    label: Waterlines
+    description: "Lines representing rivers, canals, drains and other linear bodies of water."
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Local
+          - District
+          - Regional
+          - National
+          - MHW
+          - MLW
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+  woodland:
+    sourcePath: /woodland
+    type: OBJECT
+    label: Woodland
+    description: "The polygons represent areas of trees: coniferous, non-coniferous and mixed."
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        role: ID
+        scope: QUERIES
+      type:
+        sourcePath: type
+        type: STRING
+        label: Type
+        constraints:
+          enum:
+          - Local
+          - Regional
+          - National
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON

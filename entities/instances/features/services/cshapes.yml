@@ -1,0 +1,65 @@
+---
+id: cshapes
+createdAt: 1616851637279
+lastModified: 1697133220383
+label: CShapes Dataset of Historical Country Boundaries
+description: "CShapes 2.0 maps the borders and capitals of independent states and dependent territories from 1886 to 2019. There are two versions of the dataset, which are based on the Gleditsch and Ward (1999) or the Correlates of War coding of independent states. Border changes were coded based on the Territorial Change Dataset by Tir et al (1998), the Encyclopedia of International Boundaries by Biger (1995) and the Encyclopedia of African Boundaries by Brownlie (1979)."
+enabled: "${ENABLE_CSHAPES:-true}"
+serviceType: OGC_API
+metadata:
+  contactName: "Clemens Portele, interactive instruments GmbH"
+  contactEmail: portele@interactive-instruments.de
+  creatorName: "Schvitz, Guy, Seraina Rüegger, Luc Girardin, Lars-Erik Cederman, Nils Weidmann, and Kristian Skrede Gleditsch"
+  publisherName: interactive instruments GmbH
+  publisherUrl: https://www.interactive-instruments.de
+  publisherLogoUrl: https://www.interactive-instruments.de/wp-content/uploads/2017/05/ii-icon.png
+  licenseName: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+  licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  attribution: "Schvitz, Guy, Seraina Rüegger, Luc Girardin, Lars-Erik Cederman, Nils Weidmann, and Kristian Skrede Gleditsch. 2022. <a href=\"https://icr.ethz.ch/publications/cshapes-2/\" target=\"_blank\">Mapping The International System, 1886-2017: The CShapes 2.0 Dataset</a>. Journal of Conflict Resolution 66(1): 144–61."
+api:
+- buildingBlock: COLLECTIONS
+  additionalLinks:
+  - rel: related
+    type: text/html
+    title: CShapes website
+    href: https://icr.ethz.ch/data/cshapes/
+    hreflang: en
+  - rel: enclosure
+    type: application/geo+json
+    title: Download the data as GeoJSON
+    href: https://icr.ethz.ch/data/cshapes/CShapes-2.0.geojson
+    hreflang: en
+  - rel: enclosure
+    type: application/x-shape
+    title: Download the data as a shapefile
+    href: https://icr.ethz.ch/data/cshapes/CShapes-2.0.zip
+    hreflang: en
+collections:
+  boundary:
+    id: boundary
+    label: boundary
+    enabled: true
+    extent:
+      spatialComputed: true
+      temporalComputed: true
+    api:
+    - buildingBlock: QUERYABLES
+      included:
+      - geometry
+      - gwsdate
+      - gwedate
+      - name
+      - capname
+      - gwcode
+    - buildingBlock: SORTING
+      included:
+      - name
+      - capname
+      - gwcode
+    - buildingBlock: FEATURES_HTML
+      featureTitleTemplate: "{{name}}"
+      transformations:
+        gwsdate:
+        - dateFormat: dd/MM/yyyy
+        gwedate:
+        - dateFormat: dd/MM/yyyy

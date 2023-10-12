@@ -1,0 +1,99 @@
+{
+  "bearing": 0.0,
+  "version": 8,
+  "pitch": 0.0,
+  "name": "default",
+  "center": [7.35, 49.8],
+  "zoom": 8,
+  "metadata": {
+    "ldproxy:layerControl": {
+      "entries": 
+    [
+      {
+        "id": "Basemap",
+        "type": "radio-group",
+        "entries": ["Grau", "Farbig"]
+      },
+      {
+        "id": "Vineyards",
+        "type": "merge-group",
+        "sourceLayer": "vineyards"
+      }
+    ]
+  }
+  },
+  "sources": {
+    "vineyards": {
+      "type": "vector"                                       ,
+      "url" : "{serviceUrl}/tiles/WebMercatorQuad?f=tilejson"
+    },
+    "Grau": {
+      "type": "raster",
+      "tileSize": 256,
+      "tiles": [
+        "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png"
+      ],
+      "attribution": "&copy; basemap.de / BKG",
+      "maxzoom": 19
+    },
+    "Farbig": {
+      "type": "raster",
+      "tileSize": 256,
+      "tiles": [
+        "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png"
+      ],
+      "attribution": "&copy; basemap.de / BKG",
+      "maxzoom": 19
+    }
+  },
+  "glyphs": "https://sg.geodatenzentrum.de/gdz_basemapde_vektor/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "Grau",
+      "type": "raster",
+      "source": "Grau",
+      "layout": {"visibility": "visible"}
+    },
+    {
+      "id": "Farbig",
+      "type": "raster",
+      "source": "Farbig",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "vineyards_fill",
+      "type": "fill",
+      "source": "vineyards",
+      "source-layer": "vineyards",
+      "layout": {"visibility": "visible"},
+      "paint": { "fill-color": ["rgb", 0, 255, 0], "fill-opacity": 0.75 }
+    },
+    {
+      "id": "vineyards_line",
+      "type": "line",
+      "source": "vineyards",
+      "source-layer": "vineyards",
+      "layout": {"visibility": "visible"},
+      "paint": {"line-color": "#408040", "line-width": 0.5}
+    },
+    {
+      "id": "vineyards_symbol",
+      "type": "symbol",
+      "source": "vineyards",
+      "source-layer": "vineyards",
+      "layout": {
+        "text-field": [ "step", ["zoom"], "", 12, ["get", "name"] ],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": 10,
+        "text-padding": 18,
+        "text-justify": "auto",
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": "#006000",
+        "text-halo-width": 2,
+        "text-halo-blur": 2
+      }
+    }
+  ]
+}

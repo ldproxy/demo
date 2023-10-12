@@ -1,0 +1,11 @@
+---
+id: DatenquelleLage
+label: Datenquelle Lage
+entries:
+  "1000": Liegenschaftskataster
+  "1100": Liegenschaftskataster (Berechnung)
+  "1200": Liegenschaftskataster (Digitalisierung)
+  "1300": Liegenschaftskataster (Top. Aufnahme)
+  "2300": Geometrisches Mittel
+  "2000": Photogrammetrisch ermittelt
+  "3000": Topographische Landesaufnahme

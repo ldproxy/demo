@@ -13,13 +13,14 @@ services:
       - /var/lib/postgresql/data
 
   ldproxy:
-    image: iide/ldproxy:next
+    image: iide/ldproxy:next 
     container_name: ldproxy_demo
     ports:
       - "7080:7080"
     volumes:
-      - "$PWD:/ldproxy/data"
+      - .:/ldproxy/data
     environment:
       - EXTERNAL_URL=http://localhost:7080/rest/services
       - ENABLE_ZOOMSTACK=false
       - ENABLE_COLOGNE=false
+      - DB_HOST=host.docker.internal
