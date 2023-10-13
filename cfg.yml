@@ -15,3 +15,13 @@ logging:
       timeZone: Europe/Berlin
   loggers:
     de.ii: INFO
+auth:
+  providers:
+    oidc-ldproxy-integrated:
+      type: OIDC
+      endpoint: https://auth.ldproxy.net/realms/demo/.well-known/openid-configuration
+      login:
+        clientId: ldproxy-integrated
+      claims:
+        userName: preferred_username
+        permissions: resource_access.ldproxy-integrated.roles

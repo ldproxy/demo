@@ -1,13 +1,16 @@
 
 .DS_Store
-cache
-tmp
-proj
-api-resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles
-api-resources/features/OS_Open_Zoomstack.gpkg
-api-resources/features/*.gpkg-journal
-api-resources/features/*.gpkg-shm
-api-resources/features/*.gpkg-wal
-store/overrides/
 .backup
+tmp
+entities/overrides/
+resources/tiles/*/cache_dyn
+resources/tiles/*/cache_imm
+resources/jwt
+resources/proj
+resources/tiles3d
+resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles
+resources/features/OS_Open_Zoomstack.gpkg
+resources/features/*.gpkg-journal
+resources/features/*.gpkg-shm
+resources/features/*.gpkg-wal
 \!*

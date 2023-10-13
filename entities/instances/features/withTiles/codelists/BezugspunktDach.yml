@@ -1,0 +1,12 @@
+---
+id: BezugspunktDach
+label: Bezugspunkt Dach
+entries:
+  "1000": First
+  "2000": Mittelwert
+  "2100": Arithmetrisches Mittel
+  "2200": Median
+  "2300": Geometrisches Mittel
+  "3000": Traufe
+  "4000": Defaulthöhe
+  "9998": Nach Quellenlage nicht zu spezifizieren

@@ -1,0 +1,622 @@
+---
+id: strassen
+createdAt: 1616851635946
+lastModified: 1697133220402
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  dialect: GPKG
+  database: strassennrw.gpkg
+sourcePathDefaults:
+  primaryKey: fid
+  sortKey: fid
+types:
+  abschnitteaeste:
+    sourcePath: /abschnitteaeste_line
+    type: OBJECT
+    label: Abschnitte und Äste
+    description: "Als Abschnitt wird ein gerichteter Teil des Straßennetzes bezeichnet, der zwischen zwei aufeinander folgenden Netzknoten liegt. Er wird durch die in den Netzknoten festgelegten Nullpunkte begrenzt.<br>Als Ast wird der Teil des Straßennetzes bezeichnet, der die Abschnitte untereinander verkehrlich verknüpft und deshalb Teil des Netzknotens ist. Er wird durch die im Netzknoten festgelegten Nullpunkte begrenzt. Eine Festlegung von Ästen erfolgt nur, wenn sie Bestandteil des aufzunehmenden Straßennetzes sind.<br>Weitere Begriffsdefinition siehe: <a href=\"https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf\" target=\"_blank\">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>"
+    properties:
+      kennung:
+        sourcePath: abs
+        type: STRING
+        role: ID
+        label: Kennung
+        description: 16-stellige Kennung des Abschnittes oder Astes
+        constraints:
+          regex: "^[0-9]{7}[A-Z][0-9]{7}[A-Z]$"
+      strasse:
+        type: OBJECT
+        objectType: Strasse
+        label: Straße
+        properties:
+          bez:
+            sourcePath: strbez
+            type: STRING
+            label: Straßenbezeichnung
+          klasse:
+            sourcePath: strkl
+            type: STRING
+            label: Straßenklasse
+            constraints:
+              enum:
+              - A
+              - B
+              - L
+              - K
+          nummer:
+            sourcePath: strnr
+            type: INTEGER
+            label: Straßennummer
+            constraints:
+              min: 1.0
+              max: 9999.0
+          zusatz:
+            sourcePath: strzus
+            type: STRING
+            label: Buchstabenzusatz
+            description: Buchstabenzusatz zur Straßennummer
+            constraints:
+              regex: "^[A-Z]$"
+      absnr:
+        sourcePath: absnr
+        type: STRING
+        label: Abschnittsnummer
+      absast:
+        sourcePath: absast
+        type: STRING
+        label: Art
+        description: Art des Abschnittes oder Astes
+        constraints:
+          enum:
+          - Abschnitt
+          - Ast
+      statanf:
+        sourcePath: statanf
+        type: INTEGER
+        label: Station am Anfang
+        description: Station am Anfang des Abschnittes oder Astes
+      laenge_m:
+        sourcePath: laenge
+        type: INTEGER
+        label: "Länge [m]"
+        description: Länge des Abschnittes oder Astes (m)
+        constraints:
+          min: 0.0
+      vwbez:
+        type: OBJECT
+        objectType: Verwaltungsbezirk
+        label: Verwaltungsbezirk der Straße
+        description: Verwaltungsbezirk der Straße
+        properties:
+          name:
+            sourcePath: vwbez
+            type: STRING
+            label: Name
+          knz:
+            sourcePath: vwbezknz
+            type: STRING
+            label: Kennziffer
+      netzstand:
+        sourcePath: netzstand
+        type: DATETIME
+        role: PRIMARY_INSTANT
+        label: Datum des Netzstichtages
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+      unfaelle:
+        sourcePath: "[abs=abs]unfaelle_point/fid"
+        type: FEATURE_REF_ARRAY
+        label: Unfälle
+        description: Unfälle auf dem Abschnitt oder Ast
+        refType: unfaelle
+  netzknoten:
+    sourcePath: /netzknoten_point
+    type: OBJECT
+    label: Netzknoten
+    description: "Netzknoten sind sämtliche plangleichen (höhengleichen) und planfreien (höhenungleichen) Knotenpunkte, die sich aus der verkehrlichen Verknüpfung zweier oder mehrerer Straßen des aufzunehmenden Straßennetzes untereinander ergeben. In Sonderfällen können zusätzliche Netzknoten erforderlich werden.<br>Weitere Begriffsdefinition siehe: <a href=\"https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf\" target=\"_blank\">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>"
+    properties:
+      nknr:
+        sourcePath: nknr
+        type: STRING
+        role: ID
+        label: Netzknotennummer
+        constraints:
+          regex: "^[0-9]{7}$"
+      nkname:
+        sourcePath: nkname
+        type: STRING
+        label: Netzknotenname
+      nkart:
+        type: OBJECT
+        objectType: Netzknotenart
+        label: Netzknotenart
+        properties:
+          bez:
+            sourcePath: nkart
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - plangleich (höhengleich)
+              - planfrei (höhenungleich)
+          knz:
+            sourcePath: nkartknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - 1
+              - 2
+      nkpktf:
+        type: OBJECT
+        objectType: Knotenpunktform
+        label: Knotenpunktform
+        properties:
+          bez:
+            sourcePath: nkpktf
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - Einmündung oder Kreuzung von 2-streifigen Straßen
+              - planfreie Kreuzung von 2-streifigen oder 2-bahnigen Straßen
+              - Aufgeweitete Einmündung oder Kreuzung mit mindestens einer 2-bahnigen Straße
+              - "großer Kreisverkehrsplatz, d>30m"
+              - "kleiner Kreisverkehrsplatz, d<30m (ohne Minikreisel)"
+              - Minikreisel
+          knz:
+            sourcePath: nkpktfknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - '01'
+              - '04'
+              - '07'
+              - '08'
+              - '09'
+              - 15
+      asart:
+        type: OBJECT
+        objectType: Knotenpunktform
+        label: Knotenpunktform
+        properties:
+          bez:
+            sourcePath: asart
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - Autobahndreieck
+              - Autobahnkreuz
+              - Anschluss (Anfang bzw. Ende der Autobahn)
+              - Anschlussstelle
+              - Bundesgrenze BRD/Belgien
+              - Bundesgrenze BRD/Niederlande
+              - Kreisgrenze
+              - Landesgrenze NRW/Hessen
+              - Landesgrenze NRW/Niedersachsen
+              - Landesgrenze NRW/Rheinland-Pfalz
+              - Grenze LWL / LVR
+              - Richtungsanschluss
+          knz:
+            sourcePath: asartknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - AD
+              - AK
+              - AN
+              - AS
+              - BG-B
+              - BG-NL
+              - KG
+              - LG-HE
+              - LG-NI
+              - LG-RP
+              - LV
+              - RA
+      netzstand:
+        sourcePath: netzstand
+        type: DATETIME
+        role: PRIMARY_INSTANT
+        label: Datum des Netzstichtages
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  nullpunkte:
+    sourcePath: /nullpunkte_point
+    type: OBJECT
+    label: Nullpunkte
+    description: "Die Gliederung des gesamten Straßennetzes in Abschnitte und Äste erfordert eine exakte und eindeutige Festlegung ihrer Anfangs- und Endpunkte an denen die Stationierung beginnt und bzw. endet. Diese Anfangs- und Endpunkte werden als Nullpunkte bezeichnet und sind einem Netzknoten zugeordnet.<br>Weitere Begriffsdefinition siehe: <a href=\"https://www.bast.de/DE/Publikationen/Regelwerke/Verkehrstechnik/Downloads/V-asb-kernsystem.pdf\" target=\"_blank\">Anweisung Straßeninformationsbank (ASB), Segment: Kernsystem</a>"
+    properties:
+      nk:
+        sourcePath: nk
+        type: STRING
+        role: ID
+        label: Kennung
+        description: Netzknotennummer mit Nullpunktsbuchstabenzusatz
+        constraints:
+          regex: "^[0-9]{7}[A-Z]$"
+      tkblattnr:
+        sourcePath: tkblattnr
+        type: STRING
+        label: TK-Blattnummer
+        constraints:
+          regex: "^[0-9]{4}$"
+      nknr:
+        sourcePath: nknr
+        type: INTEGER
+        label: Netzknotennummer
+        constraints:
+          min: 1.0
+          max: 999.0
+      npbuchs:
+        sourcePath: npbuchs
+        type: STRING
+        label: Nullpunktsbuchstabenzusatz
+        constraints:
+          regex: "^[A-Z]$"
+      nkname:
+        sourcePath: nkname
+        type: STRING
+        label: Netzknotenname
+      npart:
+        type: OBJECT
+        objectType: Nullpunktart
+        label: Art des Nullpunktes
+        properties:
+          bez:
+            sourcePath: npart
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - fiktiver Nullpunkt
+              - zentraler Nullpunkt
+              - Nullpunkt
+          knz:
+            sourcePath: npartknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - 0
+              - 1
+              - 2
+      klassif:
+        sourcePath: klassif
+        type: BOOLEAN
+        label: Klassifiziert?
+      netzstand:
+        sourcePath: netzstand
+        type: DATETIME
+        role: PRIMARY_INSTANT
+        label: Datum des Netzstichtages
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  unfaelle:
+    sourcePath: /unfaelle_point
+    type: OBJECT
+    label: Unfälle
+    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
+    properties:
+      fid:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+        label: Objektidentifikator
+        scope: QUERIES
+      unfzeit:
+        sourcePath: unfzeit
+        type: DATETIME
+        role: PRIMARY_INSTANT
+        label: Unfallzeitpunkt
+      hauptunft:
+        sourcePath: hauptunft
+        type: STRING
+        label: Hauptunfalltyp
+        constraints:
+          enum:
+          - Abbiegeunfall
+          - Fahrunfall
+          - Einbiege-/Kreuzungs-Unfall
+          - Längsunfall
+          - Unfall durch Straße überschreitenden Fußgänger
+          - Sonstiger Unfall
+          - Unfall durch haltendes oder parkendes Fahrzeug
+      unfart:
+        sourcePath: unfart
+        type: STRING
+        label: Art des Unfalls
+        constraints:
+          enum:
+          - "Zusammenstoß mit Fahrzeug, das einbiegt oder kreuzt"
+          - Abkommen von Fahrbahn nach links
+          - "Zusammenstoß mit Fahrzeug, das entgegenkommt"
+          - "Zusammenstoß mit Fahrzeug, das vorausfährt oder wartet"
+          - Abkommen von Fahrbahn nach rechts
+          - Zusammenstoß zwischen Fahrzeug und Fußgänger
+          - "Zusammenstoß mit Fahrzeug, das anfährt, anhält, im ruhenden Verkehr steht"
+          - Unfall anderer Art
+          - "Zusammenstoß mit Fahrzeug, das seitlich in gleicher Richtung fährt"
+      unfkat:
+        type: OBJECT
+        objectType: Unfallkategorie
+        label: Unfallkategorie
+        properties:
+          bez:
+            sourcePath: unfkat
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - Unfall mit Getöteten
+              - Unfall mit Schwerverletzten
+              - Unfall mit Leichtverletzten
+              - Unfall mit schwerem Sachschaden
+          knz:
+            sourcePath: unfkatknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - 1
+              - 2
+              - 3
+              - 4
+      strzust1:
+        sourcePath: strzust1
+        type: STRING
+        label: 1. Straßenzustand
+        constraints:
+          enum:
+          - Trocken
+          - Nass/Feucht
+          - Winterglatt
+          - "Schlüpfrigkeit (Öl, Dung, Laub usw.)"
+      strzust2:
+        sourcePath: strzust2
+        type: STRING
+        label: 2. Straßenzustand
+        constraints:
+          enum:
+          - Trocken
+          - Nass/Feucht
+          - Winterglatt
+          - "Schlüpfrigkeit (Öl, Dung, Laub usw.)"
+      abs:
+        sourcePath: abs
+        type: FEATURE_REF
+        label: Abschnitt/Ast
+        description: 16-stellige Kennung des Abschnittes oder Astes
+        refType: abschnitteaeste
+      stat:
+        sourcePath: stat
+        type: FLOAT
+        label: "Station [m]"
+        description: "Station auf dem Abschnitt/Ast [m]"
+        constraints:
+          min: 0.0
+      fahrtri:
+        sourcePath: fahrtri
+        type: STRING
+        label: Fahrtrichtung
+      netzstand:
+        sourcePath: netzstand
+        type: DATETIME
+        label: Datum des Netzstichtages
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  unfaelle2:
+    sourcePath: /unfaelle_point
+    type: OBJECT
+    label: Unfälle (alternative Darstellung)
+    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
+    properties:
+      fid:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+        label: Objektidentifikator
+        scope: QUERIES
+      unfzeit:
+        sourcePath: unfzeit
+        type: DATETIME
+        role: PRIMARY_INSTANT
+        label: Unfallzeitpunkt
+      hauptunft:
+        sourcePath: hauptunft
+        type: STRING
+        label: Hauptunfalltyp
+        constraints:
+          enum:
+          - Abbiegeunfall
+          - Fahrunfall
+          - Einbiege-/Kreuzungs-Unfall
+          - Längsunfall
+          - Unfall durch Straße überschreitenden Fußgänger
+          - Sonstiger Unfall
+          - Unfall durch haltendes oder parkendes Fahrzeug
+      unfart:
+        sourcePath: unfart
+        type: STRING
+        label: Art des Unfalls
+        constraints:
+          enum:
+          - "Zusammenstoß mit Fahrzeug, das einbiegt oder kreuzt"
+          - Abkommen von Fahrbahn nach links
+          - "Zusammenstoß mit Fahrzeug, das entgegenkommt"
+          - "Zusammenstoß mit Fahrzeug, das vorausfährt oder wartet"
+          - Abkommen von Fahrbahn nach rechts
+          - Zusammenstoß zwischen Fahrzeug und Fußgänger
+          - "Zusammenstoß mit Fahrzeug, das anfährt, anhält, im ruhenden Verkehr steht"
+          - Unfall anderer Art
+          - "Zusammenstoß mit Fahrzeug, das seitlich in gleicher Richtung fährt"
+      unfkat:
+        type: OBJECT
+        objectType: Unfallkategorie
+        label: Unfallkategorie
+        properties:
+          bez:
+            sourcePath: unfkat
+            type: STRING
+            label: Bezeichnung
+            constraints:
+              enum:
+              - Unfall mit Getöteten
+              - Unfall mit Schwerverletzten
+              - Unfall mit Leichtverletzten
+              - Unfall mit schwerem Sachschaden
+          knz:
+            sourcePath: unfkatknz
+            type: STRING
+            label: Kennziffer
+            constraints:
+              enum:
+              - 1
+              - 2
+              - 3
+              - 4
+      strzust1:
+        sourcePath: strzust1
+        type: STRING
+        label: 1. Straßenzustand
+        constraints:
+          enum:
+          - Trocken
+          - Nass/Feucht
+          - Winterglatt
+          - "Schlüpfrigkeit (Öl, Dung, Laub usw.)"
+      strzust2:
+        sourcePath: strzust2
+        type: STRING
+        label: 2. Straßenzustand
+        constraints:
+          enum:
+          - Trocken
+          - Nass/Feucht
+          - Winterglatt
+          - "Schlüpfrigkeit (Öl, Dung, Laub usw.)"
+      abs:
+        sourcePath: "[abs=abs]abschnitteaeste_line"
+        type: OBJECT
+        objectType: AbschnittAst
+        label: Abschnitt/Ast
+        description: 16-stellige Kennung des Abschnittes oder Astes
+        properties:
+          kennung:
+            sourcePath: abs
+            type: STRING
+            label: Kennung
+            description: 16-stellige Kennung des Abschnittes oder Astes
+            constraints:
+              regex: "^[0-9]{7}[A-Z][0-9]{7}[A-Z]$"
+          strasse:
+            type: OBJECT
+            objectType: Strasse
+            label: Straße
+            properties:
+              bez:
+                sourcePath: strbez
+                type: STRING
+                label: Straßenbezeichnung
+              klasse:
+                sourcePath: strkl
+                type: STRING
+                label: Straßenklasse
+                constraints:
+                  enum:
+                  - A
+                  - B
+                  - L
+                  - K
+              nummer:
+                sourcePath: strnr
+                type: INTEGER
+                label: Straßennummer
+                constraints:
+                  min: 1.0
+                  max: 9999.0
+              zusatz:
+                sourcePath: strzus
+                type: STRING
+                label: Buchstabenzusatz
+                description: Buchstabenzusatz zur Straßennummer
+                constraints:
+                  regex: "^[A-Z]$"
+          absnr:
+            sourcePath: absnr
+            type: STRING
+            label: Abschnittsnummer
+          absast:
+            sourcePath: absast
+            type: STRING
+            label: Art
+            description: Art des Abschnittes oder Astes
+            constraints:
+              enum:
+              - Abschnitt
+              - Ast
+          statanf:
+            sourcePath: statanf
+            type: INTEGER
+            label: Station am Anfang
+            description: Station am Anfang des Abschnittes oder Astes
+          laenge_m:
+            sourcePath: laenge
+            type: INTEGER
+            label: "Länge [m]"
+            description: Länge des Abschnittes oder Astes (m)
+            constraints:
+              min: 0.0
+          vwbez:
+            type: OBJECT
+            objectType: Verwaltungsbezirk
+            label: Verwaltungsbezirk der Straße
+            description: Verwaltungsbezirk der Straße
+            properties:
+              name:
+                sourcePath: vwbez
+                type: STRING
+                label: Name
+              knz:
+                sourcePath: vwbezknz
+                type: STRING
+                label: Kennziffer
+      stat:
+        sourcePath: stat
+        type: FLOAT
+        label: "Station [m]"
+        description: "Station auf dem Abschnitt/Ast [m]"
+        constraints:
+          min: 0.0
+      fahrtri:
+        sourcePath: fahrtri
+        type: STRING
+        label: Fahrtrichtung
+      netzstand:
+        sourcePath: netzstand
+        type: DATETIME
+        label: Datum des Netzstichtages
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT

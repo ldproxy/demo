@@ -22,9 +22,10 @@ License: [Datenlizenz Deutschland - Zero – Version 2.0](https://www.govdata.de
 
 This data source requires two docker containers. In addition to ldproxy, we also need a PostgreSQL/PostGIS database. This complicates the setup and this data source has therefore been disabled by default. To include this data source, execute the following steps:
 
-* Move `cologne_lod2/provider/cologne_lod2.yml` to `store/entities/features/withTiles/providers/cologne_lod2.yml`.
-* Move `cologne_lod2/service/cologne_lod2.yml` to `store/entities/features/withTiles/services/cologne_lod2.yml`.
-* Set `ENABLE_ZOOMSTACK` in `docker-compose.yml` to `true`.
+* Move `cologne_lod2/cologne_lod2.sql.gz` to `db/cologne_lod2.sql.gz`.
+* Move `cologne_lod2/provider/cologne_lod2.yml` to `entities/features/withTiles/providers/cologne_lod2.yml`.
+* Move `cologne_lod2/service/cologne_lod2.yml` to `entities/features/withTiles/services/cologne_lod2.yml`.
+* Set `ENABLE_COLOGNE` in `docker-compose.yml` to `true`.
 
 To start ldproxy:
 

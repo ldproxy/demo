@@ -1,0 +1,74 @@
+---
+id: cshapes
+createdAt: 1616851636763
+lastModified: 1697133220380
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 4326
+  forceAxisOrder: LON_LAT
+connectionInfo:
+  dialect: GPKG
+  database: CShapes-2.0.gpkg
+sourcePathDefaults:
+  primaryKey: fid
+  sortKey: fid
+types:
+  boundary:
+    sourcePath: /CShapes
+    type: OBJECT
+    label: Historical Country Boundaries
+    description: "Core territories of the given country, excluding colonies and other dependent territories, between the start and end date."
+    properties:
+      fid:
+        sourcePath: fid
+        type: INTEGER
+        role: ID
+        label: Unique identifier
+        scope: QUERIES
+      name:
+        sourcePath: cntry_name
+        type: STRING
+        label: Country name
+      area_km2:
+        sourcePath: area
+        type: FLOAT
+        label: Area (km²)
+        description: "The polygon area in square kilometers, computed using an Eckert VI projection."
+      capname:
+        sourcePath: capname
+        type: STRING
+        label: Country capital
+        description: The name of the country capital.
+      caplong:
+        sourcePath: caplong
+        type: FLOAT
+        label: Longitude of the capital
+        description: "Longitude of the capital, in decimal degrees"
+      caplat:
+        sourcePath: caplat
+        type: FLOAT
+        label: Latitude of the capital
+        description: "Latitude of the capital, in decimal degrees"
+      gwsdate:
+        sourcePath: gwsdate
+        type: DATE
+        role: PRIMARY_INTERVAL_START
+        label: Start date
+        description: Start date of the entry.
+      gwedate:
+        sourcePath: gwedate
+        type: DATE
+        role: PRIMARY_INTERVAL_END
+        label: End date
+        description: End date of the entry.
+      gwcode:
+        sourcePath: gwcode
+        type: INTEGER
+        label: Source identifier
+        description: Numeric identifier code in the source data.
+      geometry:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
