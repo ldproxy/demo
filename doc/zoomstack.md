@@ -21,7 +21,7 @@ Attribution: 'Contains OS data © Crown copyright and database right 2023.'
 To enable the API, follow these steps:
 
 * Go to https://osdatahub.os.uk/downloads/open/OpenZoomstack.
-* Select "GeoPackage" as the data format and click the download link. Store the downloaded file at the path `api-resources/features/OS_Open_Zoomstack.gpkg`.
-* Select "Vector Tiles (MBTiles)" as the data format and click the download link. Store the downloaded file at the path `api-resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles`.
-* Download the Stylesheets and associated resources from https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets and copy those to `api-resources/styles/zoomstack` and `api-resources/resources/zoomstack`.
+* Select "GeoPackage" as the data format and click the download link. Store the downloaded file at the path `resources/features/OS_Open_Zoomstack.gpkg`.
+* Select "Vector Tiles (MBTiles)" as the data format and click the download link. Store the downloaded file at the path `resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles`.
+* Download the Stylesheets and associated resources from https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets and copy those to `resources/styles/zoomstack` and `resources/api-resources/zoomstack`.
 * Set `ENABLE_ZOOMSTACK` in `docker-compose.yml` to `true`.
