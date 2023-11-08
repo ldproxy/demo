@@ -17,6 +17,7 @@ types:
     sourcePath: /airports
     type: OBJECT
     label: Airports
+    objectType: Airport
     description: A centre point for all major airports including a name.
     properties:
       id:
@@ -37,6 +38,7 @@ types:
     sourcePath: /boundaries
     type: OBJECT
     label: Boundaries
+    objectType: Boundary
     description: National boundary lines between England - Scotland and England - Wales.
     properties:
       id:
@@ -60,6 +62,7 @@ types:
     sourcePath: /contours
     type: OBJECT
     label: Contours
+    objectType: Contour
     description: These contours lines have a 10-metre interval with an index every 50 metres. Each contour contains a value.
     properties:
       id:
@@ -88,6 +91,7 @@ types:
     sourcePath: /district_buildings
     type: OBJECT
     label: District Buildings
+    objectType: DistrictBuilding
     description: Generalised building footprints at district resolution.
     properties:
       id:
@@ -104,6 +108,7 @@ types:
     sourcePath: /etl
     type: OBJECT
     label: ETL
+    objectType: ETL
     description: Electricity Transmission Lines.
     properties:
       id:
@@ -120,6 +125,7 @@ types:
     sourcePath: /foreshore
     type: OBJECT
     label: Foreshore
+    objectType: Foreshore
     description: These polygons depict the part of the shore or beach which lies between the Mean Low Water Mark and Mean High Water Mark.
     properties:
       id:
@@ -136,6 +142,7 @@ types:
     sourcePath: /greenspace
     type: OBJECT
     label: Greenspace
+    objectType: Greenspace
     description: Polygon features representing the extent of places such as parks and sports facilities that are likely to be accessible to the public.
     properties:
       id:
@@ -168,6 +175,7 @@ types:
     sourcePath: /land
     type: OBJECT
     label: Land
+    objectType: Land
     description: This layer depicts the shape of Great Britain.
     properties:
       id:
@@ -184,6 +192,7 @@ types:
     sourcePath: /local_buildings
     type: OBJECT
     label: Local Buildings
+    objectType: LocalBuilding
     description: Generalised building footprints at local resolution. The buildings have a unique identifier which can be used to style features distinctly. The identifier will not be persistent between product versions and therefore there will be no change history information for a feature.
     properties:
       id:
@@ -204,6 +213,7 @@ types:
     sourcePath: /names
     type: OBJECT
     label: Names
+    objectType: Name
     description: Use this point layer to render contextual labels on your map.
     properties:
       id:
@@ -268,6 +278,7 @@ types:
     sourcePath: /national_parks
     type: OBJECT
     label: National Parks
+    objectType: NationalPark
     description: Theses polygons depict the extent of the 15 National Parks in Great Britain.
     properties:
       id:
@@ -284,6 +295,7 @@ types:
     sourcePath: /rail
     type: OBJECT
     label: Rail
+    objectType: Rail
     description: "Lines representing the railway network. They are broken where they pass under bridges, buildings or other obstructing detail."
     properties:
       id:
@@ -309,7 +321,8 @@ types:
   railway_stations:
     sourcePath: /railway_stations
     type: OBJECT
-    label: Railway Stations
+    label: RailwayStation
+    objectType: Railway Stations
     description: This layer contains a point for all stations and includes a name.
     properties:
       id:
@@ -342,6 +355,7 @@ types:
     sourcePath: /roads_local
     type: OBJECT
     label: Local Roads
+    objectType: LocalRoad
     description: Lines representing the road network. A road is defined as a metalled way for vehicles.
     properties:
       id:
@@ -384,6 +398,7 @@ types:
     sourcePath: /roads_national
     type: OBJECT
     label: National Roads
+    objectType: NationalRoad
     description: Lines representing the road network. A road is defined as a metalled way for vehicles.
     properties:
       id:
@@ -425,6 +440,7 @@ types:
     sourcePath: /roads_regional
     type: OBJECT
     label: Regional Roads
+    objectType: RegionalRoad
     description: Lines representing the road network. A road is defined as a metalled way for vehicles.
     properties:
       id:
@@ -467,6 +483,7 @@ types:
     sourcePath: /sites
     type: OBJECT
     label: Sites
+    objectType: Site
     description: Polygon features that represent the area or extent of certain types of function or activity.
     properties:
       id:
@@ -494,6 +511,7 @@ types:
     sourcePath: /surfacewater
     type: OBJECT
     label: Surface Water
+    objectType: SurfaceWater
     description: These polygons represent inland water bodies that are sufficiently wide enough to be captured as an area.
     properties:
       id:
@@ -519,6 +537,7 @@ types:
     sourcePath: /urban_areas
     type: OBJECT
     label: Urban Areas
+    objectType: UrbanArea
     description: These are generalised polygons representing built-up areas for use at smaller scales.
     properties:
       id:
@@ -543,6 +562,7 @@ types:
     sourcePath: /waterlines
     type: OBJECT
     label: Waterlines
+    objectType: Waterline
     description: "Lines representing rivers, canals, drains and other linear bodies of water."
     properties:
       id:
@@ -571,6 +591,7 @@ types:
     sourcePath: /woodland
     type: OBJECT
     label: Woodland
+    objectType: Woodland
     description: "The polygons represent areas of trees: coniferous, non-coniferous and mixed."
     properties:
       id:
