@@ -24,4 +24,4 @@ auth:
         clientId: ldproxy-integrated
       claims:
         userName: preferred_username
-        permissions: resource_access.ldproxy-integrated.roles
+        permissions: resource_access.roles
