@@ -91,6 +91,7 @@ collections:
       - statanf
       - laenge_m
       - vwbez.knz
+      - unfaelle
     - buildingBlock: SORTING
       included:
       - kennung
@@ -241,15 +242,16 @@ collections:
       - geometry
       - unfzeit
       - netzstand
-      - abs.title
       - hauptunft
       - unfart
       - unfkat.bez
       - strzust1
       - strzust2
+      - abs
       - stat
       - fahrtri
       - unfkat.knz
+      - strassenklasse
     - buildingBlock: SORTING
       included:
       - stat
@@ -258,6 +260,7 @@ collections:
       - unfart
       - strzust1
       - strzust2
+      - abs
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{hauptunft}} ({{unfkat.bez}})"
       removeZoomLevelConstraints: true
