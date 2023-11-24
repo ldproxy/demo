@@ -24,7 +24,7 @@ types:
     merge:
     - schema: '#/fragments/city_object'
       properties:
-        gml_id:
+        id:
           role: ID
         bbox:
           role: PRIMARY_GEOMETRY
@@ -44,7 +44,7 @@ fragments:
   city_object:
     sourcePath: "[id=id]cityobject"
     properties:
-      gml_id:
+      id:
         sourcePath: gmlid
         type: STRING
         label: ALKIS-ID
