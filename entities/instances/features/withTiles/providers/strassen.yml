@@ -77,11 +77,13 @@ types:
       statanf:
         sourcePath: statanf
         type: INTEGER
+        unit: m
         label: Station am Anfang
         description: Station am Anfang des Abschnittes oder Astes
       laenge_m:
         sourcePath: laenge
         type: INTEGER
+        unit: m
         label: "Länge [m]"
         description: Länge des Abschnittes oder Astes (m)
         constraints:
@@ -417,8 +419,9 @@ types:
       stat:
         sourcePath: stat
         type: FLOAT
+        unit: m
         label: "Station [m]"
-        description: "Station auf dem Abschnitt/Ast [m]"
+        description: "Station auf dem Abschnitt/Ast in Metern"
         constraints:
           min: 0.0
       strassenklasse:
@@ -600,11 +603,13 @@ types:
           statanf:
             sourcePath: statanf
             type: INTEGER
+            unit: m
             label: Station am Anfang
             description: Station am Anfang des Abschnittes oder Astes
           laenge_m:
             sourcePath: laenge
             type: INTEGER
+            unit: m
             label: "Länge [m]"
             description: Länge des Abschnittes oder Astes (m)
             constraints:
@@ -626,8 +631,9 @@ types:
       stat:
         sourcePath: stat
         type: FLOAT
+        unit: m
         label: "Station [m]"
-        description: "Station auf dem Abschnitt/Ast [m]"
+        description: "Station auf dem Abschnitt/Ast in Metern"
         constraints:
           min: 0.0
       fahrtri:
