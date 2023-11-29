@@ -111,11 +111,21 @@ types:
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
       unfaelle:
-        sourcePath: "[abs=abs]unfaelle_point/fid"
+        sourcePath: "[abs=abs]unfaelle_point"
         type: FEATURE_REF_ARRAY
         label: Unfälle
         description: Unfälle auf dem Abschnitt oder Ast
         refType: unfaelle
+        properties:
+          id: 
+            type: INTEGER
+            sourcePath: fid
+          title: 
+            type: STRING
+            sourcePath: unfzeit
+          type: 
+            type: STRING
+            constantValue: unfaelle            
   netzknoten:
     sourcePath: /netzknoten_point
     type: OBJECT
@@ -411,6 +421,19 @@ types:
         description: "Station auf dem Abschnitt/Ast [m]"
         constraints:
           min: 0.0
+      strassenklasse:
+        sourcePath: "[abs=abs]abschnitteaeste_line/strkl"
+        type: STRING
+        label: Straßenklasse
+        constraints:
+          enum:
+          - A
+          - B
+          - L
+          - K
+        excludedScopes:
+        - RETURNABLE
+        - RECEIVABLE
       fahrtri:
         sourcePath: fahrtri
         type: STRING
