@@ -23,9 +23,11 @@ To enable the API, follow these steps:
 * Go to https://osdatahub.os.uk/downloads/open/OpenZoomstack.
 * Select "GeoPackage" as the data format and click the download link. Store the downloaded file at the path `resources/features/OS_Open_Zoomstack.gpkg`.
 * Select "Vector Tiles (MBTiles)" as the data format and click the download link. Store the downloaded file at the path `resources/tiles/zoomstack/OS_Open_Zoomstack.mbtiles`.
-* Move `zoomstack/provider/zoomstack.yml` to `entities/instances/features/withTiles/providers/zoomstack.yml`.
-* Move `zoomstack/provider/zoomstack-tiles.yml` to `entities/instances/features/withTiles/providers/zoomstack-tiles.yml`.
-* Move `zoomstack/service/zoomstack.yml` to `entities/instances/features/withTiles/services/zoomstack.yml`.
+* Copy `zoomstack/provider/zoomstack.yml` to `entities/instances/features/withTiles/providers/zoomstack.yml`.
+* Copy `zoomstack/provider/zoomstack-tiles.yml` to `entities/instances/features/withTiles/providers/zoomstack-tiles.yml`.
+* Copy `zoomstack/service/zoomstack.yml` to `entities/instances/features/withTiles/services/zoomstack.yml`.
 * Set `ENABLE_ZOOMSTACK` in `docker-compose.yml` to `true`.
+
+There is also a script `enable_zoomstack.sh` that executes the last four steps steps. The script `disable_zoomstack.sh` restores the original setting.
 
 Note that the Stylesheets and associated resources from https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets are already included in `values/maplibre-styles/zoomstack`, `resources/other-styles/zoomstack` and `resources/api-resources/zoomstack`.
