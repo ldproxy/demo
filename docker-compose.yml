@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   db:
-    image: postgis/postgis:14-3.3-alpine
+    image: postgis/postgis:15-3.4-alpine
     container_name: db_demo
     command: postgres -c 'max_connections=250'
     environment:
@@ -19,8 +19,12 @@ services:
       - "7080:7080"
     volumes:
       - .:/ldproxy/data
+    depends_on:
+      - db
     environment:
       - EXTERNAL_URL=http://localhost:7080/rest/services
-      - ENABLE_ZOOMSTACK=false
-      - ENABLE_COLOGNE=false
-      - DB_HOST=host.docker.internal
+      - ENABLE_ZOOMSTACK=true
+      - ENABLE_COLOGNE=true
+      # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;
+      # in this case comment out "#/services/db" and "#/services/ldproxy/depends_on"
+      # - DB_HOST=host.docker.internal
