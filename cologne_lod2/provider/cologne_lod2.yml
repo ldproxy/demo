@@ -57,10 +57,14 @@ fragments:
         type: GEOMETRY
         geometryType: POLYGON
         label: Bounding Box
+        constraints:
+          required: true
       creationDate:
         sourcePath: creation_date
         type: DATE
         label: Erzeugungsdatum
+        constraints:
+          required: true
   abstract_building:
     properties:
       measuredHeight:

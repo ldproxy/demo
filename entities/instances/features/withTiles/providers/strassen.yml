@@ -107,17 +107,20 @@ types:
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Datum des Netzstichtages
+        constraints:
+          required: true
       geometry:
         sourcePath: geom
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
       unfaelle:
         sourcePath: "[abs=abs]unfaelle_point"
         type: FEATURE_REF_ARRAY
         label: Unfälle
         description: Unfälle auf dem Abschnitt oder Ast
-        refType: unfaelle
         properties:
           id: 
             type: INTEGER
@@ -241,11 +244,15 @@ types:
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Datum des Netzstichtages
+        constraints:
+          required: true
       geometry:
         sourcePath: geom
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   nullpunkte:
     sourcePath: /nullpunkte_point
     type: OBJECT
@@ -315,11 +322,15 @@ types:
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Datum des Netzstichtages
+        constraints:
+          required: true
       geometry:
         sourcePath: geom
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   unfaelle:
     sourcePath: /unfaelle_point
     type: OBJECT
@@ -331,12 +342,15 @@ types:
         type: INTEGER
         role: ID
         label: Objektidentifikator
-        scope: QUERIES
+        excludedScopes: 
+        - RECEIVABLE
       unfzeit:
         sourcePath: unfzeit
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Unfallzeitpunkt
+        constraints:
+          required: true
       hauptunft:
         sourcePath: hauptunft
         type: STRING
@@ -415,7 +429,7 @@ types:
         type: FEATURE_REF
         label: Abschnitt/Ast
         description: 16-stellige Kennung des Abschnittes oder Astes
-        refType: abschnitteaeste
+        refType: abschnitteaeste 
       stat:
         sourcePath: stat
         type: FLOAT
@@ -450,6 +464,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   unfaelle2:
     sourcePath: /unfaelle_point
     type: OBJECT
@@ -461,12 +477,15 @@ types:
         type: INTEGER
         role: ID
         label: Objektidentifikator
-        scope: QUERIES
+        excludedScopes: 
+        - RECEIVABLE
       unfzeit:
         sourcePath: unfzeit
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Unfallzeitpunkt
+        constraints:
+          required: true
       hauptunft:
         sourcePath: hauptunft
         type: STRING
@@ -649,3 +668,5 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true

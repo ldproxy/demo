@@ -34,6 +34,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   boundaries:
     sourcePath: /boundaries
     type: OBJECT
@@ -58,6 +60,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   contours:
     sourcePath: /contours
     type: OBJECT
@@ -87,6 +91,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   district_buildings:
     sourcePath: /district_buildings
     type: OBJECT
@@ -104,6 +110,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   etl:
     sourcePath: /etl
     type: OBJECT
@@ -121,6 +129,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   foreshore:
     sourcePath: /foreshore
     type: OBJECT
@@ -138,6 +148,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   greenspace:
     sourcePath: /greenspace
     type: OBJECT
@@ -171,6 +183,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   land:
     sourcePath: /land
     type: OBJECT
@@ -188,6 +202,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   local_buildings:
     sourcePath: /local_buildings
     type: OBJECT
@@ -209,6 +225,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   names:
     sourcePath: /names
     type: OBJECT
@@ -274,6 +292,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   national_parks:
     sourcePath: /national_parks
     type: OBJECT
@@ -291,6 +311,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   rail:
     sourcePath: /rail
     type: OBJECT
@@ -318,6 +340,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   railway_stations:
     sourcePath: /railway_stations
     type: OBJECT
@@ -351,6 +375,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
   roads_local:
     sourcePath: /roads_local
     type: OBJECT
@@ -394,6 +420,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   roads_national:
     sourcePath: /roads_national
     type: OBJECT
@@ -436,6 +464,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   roads_regional:
     sourcePath: /roads_regional
     type: OBJECT
@@ -479,6 +509,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   sites:
     sourcePath: /sites
     type: OBJECT
@@ -507,6 +539,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
   surfacewater:
     sourcePath: /surfacewater
     type: OBJECT
@@ -533,6 +567,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   urban_areas:
     sourcePath: /urban_areas
     type: OBJECT
@@ -558,6 +594,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true
   waterlines:
     sourcePath: /waterlines
     type: OBJECT
@@ -587,6 +625,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: LINE_STRING
+        constraints:
+          required: true
   woodland:
     sourcePath: /woodland
     type: OBJECT
@@ -613,3 +653,5 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POLYGON
+        constraints:
+          required: true

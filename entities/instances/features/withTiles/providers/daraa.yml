@@ -37,12 +37,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -95,12 +99,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -153,12 +161,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -213,12 +225,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -275,12 +291,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -344,12 +364,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -411,12 +435,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -487,12 +515,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -564,12 +596,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -640,12 +676,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -725,12 +765,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -819,12 +863,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -887,12 +935,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -945,12 +997,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -994,6 +1050,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       tag1:
         sourcePath: tag1
         type: STRING
@@ -1012,6 +1070,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       tag1:
         sourcePath: tag1
         type: STRING
@@ -1030,6 +1090,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       tag1:
         sourcePath: tag1
         type: STRING
@@ -1057,12 +1119,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1115,12 +1181,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1175,12 +1245,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1245,12 +1319,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1304,12 +1382,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1362,12 +1444,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1430,12 +1516,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1488,12 +1578,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1564,12 +1658,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1637,12 +1735,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1762,12 +1864,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1858,12 +1964,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -1961,12 +2071,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -2037,12 +2151,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_LINE_STRING
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -2104,12 +2222,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: POINT
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING
@@ -2164,12 +2286,16 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
       ZI001_SDV:
         sourcePath: zi001_sdv
         type: DATETIME
         role: PRIMARY_INSTANT
         label: Last Change
         isLastModified: true
+        constraints:
+          required: true
       UFI:
         sourcePath: ufi
         type: STRING

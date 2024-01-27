@@ -30,6 +30,8 @@ types:
         sourcePath: cntry_name
         type: STRING
         label: Country name
+        constraints:
+          required: true
       area_km2:
         sourcePath: area
         type: FLOAT
@@ -40,6 +42,8 @@ types:
         type: STRING
         label: Country capital
         description: The name of the country capital.
+        constraints:
+          required: true
       caplong:
         sourcePath: caplong
         type: FLOAT
@@ -56,12 +60,16 @@ types:
         role: PRIMARY_INTERVAL_START
         label: Start date
         description: Start date of the entry.
+        constraints:
+          required: true
       gwedate:
         sourcePath: gwedate
         type: DATE
         role: PRIMARY_INTERVAL_END
         label: End date
         description: End date of the entry.
+        constraints:
+          required: true
       gwcode:
         sourcePath: gwcode
         type: INTEGER
@@ -72,3 +80,8 @@ types:
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
+          
+
+

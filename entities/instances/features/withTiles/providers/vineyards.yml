@@ -74,8 +74,12 @@ types:
         type: DATE
         role: PRIMARY_INSTANT
         label: Validity date
+        constraints:
+          required: true
       geometry:
         sourcePath: geom
         type: GEOMETRY
         role: PRIMARY_GEOMETRY
         geometryType: MULTI_POLYGON
+        constraints:
+          required: true
