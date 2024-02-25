@@ -6,3 +6,5 @@ api:
   styleEncodings:
   - HTML
   - Mapbox
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true
