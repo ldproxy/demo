@@ -10,3 +10,5 @@ api:
   enabled: false
 - buildingBlock: CRS
   enabled: false
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true

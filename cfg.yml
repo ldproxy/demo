@@ -1,10 +1,10 @@
 ---
-store:
-  mode: READ_ONLY
 server:
   externalUrl: ${EXTERNAL_URL:-https://demo.ldproxy.net}
 backgroundTasks:
   maxThreads: 8
+modules:
+  minMaturity: PROPOSAL
 logging:
   level: OFF
   sqlQueries: OFF

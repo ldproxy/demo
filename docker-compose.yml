@@ -17,12 +17,13 @@ services:
     container_name: ldproxy_demo
     ports:
       - "7080:7080"
+      - "7081:7081"
     volumes:
       - .:/ldproxy/data
     depends_on:
       - db
     environment:
-      - EXTERNAL_URL=http://localhost:7080/rest/services
+      - EXTERNAL_URL=http://localhost:7080
       - ENABLE_ZOOMSTACK=false
       - ENABLE_COLOGNE=false
       # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;

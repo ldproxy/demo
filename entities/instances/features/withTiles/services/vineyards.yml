@@ -86,6 +86,13 @@ collections:
       - village
       - registerId
       - area_ha
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - name
+      - region
+      - subregion
+      - cluster
+      - village
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: '{{searchfield2}}'
       transformations:

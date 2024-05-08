@@ -35,8 +35,10 @@ types:
         sourcePath: rebflache_
         type: STRING
         label: Area in hectares
+        unit: ha
         transformations:
-        - stringFormat: "{{value | replace:'k. A.':'unknown' | replace:',':'.'}}"
+        - nullify: 'k. A.'
+        - stringFormat: "{{value | replace:',':'.'}}"
       region:
         sourcePath: anbaugebie
         type: STRING

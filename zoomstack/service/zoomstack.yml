@@ -67,6 +67,9 @@ collections:
     - buildingBlock: SORTING
       included:
       - name
+    - buildingBlock: TEXT_SEARCH
+      included:
+      - name
   boundaries:
     id: boundaries
     label: boundaries
@@ -77,6 +80,8 @@ collections:
       - geom
       - type
     - buildingBlock: SORTING
+      enabled: false
+    - buildingBlock: TEXT_SEARCH
       enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
@@ -95,6 +100,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - height
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
   district_buildings:
     id: district_buildings
     label: district_buildings
@@ -104,6 +111,8 @@ collections:
       included:
       - geom
     - buildingBlock: SORTING
+      enabled: false
+    - buildingBlock: TEXT_SEARCH
       enabled: false
   etl:
     id: etl
@@ -115,6 +124,8 @@ collections:
       - geom
     - buildingBlock: SORTING
       enabled: false
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
   foreshore:
     id: foreshore
     label: foreshore
@@ -124,6 +135,8 @@ collections:
       included:
       - geom
     - buildingBlock: SORTING
+      enabled: false
+    - buildingBlock: TEXT_SEARCH
       enabled: false
   greenspace:
     id: greenspace
@@ -137,6 +150,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
     - buildingBlock: HTML
@@ -150,6 +165,8 @@ collections:
       included:
       - geom
     - buildingBlock: SORTING
+      enabled: false
+    - buildingBlock: TEXT_SEARCH
       enabled: false
     - buildingBlock: HTML
       defaultStyle: NONE
@@ -165,6 +182,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - uuid
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{uuid}}"
     - buildingBlock: HTML
@@ -193,6 +212,10 @@ collections:
       included:
       - name1
       - name2
+    - buildingBlock: TEXT_SEARCH
+      properties: 
+      - name1
+      - name2
   national_parks:
     id: national_parks
     label: national_parks
@@ -202,6 +225,8 @@ collections:
       included:
       - geom
     - buildingBlock: SORTING
+      enabled: false
+    - buildingBlock: TEXT_SEARCH
       enabled: false
   rail:
     id: rail
@@ -215,6 +240,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
   railway_stations:
@@ -233,6 +260,9 @@ collections:
       defaultStyle: NONE
     - buildingBlock: SORTING
       included:
+      - name
+    - buildingBlock: TEXT_SEARCH
+      properties: 
       - name
   roads_local:
     id: roads_local
@@ -254,6 +284,9 @@ collections:
       included:
       - name
       - number
+    - buildingBlock: TEXT_SEARCH
+      properties: 
+      - name
   roads_national:
     id: roads_national
     label: roads_national
@@ -266,6 +299,9 @@ collections:
       - name
       - number
       - level
+    - buildingBlock: TEXT_SEARCH
+      properties: 
+      - name
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{number}}{{name | prepend:' - '}}"
     - buildingBlock: HTML
@@ -286,6 +322,9 @@ collections:
       - name
       - number
       - level
+    - buildingBlock: TEXT_SEARCH
+      properties: 
+      - name
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{number}}{{name | prepend:' - '}}"
     - buildingBlock: HTML
@@ -306,6 +345,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
   surfacewater:
@@ -320,6 +361,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
   urban_areas:
@@ -334,6 +377,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
   waterlines:
@@ -348,6 +393,8 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"
   woodland:
@@ -362,5 +409,7 @@ collections:
     - buildingBlock: SORTING
       included:
       - type
+    - buildingBlock: TEXT_SEARCH
+      enabled: false
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}}"

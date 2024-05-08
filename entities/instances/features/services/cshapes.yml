@@ -56,6 +56,10 @@ collections:
       - name
       - capname
       - gwcode
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - name
+      - capname
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{name}}"
       transformations:

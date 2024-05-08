@@ -99,6 +99,10 @@ collections:
       - absast
       - statanf
       - laenge_m
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - kennung
+      - strasse.bez
     - buildingBlock: TILES
       zoomLevels:
         WebMercatorQuad:
@@ -148,6 +152,12 @@ collections:
       included:
       - nknr
       - nkname
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - nknr
+      - nkname
+      - nkart.bez
+      - asart.bez
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: TILES
@@ -202,6 +212,13 @@ collections:
       - tkblattnr
       - nknr
       - npbuchs
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - nk
+      - nkname
+      - tkblattnr
+      - nknr
+      - npart.bez
     - buildingBlock: HTML
       defaultStyle: NONE
     - buildingBlock: TILES
@@ -261,6 +278,15 @@ collections:
       - strzust1
       - strzust2
       - abs
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - hauptunft
+      - unfart
+      - unfkat.bez
+      - strzust1
+      - strzust2
+      - abs
+      - fahrtri
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{hauptunft}} ({{unfkat.bez}})"
       removeZoomLevelConstraints: true
@@ -330,6 +356,16 @@ collections:
       - unfart
       - strzust1
       - strzust2
+    - buildingBlock: TEXT_SEARCH
+      properties:
+      - abs.strasse.bez
+      - hauptunft
+      - unfart
+      - unfkat.bez
+      - strzust1
+      - strzust2
+      - abs
+      - fahrtri
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{hauptunft}} ({{unfkat.bez}})"
     - buildingBlock: HTML

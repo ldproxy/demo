@@ -148,6 +148,13 @@ collections:
       - name
       - measuredHeight
       - storeysAboveGround
+    - buildingBlock: TEXT_SEARCH
+      included:
+      - name
+      - address.ThoroughfareName
+      - address.ThoroughfareNumber
+      - address.PostalCode
+      - address.LocalityName
     - buildingBlock: JSON_FG
       transformations:
         surfaces:

@@ -25,7 +25,8 @@ types:
         type: INTEGER
         role: ID
         label: Unique identifier
-        scope: QUERIES
+        excludedScopes:
+        - RECEIVABLE
       name:
         sourcePath: cntry_name
         type: STRING

@@ -24,3 +24,5 @@ api:
   enabled: true    
 - buildingBlock: SORTING
   enabled: true
+- buildingBlock: TEXT_SEARCH
+  enabled: true
