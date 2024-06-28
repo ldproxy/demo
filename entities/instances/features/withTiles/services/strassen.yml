@@ -47,13 +47,13 @@ api:
   mapPosition: TOP
 - buildingBlock: TILES
   enabled: true
+  wmts: ALL
+  mapClientType: OPEN_LAYERS
 - buildingBlock: TILE_MATRIX_SETS
   enabled: true
   includePredefined:
   - WebMercatorQuad
   - AdV_25832
-  - EU_25832
-  - gdi_de_25832
 - buildingBlock: STYLES
   enabled: true
   resourcesEnabled: false

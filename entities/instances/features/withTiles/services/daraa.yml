@@ -44,11 +44,12 @@ api:
   enabled: true
   includePredefined:
   - WebMercatorQuad
-  - WorldCRS84Quad
   - WorldMercatorWGS84Quad
 - buildingBlock: TILES
   enabled: true
   style: topographic-with-basemap
+  wmts: ALL
+  mapClientType: OPEN_LAYERS
 collections:
   AeronauticCrv:
     id: AeronauticCrv

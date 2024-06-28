@@ -3,33 +3,34 @@ id: daraa-tiles
 providerType: TILE
 providerSubType: FEATURES
 caches:
-- type: IMMUTABLE
-  storage: MBTILES
+- type: DYNAMIC
+  storage: PER_JOB
+  seeded: true
   levels:
     WebMercatorQuad:
       min: 6
-      max: 11
-    WorldCRS84Quad:
-      min: 5
-      max: 10
+      max: 14
     WorldMercatorWGS84Quad:
       min: 6
-      max: 11
+      max: 14
 - type: DYNAMIC
-  storage: MBTILES
+  storage: PER_JOB
   seeded: false
   levels:
     WebMercatorQuad:
-      min: 12
+      min: 15
       max: 18
-    WorldCRS84Quad:
-      min: 11
-      max: 17
     WorldMercatorWGS84Quad:
-      min: 12
+      min: 15
       max: 18
 seeding:
-  maxThreads: 2
+  runOnStartup: true
+  maxThreads: 7
+rasterTilesets:
+  __all__:
+    styles:
+      - daraa/topographic.mbs
+      - daraa/night.mbs
 tilesetDefaults:
   center:
     lon: 36.1033
@@ -39,10 +40,6 @@ tilesetDefaults:
       min: 6
       max: 18
       default: 13
-    WorldCRS84Quad:
-      min: 5
-      max: 17
-      default: 12
     WorldMercatorWGS84Quad:
       min: 6
       max: 18

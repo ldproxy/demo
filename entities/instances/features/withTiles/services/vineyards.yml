@@ -62,6 +62,13 @@ api:
 - buildingBlock: TILES
   enabled: true
   tileProviderTileset: vineyards
+  wmts: ALL
+  mapClientType: OPEN_LAYERS
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true
+  includePredefined:
+  - WebMercatorQuad
+  - AdV_25832
 - buildingBlock: STYLES
   deriveCollectionStyles: true
   webmapWithLayerControl: true

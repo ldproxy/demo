@@ -3,60 +3,36 @@ id: strassen-tiles
 providerType: TILE
 providerSubType: FEATURES
 caches:
-- type: IMMUTABLE
-  storage: MBTILES
+- type: DYNAMIC # IMMUTABLE
+  storage: PER_JOB
   levels:
     WebMercatorQuad:
-      min: 4
-      max: 10
-    gdi_de_25832:
-      min: 0
-      max: 5
+      min: 5
+      max: 11 # 14
     AdV_25832:
       min: 0
-      max: 5
-    EU_25832:
-      min: 0
-      max: 5
-- type: DYNAMIC
-  storage: MBTILES
-  seeded: false
-  levels:
-    WebMercatorQuad:
-      min: 11
-      max: 14
-    gdi_de_25832:
-      min: 6
-      max: 10
-    AdV_25832:
-      min: 6
-      max: 10
-    EU_25832:
-      min: 6
-      max: 10
+      max: 6 # 9
 seeding:
-  maxThreads: 5
+  runOnStartup: true
+  maxThreads: 7
+rasterTilesets:
+  __all__:
+    styles:
+      - strassen/asb.mbs
+      - strassen/topo.mbs  
 tilesetDefaults:
   center:
     lon: 7.0
     lat: 51.0
   levels:
     WebMercatorQuad:
-      min: 4
+      min: 5
       max: 14
       default: 10
-    gdi_de_25832:
-      min: 0
-      max: 10
-      default: 6
     AdV_25832:
       min: 0
-      max: 10
-      default: 6
-    EU_25832:
-      min: 0
-      max: 10
-      default: 6
+      max: 9
+      default: 5
 tilesets:
   __all__: 
     id: __all__
@@ -65,7 +41,7 @@ tilesets:
     id: abschnitteaeste
     filters:
       WebMercatorQuad:
-      - min: 4
+      - min: 5
         max: 6
         filter: 'absast=''Abschnitt'' AND strasse.klasse=''A'''
       - min: 7
@@ -77,7 +53,7 @@ tilesets:
       - min: 9
         max: 9
         filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'',''K'')'
-      gdi_de_25832:
+      AdV_25832:
       - min: 0
         max: 1
         filter: 'absast=''Abschnitt'' AND strasse.klasse=''A'''
@@ -90,32 +66,6 @@ tilesets:
       - min: 4
         max: 4
         filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'',''K'')'
-      AdV_25832:
-      - min: 0
-        max: 3
-        filter: 'absast=''Abschnitt'' AND strasse.klasse=''A'''
-      - min: 4
-        max: 4
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'')'
-      - min: 5
-        max: 5
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'')'
-      - min: 6
-        max: 6
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'',''K'')'
-      EU_25832:
-      - min: 0
-        max: 3
-        filter: 'absast=''Abschnitt'' AND strasse.klasse=''A'''
-      - min: 4
-        max: 4
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'')'
-      - min: 5
-        max: 5
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'')'
-      - min: 6
-        max: 6
-        filter: 'absast=''Abschnitt'' AND strasse.klasse IN (''A'',''B'',''L'',''K'')'
   netzknoten:
     id: netzknoten
     levels:
@@ -123,18 +73,10 @@ tilesets:
         min: 9
         max: 14
         default: 10
-      gdi_de_25832:
-        min: 4
-        max: 10
-        default: 6
       AdV_25832:
-        min: 6
-        max: 11
-        default: 7
-      EU_25832:
-        min: 6
-        max: 11
-        default: 7
+        min: 4
+        max: 9
+        default: 5
   nullpunkte:
     id: nullpunkte
     levels:
@@ -142,18 +84,10 @@ tilesets:
         min: 10
         max: 14
         default: 11
-      gdi_de_25832:
-        min: 6
-        max: 10
-        default: 7
       AdV_25832:
-        min: 7
-        max: 11
-        default: 8
-      EU_25832:
-        min: 7
-        max: 11
-        default: 8
+        min: 5
+        max: 9
+        default: 6
   unfaelle:
     id: unfaelle
     levels:
@@ -161,17 +95,9 @@ tilesets:
         min: 10
         max: 14
         default: 11
-      gdi_de_25832:
-        min: 6
-        max: 10
-        default: 7
       AdV_25832:
-        min: 7
-        max: 11
-        default: 8
-      EU_25832:
-        min: 7
-        max: 11
+        min: 5
+        max: 9
         default: 8
     transformations:
       WebMercatorQuad:
@@ -188,37 +114,9 @@ tilesets:
         - abs.title
         - stat
         - fahrtri
-      gdi_de_25832:
-      - min: 6
-        max: 10
-        properties:
-        - unfzeit
-        - hauptunft
-        - unfart
-        - unfkat.bez
-        - unfkat.knz
-        - strzust1
-        - strzust2
-        - abs.title
-        - stat
-        - fahrtri
       AdV_25832:
-      - min: 7
-        max: 11
-        properties:
-        - unfzeit
-        - hauptunft
-        - unfart
-        - unfkat.bez
-        - unfkat.knz
-        - strzust1
-        - strzust2
-        - abs.title
-        - stat
-        - fahrtri
-      EU_25832:
-      - min: 7
-        max: 11
+      - min: 5
+        max: 9
         properties:
         - unfzeit
         - hauptunft

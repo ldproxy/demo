@@ -20,3 +20,4 @@ api:
 - buildingBlock: TILES
   enabled: true
   tileProviderTileset: earthatnight
+  wmts: ALL

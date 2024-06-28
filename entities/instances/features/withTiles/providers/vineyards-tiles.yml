@@ -2,22 +2,34 @@
 id: vineyards-tiles
 providerType: TILE
 providerSubType: FEATURES
+seeding:
+  runOnStartup: true
+  maxThreads: 7
 caches:
-- type: IMMUTABLE
-  storage: MBTILES
+- type: DYNAMIC
+  storage: PER_JOB
+  seeded: true
   levels:
     WebMercatorQuad:
       min: 5
-      max: 12
+      max: 13
+    AdV_25832:
+      min: 0
+      max: 8
 - type: DYNAMIC
-  storage: MBTILES
+  storage: PER_JOB
   seeded: false
   levels:
     WebMercatorQuad:
-      min: 13
+      min: 14
       max: 16
-seeding:
-  maxThreads: 2
+    AdV_25832:
+      min: 9
+      max: 11
+rasterTilesets:
+  vineyards:
+    styles:
+      - vineyards/default.mbs
 tilesets:
   vineyards:
     id: vineyards
@@ -29,6 +41,10 @@ tilesets:
         min: 5
         max: 16
         default: 8 
+      AdV_25832:
+        min: 0
+        max: 11
+        default: 3
     transformations:
       WebMercatorQuad:
       - min: 5
@@ -44,6 +60,25 @@ tilesets:
         - subregion
       - min: 9
         max: 9
+        merge: true
+        groupBy:
+        - region
+        - subregion
+        - cluster
+      AdV_25832:
+      - min: 0
+        max: 2
+        merge: true
+        groupBy:
+        - region
+      - min: 3
+        max: 3
+        merge: true
+        groupBy:
+        - region
+        - subregion
+      - min: 4
+        max: 4
         merge: true
         groupBy:
         - region
