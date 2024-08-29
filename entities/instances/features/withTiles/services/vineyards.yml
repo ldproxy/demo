@@ -62,9 +62,15 @@ api:
 - buildingBlock: TILES
   enabled: true
   tileProviderTileset: vineyards
+- buildingBlock: TILE_MATRIX_SETS
+  enabled: true
+  includePredefined:
+  - WebMercatorQuad
+  - AdV_25832
 - buildingBlock: STYLES
   deriveCollectionStyles: true
   webmapWithLayerControl: true
+  legendEnabled: true
 collections:
   vineyards:
     id: vineyards

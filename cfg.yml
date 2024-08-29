@@ -5,6 +5,7 @@ backgroundTasks:
   maxThreads: 8
 modules:
   minMaturity: PROPOSAL
+  minMaintenance: NONE
 logging:
   level: OFF
   sqlQueries: OFF
