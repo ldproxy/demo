@@ -48,8 +48,6 @@ api:
 - buildingBlock: TILES
   enabled: true
   style: topographic-with-basemap
-  wmts: ALL
-  mapClientType: OPEN_LAYERS
 - buildingBlock: CODELISTS
   enabled: true
 collections:

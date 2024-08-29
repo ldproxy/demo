@@ -4,32 +4,28 @@ providerType: TILE
 providerSubType: FEATURES
 seeding:
   runOnStartup: true
-  maxThreads: 7
+  maxThreads: 8
 caches:
-- type: DYNAMIC
+- type: IMMUTABLE
   storage: PER_JOB
   seeded: true
   levels:
     WebMercatorQuad:
       min: 5
-      max: 13
+      max: 14
     AdV_25832:
       min: 0
-      max: 8
+      max: 9
 - type: DYNAMIC
   storage: PER_JOB
   seeded: false
   levels:
     WebMercatorQuad:
-      min: 14
-      max: 16
+      min: 15
+      max: 18
     AdV_25832:
-      min: 9
-      max: 11
-rasterTilesets:
-  vineyards:
-    styles:
-      - vineyards/default.mbs
+      min: 10
+      max: 13
 tilesets:
   vineyards:
     id: vineyards

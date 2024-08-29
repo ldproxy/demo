@@ -3,23 +3,33 @@ id: strassen-tiles
 providerType: TILE
 providerSubType: FEATURES
 caches:
-- type: DYNAMIC # IMMUTABLE
+- type: DYNAMIC
   storage: PER_JOB
   levels:
     WebMercatorQuad:
       min: 5
-      max: 11 # 14
+      max: 13
     AdV_25832:
       min: 0
-      max: 6 # 9
+      max: 8
+- type: DYNAMIC
+  storage: PER_TILESET
+  seeded: false
+  levels:
+    WebMercatorQuad:
+      min: 14
+      max: 18
+    AdV_25832:
+      min: 9
+      max: 13
 seeding:
   runOnStartup: true
-  maxThreads: 7
+  maxThreads: 8
 rasterTilesets:
   __all__:
     styles:
-      - strassen/asb.mbs
-      - strassen/topo.mbs  
+      - strassen/asb.json
+      - strassen/topo.json  
 tilesetDefaults:
   center:
     lon: 7.0
