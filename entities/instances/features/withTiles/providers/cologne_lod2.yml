@@ -16,6 +16,7 @@ connectionInfo:
   - citydb
   pool:
     initFailTimeout: 90s
+labelTemplate: "{{value}}{{unit | prepend:' [' | append:']'}}"
 types:
   building:
     sourcePath: "/building{filter=objectclass_id=26}"
@@ -71,7 +72,8 @@ fragments:
       measuredHeight:
         sourcePath: measured_height
         type: FLOAT
-        label: "Gebäudehöhe [m]"
+        label: Gebäudehöhe
+        unit: m
         description: Height of the building as the difference in meters between the highest reference point and the lowest reference point of the building.
       storeysAboveGround:
         sourcePath: storeys_above_ground

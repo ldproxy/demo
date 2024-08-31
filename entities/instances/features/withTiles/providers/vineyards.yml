@@ -12,6 +12,7 @@ connectionInfo:
 sourcePathDefaults:
   primaryKey: fid
   sortKey: fid
+labelTemplate: "{{value}}{{unit | prepend:' [' | append:']'}}"
 types:
   vineyards:
     sourcePath: /Weinlagen
@@ -34,7 +35,7 @@ types:
       area_ha:
         sourcePath: rebflache_
         type: STRING
-        label: Area in hectares
+        label: Area
         unit: ha
         transformations:
         - nullify: 'k. A.'

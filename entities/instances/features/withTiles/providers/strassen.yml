@@ -13,6 +13,7 @@ connectionInfo:
 sourcePathDefaults:
   primaryKey: fid
   sortKey: fid
+labelTemplate: "{{value}}{{unit | prepend:' [' | append:']'}}"
 types:
   abschnitteaeste:
     sourcePath: /abschnitteaeste_line
@@ -84,7 +85,7 @@ types:
         sourcePath: laenge
         type: INTEGER
         unit: m
-        label: "Länge [m]"
+        label: Länge
         description: Länge des Abschnittes oder Astes (m)
         constraints:
           min: 0.0
@@ -434,7 +435,7 @@ types:
         sourcePath: stat
         type: FLOAT
         unit: m
-        label: "Station [m]"
+        label: Station
         description: "Station auf dem Abschnitt/Ast in Metern"
         constraints:
           min: 0.0
@@ -629,7 +630,7 @@ types:
             sourcePath: laenge
             type: INTEGER
             unit: m
-            label: "Länge [m]"
+            label: Länge
             description: Länge des Abschnittes oder Astes (m)
             constraints:
               min: 0.0
@@ -651,7 +652,7 @@ types:
         sourcePath: stat
         type: FLOAT
         unit: m
-        label: "Station [m]"
+        label: Station
         description: "Station auf dem Abschnitt/Ast in Metern"
         constraints:
           min: 0.0
