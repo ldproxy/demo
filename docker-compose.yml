@@ -11,6 +11,14 @@ services:
     tmpfs:
       - /var/lib/postgresql/data
 
+  xtratiler:
+    image: ghcr.io/ldproxy/xtratiler
+    container_name: xtratiler_demo
+    volumes:
+      - .:/store
+    # on linux use localhost, on macOS use host.docker.internal
+    command: agent -q http://host.docker.internal:7081 -c 8 -r 2
+
   ldproxy:
     image: iide/ldproxy:next 
     container_name: ldproxy_demo
@@ -22,9 +30,9 @@ services:
     depends_on:
       - db
     environment:
-      - EXTERNAL_URL=http://localhost:7080
-      - ENABLE_ZOOMSTACK=true
-      - ENABLE_COLOGNE=true
+      - ENABLE_ZOOMSTACK=false
+      - ENABLE_COLOGNE=false
       # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;
-      # in this case comment out "#/services/db" and "#/services/ldproxy/depends_on"
+      # in this case comment out "#/services/db" and "#/services/ldproxy/depends_on";
+      # on Linux use localhost, on macOS use host.docker.internal
       # - DB_HOST=host.docker.internal

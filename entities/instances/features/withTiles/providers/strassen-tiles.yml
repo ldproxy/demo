@@ -25,12 +25,11 @@ caches:
 seeding:
   runOnStartup: true
   maxThreads: 8
-# Enable the following lines to also seed raster tiles; requires xtratiler
-# rasterTilesets:
-#   __all__:
-#     styles:
-#       - strassen/asb.json
-#       - strassen/topo.json  
+rasterTilesets:
+  __all__:
+    styles:
+      - strassen/asb.json
+      - strassen/topo.json  
 tilesetDefaults:
   center:
     lon: 7.0
