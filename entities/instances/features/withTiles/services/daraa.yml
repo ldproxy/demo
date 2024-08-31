@@ -68,12 +68,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -94,12 +90,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -120,12 +112,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -146,12 +134,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
   CulturePnt:
     id: CulturePnt
     label: Cultural (Points)
@@ -170,14 +154,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI037_REL:
-        - codelist: rel
   CultureSrf:
     id: CultureSrf
     label: Cultural (Surfaces)
@@ -196,14 +174,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI037_REL:
-        - codelist: rel
   FacilityPnt:
     id: FacilityPnt
     label: Facility (Points)
@@ -222,16 +194,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
-        ZI037_REL:
-        - codelist: rel
   FacilitySrf:
     id: FacilitySrf
     label: Facility (Surfaces)
@@ -250,16 +214,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
-        ZI037_REL:
-        - codelist: rel
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -280,16 +236,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI024_HYP:
-        - codelist: hyp
-        WCC:
-        - codelist: wcc
   HydrographyPnt:
     id: HydrographyPnt
     label: Hydrography (Points)
@@ -307,18 +255,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        SWT:
-        - codelist: swt
-        IWT:
-        - codelist: iwt
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI024_HYP:
-        - codelist: hyp
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -340,20 +278,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        SWT:
-        - codelist: swt
-        IWT:
-        - codelist: iwt
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI024_HYP:
-        - codelist: hyp
-        WCC:
-        - codelist: wcc
   IndustrySrf:
     id: IndustrySrf
     label: Industry (Surfaces)
@@ -371,14 +297,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        MZN:
-        - codelist: mzn
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -399,12 +319,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -425,12 +341,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
   o2s_a:
     id: o2s_a
     label: Other (Surfaces)
@@ -493,12 +405,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -518,12 +426,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -544,14 +448,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -571,12 +469,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -596,12 +490,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -622,14 +512,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
   StructureCrv:
     id: StructureCrv
     label: Structure (Curves)
@@ -646,12 +530,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -674,16 +554,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
-        ZI037_REL:
-        - codelist: rel
   StructureSrf:
     id: StructureSrf
     label: Structure (Surfaces)
@@ -701,14 +573,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI037_REL:
-        - codelist: rel
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -733,24 +599,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        RTY:
-        - codelist: rty
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        TRS:
-        - codelist: trs
-        RIN_ROI:
-        - codelist: roi
-        ZI016_WTC:
-        - codelist: wtc
-        RLE:
-        - codelist: rle
-        LOC:
-        - codelist: loc
     - buildingBlock: SORTING
       included:
       - F_CODE
@@ -776,20 +626,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
-        RIN_ROI:
-        - codelist: roi
-        TRS:
-        - codelist: trs
-        TRS2:
-        - codelist: trs
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -813,22 +651,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        FFN:
-        - codelist: ffn
-        TRS:
-        - codelist: trs
-        ZI016_WTC:
-        - codelist: wtc
-        RIN_ROI:
-        - codelist: roi
-        RTY:
-        - codelist: rty
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -849,16 +673,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI024_HYP:
-        - codelist: hyp
-        RLE:
-        - codelist: rle
       style: NONE
     - buildingBlock: TILES
       style: NONE
@@ -879,14 +695,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        CAB:
-        - codelist: cab
-        FCSUBTYPE:
-        - codelist: fcsubtype
   UtilityInfrastructurePnt:
     id: UtilityInfrastructurePnt
     label: Utility Infrastructure (Points)
@@ -903,12 +713,8 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
   VegetationSrf:
     id: VegetationSrf
     label: Vegetation (Surfaces)
@@ -926,13 +732,5 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{ZI005_FNA}}"
       transformations:
-        F_CODE:
-        - codelist: f_code
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
-        FCSUBTYPE:
-        - codelist: fcsubtype
-        ZI024_HYP:
-        - codelist: hyp
-        VEG:
-        - codelist: veg

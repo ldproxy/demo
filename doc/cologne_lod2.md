@@ -6,7 +6,7 @@ https://demo.ldproxy.net/cologne_lod2
 
 Together with a digital terrain model, 3D building models describe the natural terrain shape of the earth's surface, including all buildings and structures, in digital form and enable the representation of cities and towns in virtual worlds. Buildings can be modeled in different levels of detail (Level of Detail, LoD). In the 3D building model LoD2, the modeling of the buildings is done with standardized roof shapes such as a gable or hip roof.
 
-Resource types: Features, 3D Tiles, Styles
+Resource types: Features, 3D Tiles, Styles, Codelists
 
 ## Notes
 
@@ -14,7 +14,7 @@ The data in this API is an extract from the statewide data (rectangle in the cit
 
 The building properties and their values are in German.
 
-This API is disabled by default, because of the need to first start a PosqlgrSQL database and load the data. See below.
+This API is disabled by default, because of the need to first start a PostgreSQL database and load the data. See below.
 
 ## Data source
 
@@ -22,13 +22,7 @@ License: [Datenlizenz Deutschland - Zero – Version 2.0](https://www.govdata.de
 
 This data source requires two docker containers. In addition to ldproxy, we also need a PostgreSQL/PostGIS database. This complicates the setup and this data source has therefore been disabled by default. To include this data source, execute the following steps:
 
-* Copy `cologne_lod2/provider/cologne_lod2.yml` to `entities/instances/features/withTiles/providers/cologne_lod2.yml`.
-* Copy `cologne_lod2/service/cologne_lod2.yml` to `entities/instances/features/withTiles/services/cologne_lod2.yml`.
 * Set `ENABLE_COLOGNE` in `docker-compose.yml` to `true`.
-
-There is also a script `enable_cologne.sh` that executes these steps. The script `disable_cologne.sh` restores the original setting.
-
-Note that a 3D Tiles stylesheet is already included in `values/3dtiles-styles/cologne_lod2`.
 
 To start ldproxy:
 

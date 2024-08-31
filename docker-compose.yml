@@ -1,4 +1,3 @@
-version: '3.9'
 services:
   db:
     image: postgis/postgis:15-3.4-alpine
@@ -8,7 +7,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: cologne_lod2
     volumes:
-      - ./cologne_lod2/cologne_lod2.sql.gz:/docker-entrypoint-initdb.d/cologne_lod2.sql.gz
+      - ./db/cologne_lod2.sql.gz:/docker-entrypoint-initdb.d/cologne_lod2.sql.gz
     tmpfs:
       - /var/lib/postgresql/data
 
@@ -24,8 +23,8 @@ services:
       - db
     environment:
       - EXTERNAL_URL=http://localhost:7080
-      - ENABLE_ZOOMSTACK=false
-      - ENABLE_COLOGNE=false
+      - ENABLE_ZOOMSTACK=true
+      - ENABLE_COLOGNE=true
       # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;
       # in this case comment out "#/services/db" and "#/services/ldproxy/depends_on"
       # - DB_HOST=host.docker.internal

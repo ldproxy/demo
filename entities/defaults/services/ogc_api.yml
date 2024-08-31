@@ -10,13 +10,14 @@ accessControl:
   audience:
   - ldproxy-integrated
 metadata:
-  contactName: interactive instruments GmbH
-  contactEmail: mail@interactive-instruments.de
+  contactName: Clemens Portele
+  contactEmail: portele@interactive-instruments.de
   publisherName: interactive instruments GmbH
   publisherUrl: https://www.interactive-instruments.de/
   publisherLogoUrl: https://www.interactive-instruments.de/wp-content/uploads/2017/05/ii-icon.png
   keywords:
   - ldproxy
+  - OGC API Standards
 apiValidation: NONE
 api:
 - buildingBlock: FOUNDATION

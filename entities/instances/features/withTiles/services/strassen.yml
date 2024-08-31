@@ -55,7 +55,6 @@ api:
   - AdV_25832
 - buildingBlock: STYLES
   enabled: true
-  resourcesEnabled: false
   deriveCollectionStyles: true
   webmapWithPopup: true
   webmapWithLayerControl: true
@@ -102,24 +101,6 @@ collections:
       properties:
       - kennung
       - strasse.bez
-    - buildingBlock: TILES
-      zoomLevels:
-        WebMercatorQuad:
-          min: 4
-          max: 14
-          default: 8
-        gdi_de_25832:
-          min: 0
-          max: 10
-          default: 4
-        AdV_25832:
-          min: 0
-          max: 10
-          default: 4
-        EU_25832:
-          min: 0
-          max: 10
-          default: 4
     - buildingBlock: GEOMETRY_SIMPLIFICATION
   netzknoten:
     id: netzknoten
@@ -159,24 +140,6 @@ collections:
       - asart.bez
     - buildingBlock: HTML
       defaultStyle: NONE
-    - buildingBlock: TILES
-      zoomLevels:
-        WebMercatorQuad:
-          min: 9
-          max: 14
-          default: 10
-        gdi_de_25832:
-          min: 4
-          max: 10
-          default: 6
-        AdV_25832:
-          min: 6
-          max: 11
-          default: 7
-        EU_25832:
-          min: 6
-          max: 11
-          default: 7
     - buildingBlock: GEOMETRY_SIMPLIFICATION
   nullpunkte:
     id: nullpunkte
@@ -220,24 +183,6 @@ collections:
       - npart.bez
     - buildingBlock: HTML
       defaultStyle: NONE
-    - buildingBlock: TILES
-      zoomLevels:
-        WebMercatorQuad:
-          min: 10
-          max: 14
-          default: 11
-        gdi_de_25832:
-          min: 6
-          max: 10
-          default: 7
-        AdV_25832:
-          min: 7
-          max: 11
-          default: 8
-        EU_25832:
-          min: 7
-          max: 11
-          default: 8
     - buildingBlock: GEOMETRY_SIMPLIFICATION
   unfaelle:
     id: unfaelle
@@ -291,23 +236,6 @@ collections:
       removeZoomLevelConstraints: true
     - buildingBlock: TILES
       removeZoomLevelConstraints: true
-      zoomLevels:
-        WebMercatorQuad:
-          min: 10
-          max: 14
-          default: 11
-        gdi_de_25832:
-          min: 6
-          max: 10
-          default: 7
-        AdV_25832:
-          min: 7
-          max: 11
-          default: 8
-        EU_25832:
-          min: 7
-          max: 11
-          default: 8
     - buildingBlock: GEOMETRY_SIMPLIFICATION
   unfaelle2:
     id: unfaelle2

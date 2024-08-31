@@ -2,6 +2,7 @@
 id: zoomstack-tiles
 providerType: TILE
 providerSubType: MBTILES
+enabled: "${ENABLE_ZOOMSTACK:-false}"
 tilesets:
   __all__:
     id: __all__

@@ -10,7 +10,7 @@ Resource types: Features, Vector Tiles, Styles
 
 ## Notes
 
-Vector tiles are provided in multiple tiling schemes.
+Vector tiles are provided in two tiling schemes.
 
 Accidents are provided in two variants. The first variant links to the road segment, the second joins the road segment and includes attributes from the road segment in the response.
 

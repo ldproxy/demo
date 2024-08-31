@@ -4,6 +4,7 @@ createdAt: 1614412062943
 lastModified: 1697133220412
 providerType: FEATURE
 providerSubType: SQL
+enabled: "${ENABLE_ZOOMSTACK:-false}"
 nativeCrs:
   code: 27700
   forceAxisOrder: NONE

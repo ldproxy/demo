@@ -6,11 +6,11 @@ https://demo.ldproxy.net/daraa
 
 A test dataset used in OGC testbeds and pilots. The data is derived from OpenStreetMap data from the region of Daraa, Syria, converted to the Topographic Data Store schema.
 
-Resource types: Features, Vector Tiles, Styles
+Resource types: Features, Vector Tiles, Styles, Codelists
 
 ## Notes
 
-Vector tiles are provided in multiple tiling schemes.
+Vector tiles are provided in two tiling schemes.
 
 ## Data source
 

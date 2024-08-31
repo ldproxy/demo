@@ -22,14 +22,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - GB075
       geometry:
@@ -84,14 +83,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - GB015
       geometry:
@@ -146,14 +144,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AM020
       geometry:
@@ -208,14 +205,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - EA040
           - AM020
@@ -272,14 +268,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AK121
           - AL012
@@ -324,7 +319,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -347,14 +342,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AK120
           - AL012
@@ -397,7 +391,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -420,14 +414,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL010
       geometry:
@@ -468,7 +461,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       ZI037_REL:
         sourcePath: zi037_rel
         type: INTEGER
@@ -477,7 +470,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -500,14 +493,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL010
       geometry:
@@ -548,7 +540,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       ZI037_REL:
         sourcePath: zi037_rel
         type: INTEGER
@@ -557,7 +549,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -580,14 +572,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - BH140
           - BI020
@@ -629,7 +620,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: hyp
+          codelist: daraa/hyp
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -652,7 +643,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
   HydrographyPnt:
     sourcePath: /hydrographypnt
     type: OBJECT
@@ -661,14 +652,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - BH170
       geometry:
@@ -702,7 +692,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
       IWT:
         sourcePath: iwt
         type: INTEGER
@@ -711,7 +701,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
       FCSUBTYPE:
         sourcePath: fcsubtype
         type: INTEGER
@@ -727,7 +717,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: hyp
+          codelist: daraa/hyp
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -750,14 +740,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - BH082
       geometry:
@@ -791,7 +780,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
       IWT:
         sourcePath: iwt
         type: INTEGER
@@ -800,7 +789,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
       FCSUBTYPE:
         sourcePath: fcsubtype
         type: INTEGER
@@ -816,7 +805,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: hyp
+          codelist: daraa/hyp
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -839,7 +828,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wcc
+          codelist: daraa/wcc
   IndustrySrf:
     sourcePath: /industrysrf
     type: OBJECT
@@ -848,14 +837,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AA010
       geometry:
@@ -889,7 +877,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: mzn
+          codelist: daraa/mzn
       FCSUBTYPE:
         sourcePath: fcsubtype
         type: INTEGER
@@ -919,14 +907,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - ZD040
           - ZD045
@@ -982,14 +969,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - SU001
       geometry:
@@ -1044,7 +1030,6 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -1064,7 +1049,6 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -1084,7 +1068,6 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       geometry:
         sourcePath: geom
         type: GEOMETRY
@@ -1104,14 +1087,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - DB010
       geometry:
@@ -1166,14 +1148,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AK130
       geometry:
@@ -1228,14 +1209,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AK030
           - AK170
@@ -1278,7 +1258,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1301,14 +1281,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AK040
           - AK060
@@ -1366,14 +1345,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL020
           - AL105
@@ -1429,14 +1407,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL020
       geometry:
@@ -1477,7 +1454,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1500,14 +1477,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL260
           - AQ150
@@ -1563,14 +1539,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL013
       geometry:
@@ -1611,7 +1586,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       ZI037_REL:
         sourcePath: zi037_rel
         type: INTEGER
@@ -1620,7 +1595,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1643,14 +1618,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AL013
       geometry:
@@ -1691,7 +1665,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rel
+          codelist: daraa/rel
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1714,14 +1688,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AN010
           - AP010
@@ -1761,7 +1734,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rty
+          codelist: daraa/rty
       FCSUBTYPE:
         sourcePath: fcsubtype
         type: INTEGER
@@ -1777,7 +1750,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: trs
+          codelist: daraa/trs
       RIN_ROI:
         sourcePath: rin_roi
         type: INTEGER
@@ -1786,7 +1759,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: roi
+          codelist: daraa/roi
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1809,7 +1782,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wtc
+          codelist: daraa/wtc
       RIN_RTN:
         sourcePath: rin_rtn
         type: STRING
@@ -1825,7 +1798,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rle
+          codelist: daraa/rle
       LOC:
         sourcePath: loc
         type: INTEGER
@@ -1834,7 +1807,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: loc
+          codelist: daraa/loc
   TransportationGroundPnt:
     sourcePath: /transportationgroundpnt
     type: OBJECT
@@ -1843,14 +1816,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AP033
           - AP040
@@ -1897,7 +1869,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       RIN_ROI:
         sourcePath: rin_roi
         type: INTEGER
@@ -1906,7 +1878,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: roi
+          codelist: daraa/roi
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -1929,7 +1901,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: trs
+          codelist: daraa/trs
       TRS2:
         sourcePath: trs2
         type: INTEGER
@@ -1938,7 +1910,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: trs
+          codelist: daraa/trs
   TransportationGroundSrf:
     sourcePath: /transportationgroundsrf
     type: OBJECT
@@ -1947,14 +1919,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AP030
           - AQ125
@@ -1997,7 +1968,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: ffn
+          codelist: daraa/ffn
       TRS:
         sourcePath: trs
         type: INTEGER
@@ -2006,7 +1977,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: trs
+          codelist: daraa/trs
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -2029,7 +2000,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: wtc
+          codelist: daraa/wtc
       RIN_ROI:
         sourcePath: rin_roi
         type: INTEGER
@@ -2038,7 +2009,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: roi
+          codelist: daraa/roi
       RTY:
         sourcePath: rty
         type: INTEGER
@@ -2047,7 +2018,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rty
+          codelist: daraa/rty
   TransportationWaterCrv:
     sourcePath: /transportationwatercrv
     type: OBJECT
@@ -2056,14 +2027,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - BH020
       geometry:
@@ -2104,7 +2074,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: hyp
+          codelist: daraa/hyp
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -2127,7 +2097,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: rle
+          codelist: daraa/rle
   UtilityInfrastructureCrv:
     sourcePath: /utilityinfrastructurecrv
     type: OBJECT
@@ -2136,14 +2106,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AT005
       geometry:
@@ -2177,7 +2146,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: cab
+          codelist: daraa/cab
       FCSUBTYPE:
         sourcePath: fcsubtype
         type: INTEGER
@@ -2207,14 +2176,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - AT042
       geometry:
@@ -2269,14 +2237,13 @@ types:
         sourcePath: fid
         type: INTEGER
         role: ID
-        scope: QUERIES
       F_CODE:
         sourcePath: f_code
         type: STRING
         role: TYPE
         label: Feature Type Code
         constraints:
-          codelist: f_code
+          codelist: daraa/f_code
           enum:
           - EB010
           - EB070
@@ -2319,7 +2286,7 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: hyp
+          codelist: daraa/hyp
       ZI006_MEM:
         sourcePath: zi006_mem
         type: STRING
@@ -2342,4 +2309,4 @@ types:
         - nullify:
           - -999999
         constraints:
-          codelist: veg
+          codelist: daraa/veg

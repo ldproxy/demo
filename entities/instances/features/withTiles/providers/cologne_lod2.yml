@@ -2,6 +2,7 @@
 id: cologne_lod2
 providerType: FEATURE
 providerSubType: SQL
+enabled: "${ENABLE_COLOGNE:-false}"
 nativeCrs:
   code: 5555
   forceAxisOrder: NONE
@@ -82,14 +83,14 @@ fragments:
         label: Dachform
         description: The meaning of the individual values results from the codelist <a href="https://repository.gdi-de.org/schemas/adv/citygml/Codelisten/RoofTypeTypeAdV.xml" target="_blank">RoofTypeTypeAdV.xml</a>.
         constraints:
-          codelist: RoofType
+          codelist: cologne_lod2/RoofType
       function:
         sourcePath: function
         type: STRING
         label: Gebäudefunktion
         description: The meaning of the individual values results from the codelist <a href="https://repository.gdi-de.org/schemas/adv/citygml/Codelisten/BuildingFunctionTypeAdV.xml" target="_blank">BuildingFunctionTypeAdV.xml</a>.
         constraints:
-          codelist: BuildingFunctionType
+          codelist: cologne_lod2/BuildingFunctionType
       externalReferences:
         sourcePath: "[id=cityobject_id]external_reference"
         type: OBJECT_ARRAY
@@ -110,25 +111,25 @@ fragments:
         type: STRING
         label: Bezugspunkt Dach
         constraints:
-          codelist: BezugspunktDach
+          codelist: cologne_lod2/BezugspunktDach
       datenquelleBodenhoehe:
         sourcePath: "[id=cityobject_id]cityobject_genericattrib{filter=attrname='DatenquelleBodenhoehe'}/strval"
         type: STRING
         label: Datenquelle Bodenhöhe
         constraints:
-          codelist: DatenquelleBodenhoehe
+          codelist: cologne_lod2/DatenquelleBodenhoehe
       datenquelleDachhoehe:
         sourcePath: "[id=cityobject_id]cityobject_genericattrib{filter=attrname='DatenquelleDachhoehe'}/strval"
         type: STRING
         label: Datenquelle Dachhöhe
         constraints:
-          codelist: DatenquelleDachhoehe
+          codelist: cologne_lod2/DatenquelleDachhoehe
       datenquelleLage:
         sourcePath: "[id=cityobject_id]cityobject_genericattrib{filter=attrname='DatenquelleLage'}/strval"
         type: STRING
         label: Datenquelle Lage
         constraints:
-          codelist: DatenquelleLage
+          codelist: cologne_lod2/DatenquelleLage
       gemeindeschluessel:
         sourcePath: "[id=cityobject_id]cityobject_genericattrib{filter=attrname='Gemeindeschluessel'}/strval"
         type: STRING

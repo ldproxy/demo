@@ -1,0 +1,9 @@
+{
+  "color": {
+    "conditions": [
+      ["${feature['surfaceType']} === 'roof'"  , "color('red')"  ], 
+      ["${feature['surfaceType']} === 'ground'", "color('grey')" ], 
+      ["true"                                  , "color('white')"]  
+    ]
+  }
+}

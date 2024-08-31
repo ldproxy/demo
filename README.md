@@ -6,7 +6,7 @@ This repository contains the configuration for the [ldproxy](https://github.com/
 
 interactive instruments provides this information as examples of configurations of [ldproxy](https://github.com/interactive-instruments/ldproxy).
 
-The files included in the `resources` directory are in general subject to copyright and a license. For details see each API configuration.
+The files included in the `resources` and `values` directories are in general subject to copyright and a license. For details see each API configuration.
 
 All other files are available under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
@@ -14,9 +14,9 @@ If you want to use this configuration as a starting point for your own deploymen
 
 * Change the default external URL at `cfg.yml#/server/externalUrl`.
 * Remove or change all values of `entities/defaults/services/ogc_api.yml#/metadata` and `entities/defaults/services/ogc_api.yml#/api`.
-* Remove all files in `resources`.
-  * For the GeoPackage, MBTiles and Style files in `resources/features` and `resources/tiles`: If you want to use one of the datasets yourself, download the source data, if publicly available, and convert the data to a GeoPackage or MBTiles file. The information how to do this is included for each API below, if the source data is publicly available.
-  * For other files under `resources`, if the file is publicly available, the information how to download the file is provided for each API, too.
+* Remove all files in `resources` and `values`.
+  * For the GeoPackage and MBTiles in `resources/features` and `resources/tiles`: If you want to use one of the datasets yourself, download the source data, if publicly available, and convert the data to a GeoPackage or MBTiles file. The information how to do this is included for each API below, if the source data is publicly available.
+  * For other files under `resources` and `values`, if the file is publicly available, the information how to download the file is provided for each API, too.
 
 ## Getting started
 
@@ -26,7 +26,7 @@ To start a local deployment, use `docker compose up ldproxy -d`.
 
 To stop the local deployment again, use `docker compose down`.
 
-After startup, the APIs should be available at http://localhost:7080/rest/services.
+After startup, the APIs should be available at http://localhost:7080/.
 
 The log file is available at `docker logs ldproxy_demo` while the server is running.
 
