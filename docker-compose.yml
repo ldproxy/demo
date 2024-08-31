@@ -16,7 +16,7 @@ services:
     container_name: xtratiler_demo
     volumes:
       - .:/store
-    # on linux use localhost, on macOS use host.docker.internal
+    # on Linux use localhost, on macOS use host.docker.internal
     command: agent -q http://host.docker.internal:7081 -c 8 -r 2
 
   ldproxy:
@@ -30,6 +30,7 @@ services:
     depends_on:
       - db
     environment:
+      - EXTERNAL_URL=http://localhost:7080
       - ENABLE_ZOOMSTACK=false
       - ENABLE_COLOGNE=false
       # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;
