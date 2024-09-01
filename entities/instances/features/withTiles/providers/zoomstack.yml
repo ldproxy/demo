@@ -275,6 +275,7 @@ types:
           - cym
           - eng
           - gla
+          codelist: zoomstack/language
       name2:
         sourcePath: name2
         type: STRING
@@ -288,6 +289,7 @@ types:
           - cym
           - eng
           - gla
+          codelist: zoomstack/language
       geom:
         sourcePath: geom
         type: GEOMETRY

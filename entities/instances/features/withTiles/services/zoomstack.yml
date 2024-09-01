@@ -57,6 +57,8 @@ api:
   deriveCollectionStyles: true
 - buildingBlock: RESOURCES
   enabled: true
+- buildingBlock: CODELISTS
+  enabled: true
 collections:
   airports:
     id: airports
@@ -208,11 +210,6 @@ collections:
       - name2language
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{name1}}{{name2 | prepend:' / '}}"
-      transformations:
-        name1language:
-        - codelist: language
-        name2language:
-        - codelist: language
     - buildingBlock: SORTING
       included:
       - name1
