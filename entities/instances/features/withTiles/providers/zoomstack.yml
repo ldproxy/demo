@@ -266,10 +266,14 @@ types:
         sourcePath: name1
         type: STRING
         label: First Name
+        transformations:
+        - nullify: ''
       name1language:
         sourcePath: name1language
         type: STRING
         label: First Name - Language
+        transformations:
+        - nullify: ''
         constraints:
           enum:
           - cym
@@ -280,10 +284,14 @@ types:
         sourcePath: name2
         type: STRING
         label: Second Name
+        transformations:
+        - nullify: ''
       name2language:
         sourcePath: name2language
         type: STRING
         label: Second Name - Language
+        transformations:
+        - nullify: ''
         constraints:
           enum:
           - cym
