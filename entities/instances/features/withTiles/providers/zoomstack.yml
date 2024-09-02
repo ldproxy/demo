@@ -25,7 +25,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       name:
         sourcePath: name
         type: STRING
@@ -48,7 +47,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -74,7 +72,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -105,7 +102,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -124,7 +120,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -143,7 +138,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -162,7 +156,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -197,7 +190,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -216,7 +208,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       uuid:
         sourcePath: uuid
         type: STRING
@@ -239,7 +230,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -316,7 +306,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       geom:
         sourcePath: geom
         type: GEOMETRY
@@ -335,7 +324,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -364,7 +352,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -399,7 +386,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -444,7 +430,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -488,7 +473,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -533,7 +517,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -563,7 +546,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -591,7 +573,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -618,7 +599,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
@@ -649,7 +629,6 @@ types:
         sourcePath: id
         type: INTEGER
         role: ID
-        scope: QUERIES
       type:
         sourcePath: type
         type: STRING
