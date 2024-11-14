@@ -6,7 +6,7 @@ description: |-
   The Earth at night, released by NASA. For more information, see NASA Earth Observatory <a href="https://earthobservatory.nasa.gov/features/NightLights" target="_blank">"Night Lights"</a>.
   Raster tiles on zoom levels 0 to 6 were derived from a 54000x27000 pixel GeoTIFF image using <a href="https://github.com/mapbox/rio-mbtiles" target="_blank">rio-mbtiles</a>.
 serviceType: OGC_API
-enabled: ${ENABLE_EARTHATNIGHT:-true}
+enabled: "${enable.earthatnight:-true}"
 metadata:
   creatorName: NASA Earth Observatory
   creatorUrl: https://earthobservatory.nasa.gov/features/NightLights

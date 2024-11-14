@@ -5,7 +5,7 @@ lastModified: 1697133220422
 label: OS Open Zoomstack
 description: "OS Open Zoomstack is a comprehensive vector basemap showing coverage of Great Britain at a national level, right down to street-level detail."
 serviceType: OGC_API
-enabled: "${ENABLE_ZOOMSTACK:-false}"
+enabled: "${enable.zoomstack:-false}"
 metadata:
   creatorName: Ordnance Survey
   creatorUrl: https://www.ordnancesurvey.co.uk/

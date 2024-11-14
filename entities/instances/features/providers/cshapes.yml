@@ -4,6 +4,7 @@ createdAt: 1616851636763
 lastModified: 1697133220380
 providerType: FEATURE
 providerSubType: SQL
+enabled: "${enable.cshapes:-true}"
 nativeCrs:
   code: 4326
   forceAxisOrder: LON_LAT

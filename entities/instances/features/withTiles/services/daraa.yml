@@ -4,7 +4,7 @@ createdAt: 1533195830627
 lastModified: 1697133220418
 label: Daraa
 description: "This is a test dataset used in the Open Portrayal Framework thread in the OGC Testbed-15 as well as the OGC Vector Tiles Pilot Phase 2. The data is based on OpenStreetMap data from the region of Daraa, Syria, converted to the Topographic Data Store schema of NGA."
-enabled: "${ENABLE_DARAA:-true}"
+enabled: "${enable.daraa:-true}"
 serviceType: OGC_API
 metadata:
   creatorName: US National Geospatial-Intelligence Agency (NGA)

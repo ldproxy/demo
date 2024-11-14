@@ -4,6 +4,7 @@ createdAt: 1616851635946
 lastModified: 1697133220402
 providerType: FEATURE
 providerSubType: SQL
+enabled: "${enable.strassen:-true}"
 nativeCrs:
   code: 25832
   forceAxisOrder: NONE
@@ -120,8 +121,10 @@ types:
       unfaelle:
         sourcePath: "[abs=abs]unfaelle_point"
         type: FEATURE_REF_ARRAY
+        valueType: INTEGER
         label: Unfälle
         description: Unfälle auf dem Abschnitt oder Ast
+        refType: unfaelle
         properties:
           id: 
             type: INTEGER
@@ -129,9 +132,6 @@ types:
           title: 
             type: STRING
             sourcePath: unfzeit
-          type: 
-            type: STRING
-            constantValue: unfaelle            
   netzknoten:
     sourcePath: /netzknoten_point
     type: OBJECT

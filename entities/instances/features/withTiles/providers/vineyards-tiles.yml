@@ -2,8 +2,9 @@
 id: vineyards-tiles
 providerType: TILE
 providerSubType: FEATURES
+enabled: "${enable.vineyards:-true}"
 seeding:
-  runOnStartup: true
+  runOnStartup: "${enable.seeding:-true}"
   maxThreads: 8
 caches:
 - type: IMMUTABLE

@@ -2,6 +2,7 @@
 id: vineyards
 providerType: FEATURE
 providerSubType: SQL
+enabled: "${enable.vineyards:-true}"
 nativeCrs:
   code: 25832
   forceAxisOrder: NONE

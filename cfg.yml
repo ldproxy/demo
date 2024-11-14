@@ -1,11 +1,21 @@
 ---
 server:
-  externalUrl: ${EXTERNAL_URL:-https://demo.ldproxy.net}
+  externalUrl: "${EXTERNAL_URL:-https://demo.ldproxy.net}"
 backgroundTasks:
   maxThreads: 8
 modules:
   minMaturity: PROPOSAL
   minMaintenance: NONE
+substitutions:
+  enable:
+    earthatnight: true
+    cshapes: true
+    daraa: true
+    strassen: true
+    vineyards: true
+    zoomstack: false
+    cologne_lod2: false
+    seeding: true
 logging:
   level: OFF
   sqlQueries: OFF

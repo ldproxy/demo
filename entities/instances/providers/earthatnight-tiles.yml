@@ -2,6 +2,7 @@
 id: earthatnight-tiles
 providerType: TILE
 providerSubType: MBTILES
+enabled: "${enable.earthatnight:-true}"
 tilesets:
   earthatnight:
     id: earthatnight

@@ -2,6 +2,7 @@
 id: strassen-tiles
 providerType: TILE
 providerSubType: FEATURES
+enabled: "${enable.strassen:-true}"
 caches:
 - type: DYNAMIC
   storage: PER_JOB
@@ -23,7 +24,7 @@ caches:
       min: 9
       max: 13
 seeding:
-  runOnStartup: true
+  runOnStartup: "${enable.seeding:-true}"
   maxThreads: 8
 rasterTilesets:
   __all__:

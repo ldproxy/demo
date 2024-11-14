@@ -22,7 +22,7 @@ License: [Datenlizenz Deutschland - Zero – Version 2.0](https://www.govdata.de
 
 This data source requires two docker containers. In addition to ldproxy, we also need a PostgreSQL/PostGIS database. This complicates the setup and this data source has therefore been disabled by default. To include this data source, execute the following steps:
 
-* Set `ENABLE_COLOGNE` in `docker-compose.yml` to `true`.
+* Set `enable.cologne` in `cfg.yml` to `true`.
 
 To start ldproxy:
 

@@ -20,7 +20,7 @@ services:
     command: agent -q http://host.docker.internal:7081 -c 8 -r 2
 
   ldproxy:
-    image: iide/ldproxy:next 
+    image: iide/ldproxy:next
     container_name: ldproxy_demo
     ports:
       - "7080:7080"
@@ -31,8 +31,6 @@ services:
       - db
     environment:
       - EXTERNAL_URL=http://localhost:7080
-      - ENABLE_ZOOMSTACK=false
-      - ENABLE_COLOGNE=false
       # Enable the following variable, if the cologne_lod2 data is available in a separate PostgreSQL instance;
       # in this case comment out "#/services/db" and "#/services/ldproxy/depends_on";
       # on Linux use localhost, on macOS use host.docker.internal

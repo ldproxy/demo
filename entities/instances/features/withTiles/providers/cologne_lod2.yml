@@ -2,7 +2,7 @@
 id: cologne_lod2
 providerType: FEATURE
 providerSubType: SQL
-enabled: "${ENABLE_COLOGNE:-false}"
+enabled: "${enable.cologne_lod2:-false}"
 nativeCrs:
   code: 5555
   forceAxisOrder: NONE

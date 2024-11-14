@@ -2,6 +2,7 @@
 id: daraa-tiles
 providerType: TILE
 providerSubType: FEATURES
+enabled: "${enable.daraa:-true}"
 caches:
 - type: IMMUTABLE
   storage: PER_TILESET
@@ -23,9 +24,10 @@ caches:
       min: 15
       max: 18
 seeding:
-  runOnStartup: true
+  runOnStartup: "${enable.seeding:-true}"
   maxThreads: 8
 tilesetDefaults:
+  sparse: true
   center:
     lon: 36.1033
     lat: 32.6264

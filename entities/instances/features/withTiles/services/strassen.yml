@@ -4,7 +4,7 @@ createdAt: 1616851636788
 lastModified: 1697133220421
 label: Straßennetz Landesbetrieb Straßenbau NRW
 description: "Der Datenbestand wird vorgehalten für die öffentlichen Straßen der Straßenklassen Bundesautobahnen, Bundesstraßen, Landesstraßen und Kreisstraßen, die innerhalb des Bundeslandes Nordrhein-Westfalen liegen."
-enabled: "${ENABLE_STRASSEN:-true}"
+enabled: "${enable.strassen:-true}"
 serviceType: OGC_API
 metadata:
   creatorName: Landesbetrieb Straßenbau Nordrhein-Westfalen (Straßen.NRW)

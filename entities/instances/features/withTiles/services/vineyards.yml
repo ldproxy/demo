@@ -2,7 +2,7 @@
 id: vineyards
 entityStorageVersion: 2
 serviceType: OGC_API
-enabled: ${ENABLE_VINEYARDS:-true}
+enabled: "${enable.vineyards:-true}"
 label: Vineyards in Rhineland-Palatinate, Germany
 description: |
   Have you ever wondered where the wine that you are drinking comes from? If the wine comes from the wine-growing regions Mosel, Nahe, Rheinhessen, Pfalz, Ahr, or Mittelrhein you can find this information in this API.
