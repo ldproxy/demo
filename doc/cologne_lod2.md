@@ -43,7 +43,7 @@ curl https://www.opengeodata.nrw.de/produkte/geobasis/3dg/lod2_gml/lod2_gml/LoD2
 curl https://www.opengeodata.nrw.de/produkte/geobasis/3dg/lod2_gml/lod2_gml/LoD2_32_357_5645_1_NW.gml -o temp/LoD2_32_357_5645_1_NW.gml
 
 # start 3D CityDB
-docker run -d -p 5432:5432 --name citydb --rm -e POSTGRES_PASSWORD=postgres -e SRID=5555 3dcitydb/3dcitydb-pg
+docker run -d -p 5432:5432 --name citydb --rm -e POSTGRES_PASSWORD=postgres -e SRID=5555 3dcitydb/3dcitydb-pg:4
 
 # ... wait until the database is ready
 
