@@ -10,7 +10,7 @@ Resource types: Features, 3D Tiles, Styles, Codelists
 
 ## Notes
 
-The data in this API is an extract from the statewide data (rectangle in the city of Cologne with 2 km x 3 km edge length, 10500 buildings).
+The data in this API is an extract from the statewide data (rectangle in the city of Cologne with 2 km x 3 km edge length, 10462 buildings).
 
 The building properties and their values are in German.
 
