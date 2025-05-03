@@ -6,7 +6,7 @@ enabled: "${enable.cologne_lod2:-false}"
 label: 3D Buildings in Cologne (LoD2)
 description: |-
   <p>Together with a digital terrain model, 3D building models describe the natural terrain shape of the earth's surface, including all buildings and structures, in digital form and enable the representation of cities and towns in virtual worlds. Buildings can be modeled in different levels of detail (Level of Detail, LoD). In the 3D building model LoD2, the modeling of the buildings is done with standardized roof shapes such as a gable or hip roof.</p>
-  <p>The data in this API is an extract from the statewide data (rectangle in the city of Cologne with 2 km x 3 km edge length, 10500 buildings).</p>
+  <p>The data in this API is an extract from the statewide data (rectangle in the city of Cologne with 2 km x 3 km edge length, 10462 buildings).</p>
   <p>The building properties and their values are in German.</p>
 serviceType: OGC_API
 metadata:
@@ -43,7 +43,7 @@ api:
 - buildingBlock: FEATURES_CORE
   itemType: feature
   defaultCrs: CRS84h
-  maximumPageSize: 10000
+  maximumPageSize: 10500
   coordinatePrecision:
     metre: 3
     degree: 7
@@ -107,15 +107,24 @@ api:
   withSurfaceType: true
 - buildingBlock: TILES3D
   enabled: true
-  firstLevelWithContent: 2
+  firstLevelWithContent: 0
   maxLevel: 2
-  geometricErrorRoot: 4096.0
+  geometricErrorRoot: 4096
   subtreeLevels: 3
+  tileFilters:
+  - true
+  - diameter3d("bbox")<=100
+  - diameter3d("bbox")<=50
+  contentFilters:
+  - diameter3d("bbox")>100
+  - diameter3d("bbox")>50 and diameter3d("bbox")<=100
+  - diameter3d("bbox")<=50
+  clampToEllipsoid: true
   seeding:
-    runOnStartup: true
+    runOnStartup: false
+    runOnDatasetChange: false
     purge: false
     maxThreads: 1
-  clampToEllipsoid: true
 - buildingBlock: CODELISTS
   enabled: true
 - buildingBlock: FLATGEOBUF

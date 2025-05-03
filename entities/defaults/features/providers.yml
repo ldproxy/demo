@@ -1,0 +1,4 @@
+---
+queryGeneration:
+  nullOrder: last
+  geometryEncoding: WKB

@@ -44,6 +44,8 @@ tilesetDefaults:
       min: 0
       max: 9
       default: 5
+  profiles:
+  - rel-as-uri
 tilesets:
   __all__: 
     id: __all__
