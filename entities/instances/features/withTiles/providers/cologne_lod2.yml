@@ -4,7 +4,8 @@ providerType: FEATURE
 providerSubType: SQL
 enabled: "${enable.cologne_lod2:-false}"
 nativeCrs:
-  code: 5555
+  code: 25832
+  verticalCode: 7837
   forceAxisOrder: NONE
 nativeTimeZone: Europe/Berlin
 connectionInfo:

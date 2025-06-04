@@ -16,6 +16,8 @@ The building properties and their values are in German.
 
 This API is disabled by default, because of the need to first start a PostgreSQL database and load the data. See below.
 
+The source data is in the projected coordinate reference system EPSG:25832 (ETRS89/UTM32N, easting/northing) and EPSG:7837 (DHHN2016, height). To support conversions into WGS84 coordinate reference systems, e.g., OGC:CRS84h (WGS84 geographic, longitude/latitude/ellipsoidal height), a grid for the conversion between ellipsoidal height and the geoid height is included (`resources/proj/de_bkg_gcg2016.tif`). The difference in Cologne is roughly 50 meters; without the grid file, the ellipsoidal height values are roughly 50 meters too low. The file covers all of Germany and is provided by the Bundesamt für Kartographie und Geodäsie (BKG) Deutschland; it can be downloaded from https://cdn.proj.org/.
+
 ## Data source
 
 License: [Datenlizenz Deutschland - Zero – Version 2.0](https://www.govdata.de/dl-de/zero-2-0)
@@ -43,7 +45,7 @@ curl https://www.opengeodata.nrw.de/produkte/geobasis/3dg/lod2_gml/lod2_gml/LoD2
 curl https://www.opengeodata.nrw.de/produkte/geobasis/3dg/lod2_gml/lod2_gml/LoD2_32_357_5645_1_NW.gml -o temp/LoD2_32_357_5645_1_NW.gml
 
 # start 3D CityDB
-docker run -d -p 5432:5432 --name citydb --rm -e POSTGRES_PASSWORD=postgres -e SRID=5555 3dcitydb/3dcitydb-pg:4
+docker run -d -p 5432:5432 --name citydb --rm -e POSTGRES_PASSWORD=postgres -e SRID=25832 -e "SRSNAME=urn:ogc:def:crs,crs:EPSG::25832,crs:EPSG::7837" 3dcitydb/3dcitydb-pg:4
 
 # ... wait until the database is ready
 

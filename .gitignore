@@ -5,7 +5,6 @@ tmp
 resources/tiles/*/cache_dyn
 resources/tiles/*/cache_imm
 resources/jwt
-resources/proj
 resources/tiles3d
 OS_Open_Zoomstack.mbtiles
 OS_Open_Zoomstack.gpkg
