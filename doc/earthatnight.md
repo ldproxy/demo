@@ -16,7 +16,7 @@ To generate the MBTiles:
 
 ```sh
 curl "https://eoimages.gsfc.nasa.gov/images/imagerecords/79000/79765/dnb_land_ocean_ice.2012.54000x27000_geo.tif" -o dnb_land_ocean_ice.2012.54000x27000_geo.tif
-rio mbtiles dnb_land_ocean_ice.2012.54000x27000_geo.tif  -o dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles --zoom-levels 0..6 --tile-size 512 --baselayer --title "Earth at Night" --description "GeoTIFF provided by NASA. Created using rio-mbtiles."
+rio mbtiles dnb_land_ocean_ice.2012.54000x27000_geo.tif  -o dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles --zoom-levels 0..6 --tile-size 256 --baselayer --title "Earth at Night" --description "GeoTIFF provided by NASA. Created using rio-mbtiles."
 sqlite3 dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles "insert into metadata (name,value) values ('minzoom',0);"
 sqlite3 dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles "insert into metadata (name,value) values ('maxzoom',6);"
 sqlite3 dnb_land_ocean_ice.2012.54000x27000_geo.mbtiles "insert into metadata (name,value) values ('center','0,0,0');"
