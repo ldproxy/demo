@@ -15,6 +15,8 @@ api:
 - buildingBlock: CRUD
   enabled: true
   optimisticLockingLastModified: true
+- buildingBlock: SORTING
+  enabled: false
 - buildingBlock: CRS
   additionalCrs:
   - code: 3395
@@ -602,6 +604,7 @@ collections:
         ZI001_SDV:
         - dateFormat: "MM/dd/yyyy[', 'HH:mm:ss[' 'z]]"
     - buildingBlock: SORTING
+      enabled: true
       included:
       - F_CODE
       - ZI001_SDV

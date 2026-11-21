@@ -156,7 +156,6 @@ collections:
       - consistsOfBuildingPart.storeysAboveGround
     - buildingBlock: SORTING
       included:
-      - name
       - measuredHeight
       - storeysAboveGround
     - buildingBlock: TEXT_SEARCH
