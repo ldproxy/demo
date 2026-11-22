@@ -44,6 +44,8 @@ api:
     hreflang: de
 - buildingBlock: FLATGEOBUF
   enabled: true
+- buildingBlock: RESULT_TYPE
+  enabled: true
 - buildingBlock: CRS
   additionalCrs:
   - code: 25832
