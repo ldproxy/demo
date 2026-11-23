@@ -1,11 +1,17 @@
 ---
 serviceType: OGC_API
+tags:
+- features
 api:
 - buildingBlock: FEATURES_CORE
   itemType: feature
   coordinatePrecision:
     metre: 2
-    degree: 7
+    degree: 6
+  maximumPageSize: 100000
+- buildingBlock: FEATURES_HTML
+  crsSelector: true
+  limitSelector: [0, 1, 10, 100, 1000]
 - buildingBlock: JSON_FG
   enabled: true
 - buildingBlock: FLATGEOBUF
@@ -13,6 +19,8 @@ api:
 - buildingBlock: CSV
   enabled: true
 - buildingBlock: SCHEMA
+  enabled: true
+- buildingBlock: SCHEMA_VALIDATION
   enabled: true
 - buildingBlock: QUERYABLES
   enabled: true
@@ -25,4 +33,6 @@ api:
 - buildingBlock: SORTING
   enabled: true
 - buildingBlock: TEXT_SEARCH
+  enabled: true
+- buildingBlock: RESULT_TYPE
   enabled: true

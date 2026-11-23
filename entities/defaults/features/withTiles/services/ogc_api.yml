@@ -1,5 +1,7 @@
 ---
 serviceType: OGC_API
+tags:
+- vector_tiles
 api:
 - buildingBlock: STYLES
   enabled: true

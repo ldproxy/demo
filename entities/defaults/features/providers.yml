@@ -2,3 +2,7 @@
 queryGeneration:
   nullOrder: last
   geometryEncoding: WKB
+queryProcessing: 
+  skipUnusedPipelineSteps: true
+datasetChanges:
+  mode: EXTERNAL

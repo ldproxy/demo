@@ -11,6 +11,8 @@ metadata:
   creatorName: NASA Earth Observatory
   creatorUrl: https://earthobservatory.nasa.gov/features/NightLights
   licenseName: Public Domain
+tags:
+- map_tiles
 api:
 - buildingBlock: COMMON
   additionalLinks:
