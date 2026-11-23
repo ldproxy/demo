@@ -51,17 +51,14 @@ api:
   enabled: true
   additionalCrs:
   - code: 5555
-    forceAxisOrder: NONE
   - code: 3857
-    forceAxisOrder: NONE
   - code: 4978
-    forceAxisOrder: NONE
   - code: 4979
-    forceAxisOrder: NONE
   - code: 25832
-    forceAxisOrder: NONE
 - buildingBlock: GEO_JSON
   enabled: false
+- buildingBlock: JSON_FG
+  enabled: true  
 - buildingBlock: FEATURES_HTML
   mapPosition: TOP
   mapClientType: CESIUM
@@ -105,26 +102,9 @@ api:
       componentType: UINT8
       noData: 0
   withSurfaceType: true
+  embedSchema: true
 - buildingBlock: TILES3D
   enabled: true
-  firstLevelWithContent: 0
-  maxLevel: 2
-  geometricErrorRoot: 4096
-  subtreeLevels: 3
-  tileFilters:
-  - true
-  - diameter3d("bbox")<=100
-  - diameter3d("bbox")<=50
-  contentFilters:
-  - diameter3d("bbox")>100
-  - diameter3d("bbox")>50 and diameter3d("bbox")<=100
-  - diameter3d("bbox")<=50
-  clampToEllipsoid: true
-  seeding:
-    runOnStartup: false
-    runOnDatasetChange: false
-    purge: false
-    maxThreads: 1
 - buildingBlock: CODELISTS
   enabled: true
 - buildingBlock: FLATGEOBUF
@@ -159,7 +139,7 @@ collections:
       - measuredHeight
       - storeysAboveGround
     - buildingBlock: TEXT_SEARCH
-      included:
+      properties:
       - name
       - address.ThoroughfareName
       - address.ThoroughfareNumber

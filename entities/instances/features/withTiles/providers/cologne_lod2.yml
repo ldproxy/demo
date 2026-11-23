@@ -18,6 +18,14 @@ connectionInfo:
   pool:
     initFailTimeout: 90s
 labelTemplate: "{{value}}{{unit | prepend:' [' | append:']'}}"
+providesGeometryTypes:
+  - POINT
+  - LINE_STRING
+  - POLYGON
+  - MULTI_POINT
+  - MULTI_LINE_STRING
+  - MULTI_POLYGON
+  - POLYHEDRAL_SURFACE
 types:
   building:
     sourcePath: "/building{filter=objectclass_id=26}"
@@ -30,10 +38,13 @@ types:
         gml_id:
           role: ID
         bbox:
-          role: PRIMARY_GEOMETRY
+          role: FILTER_GEOMETRY    
         creationDate:
           role: PRIMARY_INSTANT
     - schema: '#/fragments/abstract_building'
+      properties:
+        lod2Solid:
+          role: PRIMARY_GEOMETRY    
     - properties:
         consistsOfBuildingPart:
           sourcePath: "[id=building_parent_id]building"
@@ -60,6 +71,9 @@ fragments:
         type: GEOMETRY
         geometryType: POLYGON
         label: Bounding Box
+        excludedScopes: 
+        - RETURNABLE
+        - RECEIVABLE
         constraints:
           required: true
       creationDate:
@@ -151,12 +165,6 @@ fragments:
         objectType: Address
         label: Adresse
         properties:
-          id:
-            sourcePath: id
-            type: INTEGER
-            label: Objekt-ID
-            transformations:
-            - remove: ALWAYS
           multiPoint:
             sourcePath: multi_point
             type: GEOMETRY
@@ -187,14 +195,14 @@ fragments:
             type: STRING
             label: Land
       lod2Solid:
-        sourcePath: "[lod2_solid_id=id]solid_geometry/geom"
+        sourcePath: "[lod2_solid_id=id]surface_geometry/solid_geometry"
         type: GEOMETRY
-        role: SECONDARY_GEOMETRY
-        geometryType: MULTI_POLYGON
+        geometryType: POLYHEDRAL_SURFACE
         label: Geometrie (LoD 2)
         constraints:
           composite: true
           closed: true
+          required: true
         forcePolygonCCW: false
       surfaces:
         sourcePath: "[id=cityobject_id]surface_geometry_multi"
@@ -214,3 +222,5 @@ fragments:
               geometryType: MULTI_POLYGON
               label: Geometrie (LoD 2)
               forcePolygonCCW: false
+              constraints:
+                required: true
