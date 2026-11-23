@@ -380,6 +380,7 @@ types:
           - "Zusammenstoß mit Fahrzeug, das anfährt, anhält, im ruhenden Verkehr steht"
           - Unfall anderer Art
           - "Zusammenstoß mit Fahrzeug, das seitlich in gleicher Richtung fährt"
+          - Aufprall auf Hindernis auf der Fahrbahn
       unfkat:
         type: OBJECT
         objectType: Unfallkategorie
@@ -515,6 +516,7 @@ types:
           - "Zusammenstoß mit Fahrzeug, das anfährt, anhält, im ruhenden Verkehr steht"
           - Unfall anderer Art
           - "Zusammenstoß mit Fahrzeug, das seitlich in gleicher Richtung fährt"
+          - Aufprall auf Hindernis auf der Fahrbahn
       unfkat:
         type: OBJECT
         objectType: Unfallkategorie

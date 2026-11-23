@@ -4,6 +4,7 @@ entries:
   '2': Limited Access Motorway
   '3': Road
   '4': Street
+  '999': Other
 id: rty
 label: Roadway Type
 sourceType: GML_DICTIONARY

@@ -250,7 +250,7 @@ types:
           - Water
           - Greenspace
           - Sites
-          - Motorway Junction
+          - Motorway Junctions
           - National Park
       name1:
         sourcePath: name1
@@ -395,6 +395,7 @@ types:
           - Local
           - Minor
           - Guided Busway
+          - Restricted
       name:
         sourcePath: name
         type: STRING

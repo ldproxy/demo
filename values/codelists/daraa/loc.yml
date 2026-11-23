@@ -7,6 +7,14 @@ entries:
   '5': National Geodetic Vertical Datum (NGVD) 1929
   '6': Ground Level
   '7': WGS 84 EGM08 Geoid
+  '17': On Waterbody Bottom
+  '23': Below Waterbody Bottom
+  '25': Suspended or Elevated Above Ground or Water Surface
+  '40': Below Ground Surface
+  '44': On Surface
+  '45': Above Surface
+  '46': Above Waterbody Bottom
+  '47': Below Waterbody Surface
 id: loc
 label: Vertical Relative Location
 sourceType: GML_DICTIONARY

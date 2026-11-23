@@ -341,6 +341,7 @@ entries:
   '970': Meeting Place
   '980': Death Care Services
   '99': Manufacturing
+  '999': Other
 id: ffn
 label: Feature Function
 sourceType: GML_DICTIONARY
