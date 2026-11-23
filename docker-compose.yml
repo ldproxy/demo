@@ -1,6 +1,8 @@
 services:
   db:
-    image: postgis/postgis:15-3.4-alpine
+    image: postgis/postgis:18-3.6-alpine
+    # the image is only published for amd64; runs emulated on arm64
+    platform: linux/amd64
     container_name: db_demo
     command: postgres -c 'max_connections=250'
     environment:
@@ -9,7 +11,7 @@ services:
     volumes:
       - ./db/cologne_lod2.sql.gz:/docker-entrypoint-initdb.d/cologne_lod2.sql.gz
     tmpfs:
-      - /var/lib/postgresql/data
+      - /var/lib/postgresql
 
   xtratiler:
     image: ghcr.io/ldproxy/xtratiler
