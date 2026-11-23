@@ -54,7 +54,7 @@ api:
   - SLD 1.0
   - ArcGIS
   - QGIS
-  deriveCollectionStyles: true
+  deriveCollectionStyles: false
 - buildingBlock: RESOURCES
   enabled: true
 - buildingBlock: CODELISTS
@@ -105,8 +105,7 @@ collections:
     - buildingBlock: FEATURES_HTML
       featureTitleTemplate: "{{type}} {{height | append:'m'}}"
     - buildingBlock: SORTING
-      included:
-      - height
+      enabled: false
     - buildingBlock: TEXT_SEARCH
       enabled: false
   district_buildings:
@@ -185,10 +184,8 @@ collections:
     - buildingBlock: QUERYABLES
       included:
       - geom
-      - uuid
     - buildingBlock: SORTING
-      included:
-      - uuid
+      enabled: false
     - buildingBlock: TEXT_SEARCH
       enabled: false
     - buildingBlock: FEATURES_HTML
@@ -409,8 +406,7 @@ collections:
       - geom
       - type
     - buildingBlock: SORTING
-      included:
-      - type
+      enabled: false
     - buildingBlock: TEXT_SEARCH
       enabled: false
     - buildingBlock: FEATURES_HTML
