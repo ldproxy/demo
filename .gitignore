@@ -1,11 +1,14 @@
 
 .DS_Store
 .backup
+.assets
 tmp
+entities/overrides/
 resources/tiles/*/cache_dyn
 resources/tiles/*/cache_imm
 resources/jwt
 resources/tiles3d
+resources/3dtiles
 OS_Open_Zoomstack.mbtiles
 OS_Open_Zoomstack.gpkg
 *.gpkg-journal
