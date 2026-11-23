@@ -12,9 +12,6 @@ metadata:
   licenseName: "The dataset was provided by the US National Geospatial Intelligence Agency (NGA) for development, testing and demonstrations in initiatives of the Open Geospatial Consortium (OGC). For any reuse of the data outside this API, please contact NGA."
   attribution: US National Geospatial Intelligence Agency (NGA)
 api:
-- buildingBlock: CRUD
-  enabled: true
-  optimisticLockingLastModified: true
 - buildingBlock: SORTING
   enabled: false
 - buildingBlock: CRS
