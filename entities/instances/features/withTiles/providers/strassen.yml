@@ -94,7 +94,7 @@ types:
         type: OBJECT
         objectType: Verwaltungsbezirk
         label: Verwaltungsbezirk der Straße
-        description: Verwaltungsbezirk der Straße
+        description: Zuständiger Verwaltungsbezirk für die Straße. Bei Kreisstraßen ist dies der Kreis oder die kreisfreie Stadt, bei Landesstraßen das Land NRW und bei Bundesstraßen die Bundesrepublik Deutschland.
         properties:
           name:
             sourcePath: vwbez
@@ -336,7 +336,7 @@ types:
     sourcePath: /unfaelle_point
     type: OBJECT
     label: Unfälle
-    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
+    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle aus 2019 enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
     properties:
       fid:
         sourcePath: fid
@@ -472,7 +472,7 @@ types:
     sourcePath: /unfaelle_point
     type: OBJECT
     label: Unfälle (alternative Darstellung)
-    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle des letzten Kalenderjahres enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
+    description: "In der Punkteigenschaft Unfälle sind alle Unfalldaten der Kategorie 1 bis 4 erfasst (1 = Unfall mit Getöteten; 2 = Unfall mit Schwerverletzten; 3 = Unfall mit Leichtverletzten; 4 = Unfall mit schwerem Sachschaden). Im Datensatz sind nur Unfälle aus 2019 enthalten.<br>Weitere Informationen siehe: <a href=\"https://www.bast.de/DE/Verkehrstechnik/Statistik/statistik-node.html\" target=\"_blank\">Infrastruktur-, Verkehrs- und Unfalldaten</a>."
     properties:
       fid:
         sourcePath: fid
@@ -640,7 +640,7 @@ types:
             type: OBJECT
             objectType: Verwaltungsbezirk
             label: Verwaltungsbezirk der Straße
-            description: Verwaltungsbezirk der Straße
+            description: Zuständiger Verwaltungsbezirk für die Straße. Bei Kreisstraßen ist dies der Kreis oder die kreisfreie Stadt, bei Landesstraßen das Land NRW und bei Bundesstraßen die Bundesrepublik Deutschland.
             properties:
               name:
                 sourcePath: vwbez

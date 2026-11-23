@@ -44,8 +44,6 @@ api:
     hreflang: de
 - buildingBlock: FLATGEOBUF
   enabled: true
-- buildingBlock: RESULT_TYPE
-  enabled: true
 - buildingBlock: CRS
   additionalCrs:
   - code: 25832
@@ -73,6 +71,11 @@ api:
   deriveCollectionStyles: true
   webmapWithLayerControl: true
   legendEnabled: true
+- buildingBlock: MCP
+  enabled: true
+  included:
+    collections:
+      - "*"
 collections:
   vineyards:
     id: vineyards

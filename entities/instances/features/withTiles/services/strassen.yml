@@ -59,6 +59,13 @@ api:
   webmapWithPopup: true
   webmapWithLayerControl: true
   layerControlAllLayers: true
+- buildingBlock: MCP
+  enabled: true
+  addMetadataAsText: true
+  included:
+    collections:
+      - abschnitteaeste
+      - unfaelle2
 collections:
   abschnitteaeste:
     id: abschnitteaeste
