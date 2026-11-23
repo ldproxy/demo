@@ -22,7 +22,7 @@
          "attribution": "&copy; Straßen.NRW"
       }
    }, 
-  "glyphs": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/fonts/{fontstack}/{range}.pbf",
+   "glyphs": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/fonts/v2/{fontstack}/{range}.pbf",
    "layers": [
       {
          "id": "basemap.de Grau",

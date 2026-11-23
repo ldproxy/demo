@@ -25,7 +25,7 @@ caches:
       max: 13
 seeding:
   runOnStartup: "${enable.seeding:-true}"
-  maxThreads: 8
+  priority: 500
 rasterTilesets:
   __all__:
     styles:

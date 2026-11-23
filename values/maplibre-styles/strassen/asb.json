@@ -8,27 +8,26 @@
     "ldproxy:layerControl": {
       "opened": true,
       "entries": [
-                {
+        {
+          "id": "Hintergrund",
+          "type": "radio-group",
+          "opened": false,
+          "entries": ["basemap.de Grau", "basemap.de Farbig", "Einfarbig"]
+        },
+        {
           "id": "Straßen",
           "type": "group",
+          "opened": false,
           "entries": [
-            {
-              "id": "Hintergrund",
-              "type": "radio-group",
-              "entries": ["basemap.de Grau", "basemap.de Farbig", "Einfarbig"]
-            },
             {
               "id": "Autobahnen",
               "type": "merge-group",
               "entries": [
                 {"id": "Kontur_Autobahn"         , "zoom":  0},
-                {"id": "Kontur_Autobahn_Abs"     , "zoom": 14},
                 {"id": "Kontur_Autobahn_Ast"     , "zoom":  0},
                 {"id": "Decker_Autobahn"         , "zoom":  0},
-                {"id": "Decker_Autobahn_Abs"     , "zoom": 14},
                 {"id": "Decker_Autobahn_Ast"     , "zoom":  0},
-                {"id": "Mittellinie_Autobahn"    , "zoom":  0},
-                {"id": "Mittellinie_Autobahn_Abs", "zoom": 14}
+                {"id": "Mittellinie_Autobahn"    , "zoom":  0}
               ]
             },
             {
@@ -36,10 +35,8 @@
               "type": "merge-group",
               "entries": [
                 {"id": "Kontur_Bundesstr"    , "zoom": 11},
-                {"id": "Kontur_Bundesstr_Abs", "zoom": 11},
                 {"id": "Kontur_Bundesstr_Ast", "zoom": 11},
                 {"id": "Decker_Bundesstr"    , "zoom": 11},
-                {"id": "Decker_Bundesstr_Abs", "zoom": 11},
                 {"id": "Decker_Bundesstr_Ast", "zoom": 11}
               ]
             },
@@ -48,10 +45,8 @@
               "type": "merge-group",
               "entries": [
                 {"id": "Kontur_Landesstr"    , "zoom": 11},
-                {"id": "Kontur_Landesstr_Abs", "zoom": 11},
                 {"id": "Kontur_Landesstr_Ast", "zoom": 11},
                 {"id": "Decker_Landesstr"    , "zoom": 11},
-                {"id": "Decker_Landesstr_Abs", "zoom": 11},
                 {"id": "Decker_Landesstr_Ast", "zoom": 11}
               ]
             },
@@ -60,10 +55,8 @@
               "type": "merge-group",
               "entries": [
                 {"id": "Kontur_Kreisstr"    , "zoom": 11},
-                {"id": "Kontur_Kreisstr_Abs", "zoom": 11},
                 {"id": "Kontur_Kreisstr_Ast", "zoom": 11},
                 {"id": "Decker_Kreisstr"    , "zoom": 11},
-                {"id": "Decker_Kreisstr_Abs", "zoom": 11},
                 {"id": "Decker_Kreisstr_Ast", "zoom": 11}
               ]
             }
@@ -154,7 +147,7 @@
       "maxzoom": 19
    }
 },
-  "glyphs": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/fonts/v2/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "basemap.de Grau",

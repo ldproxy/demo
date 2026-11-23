@@ -25,7 +25,7 @@ caches:
       max: 18
 seeding:
   runOnStartup: "${enable.seeding:-true}"
-  maxThreads: 8
+  priority: 1500
 tilesetDefaults:
   sparse: true
   center:

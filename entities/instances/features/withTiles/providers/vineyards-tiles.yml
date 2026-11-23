@@ -5,7 +5,7 @@ providerSubType: FEATURES
 enabled: "${enable.vineyards:-true}"
 seeding:
   runOnStartup: "${enable.seeding:-true}"
-  maxThreads: 8
+  priority: 1200
 caches:
 - type: IMMUTABLE
   storage: PER_JOB
