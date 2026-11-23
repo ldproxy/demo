@@ -3,7 +3,7 @@ id: cshapes
 createdAt: 1616851637279
 lastModified: 1697133220383
 label: CShapes Dataset of Historical Country Boundaries
-description: "CShapes 2.0 maps the borders and capitals of independent states and dependent territories from 1886 to 2019. There are two versions of the dataset, which are based on the Gleditsch and Ward (1999) or the Correlates of War coding of independent states. Border changes were coded based on the Territorial Change Dataset by Tir et al (1998), the Encyclopedia of International Boundaries by Biger (1995) and the Encyclopedia of African Boundaries by Brownlie (1979)."
+description: "The CShapes 2.0 dataset maps the borders and capitals of independent states and dependent territories from 1886 to 2019. There are two versions of the dataset, which are based on the Gleditsch and Ward (1999) or the Correlates of War coding of independent states. Border changes were coded based on the Territorial Change Dataset by Tir et al (1998), the Encyclopedia of International Boundaries by Biger (1995) and the Encyclopedia of African Boundaries by Brownlie (1979)."
 enabled: "${enable.cshapes:-true}"
 serviceType: OGC_API
 metadata:
@@ -17,6 +17,16 @@ metadata:
   licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
   attribution: "Schvitz, Guy, Seraina Rüegger, Luc Girardin, Lars-Erik Cederman, Nils Weidmann, and Kristian Skrede Gleditsch. 2022. <a href=\"https://icr.ethz.ch/publications/cshapes-2/\" target=\"_blank\">Mapping The International System, 1886-2017: The CShapes 2.0 Dataset</a>. Journal of Conflict Resolution 66(1): 144–61."
 api:
+- buildingBlock: SEARCH
+  enabled: true
+- buildingBlock: MCP
+  enabled: true
+  addMetadataAsText: true
+  included:
+    collections:
+      - "*"
+    queries:
+      - "*"
 - buildingBlock: COLLECTIONS
   additionalLinks:
   - rel: related
@@ -34,6 +44,11 @@ api:
     title: Download the data as a shapefile
     href: https://icr.ethz.ch/data/cshapes/CShapes-2.0.zip
     hreflang: en
+- buildingBlock: VERSIONED_FEATURES
+  enabled: true
+  timeAxis: VALIDITY_TIME
+  compositeIdPattern: "^(?<id>\\d+)\\.(?<start>\\d{8})$"
+  defaultDatetime: 2019-12-31
 collections:
   boundary:
     id: boundary
@@ -51,11 +66,13 @@ collections:
       - name
       - capname
       - gwcode
+      - area
     - buildingBlock: SORTING
       included:
       - name
       - capname
       - gwcode
+      - area
     - buildingBlock: TEXT_SEARCH
       properties:
       - name
